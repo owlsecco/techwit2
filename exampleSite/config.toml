@@ -1,4 +1,4 @@
-baseURL = "https://examplesite.com"
+baseURL = "https://techwit2.netlify.app/"
 disableLanguages = []
 disqusShortname = ""
 googleAnalytics = ""
@@ -7,7 +7,7 @@ languageName = "En"
 paginate = "6"
 summaryLength = "10"
 theme = "twentytwenty"
-title = "Twenty Twenty Hugo"
+title = "TechWit"
 [markup.goldmark.renderer]
 unsafe = true
 [[menu.desktop]]
