@@ -1,9 +1,10 @@
 ---
 title: "Privacy Policy"
+# meta description
 description: "This is our privacy policy, last updated on Saturday 1st August 2020"
+# save as draft
 draft: false
 ---
-
 <h1>TechWit Kenya's Privacy Policy</h1>
 
 <p>At TechWit Kenya, accessible from https://techwit2.netlify.app, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by TechWit Kenya and how we use it.</p>
