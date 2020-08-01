@@ -24,3 +24,5 @@ fields:
   name: description
   label: description
   description: Meta description
+pages:
+- exampleSite/content/privacy-policy.md
