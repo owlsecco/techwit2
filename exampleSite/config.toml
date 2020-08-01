@@ -36,7 +36,7 @@ home = ["HTML", "RSS", "JSON"]
 author = "Themefisher"
 description = "Welcome to TechWit"
 [params.banner]
-heading = "The New UMoMA Opens its Doors"
+heading = "We are all about Tech, Cybersecurity and Development"
 image = "images/2020-landscape-1-2.png"
 [params.blog]
 heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
