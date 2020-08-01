@@ -36,7 +36,7 @@ home = ["HTML", "RSS", "JSON"]
 author = "Admin"
 description = "Welcome to TechWit"
 [params.banner]
-heading = "Get Quality Tech, Cybersecurity and Development Content."
+heading = "Quality Tech, Cybersecurity and Development Content For All."
 image = "images/2020-landscape-1-2.png"
 [params.blog]
 heading = "Our Latest Articles"
