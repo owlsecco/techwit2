@@ -33,7 +33,7 @@ weight = 4
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [params]
-author = "Themefisher"
+author = "Admin"
 description = "Welcome to TechWit"
 [params.banner]
 heading = "Get Quality Tech, Cybersecurity and Development Content."
