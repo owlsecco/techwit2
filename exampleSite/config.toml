@@ -34,7 +34,7 @@ weight = 4
 home = ["HTML", "RSS", "JSON"]
 [params]
 author = "Admin"
-description = "Welcome to TechWit"
+description = "Welcome to The TechWit Kenya Blog. Your Source of Cutting Edge Tech, Cybersecurity and Development Content."
 [params.banner]
 heading = "Quality Tech, Cybersecurity and Development Content For All."
 image = "images/2020-landscape-1-2.png"
