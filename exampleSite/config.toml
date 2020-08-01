@@ -47,7 +47,7 @@ content = "Sign up and stay up to date by receiving quality content such as tips
 enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
-address = "Physical Location: Nairobi, Kenya"
+address = "Nairobi, Kenya"
 content = "We are a Tech, Cybersecurity and  Development Blog focusing on delivering quality content to keep you up to date and informed."
 copyright = "Copyright &copy; 2020 [TechWit Kenya](https://techwit2.netlify.app). All Rights Reserved"
 hours = "Blog: 24/7"
