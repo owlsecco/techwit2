@@ -1,6 +1,6 @@
 baseURL = "https://techwit2.netlify.app/"
 disableLanguages = []
-disqusShortname = ""
+disqusShortname = "techwitke"
 googleAnalytics = ""
 languageCode = "en-us"
 languageName = "En"
