@@ -39,7 +39,7 @@ description = "Welcome to TechWit"
 heading = ""
 image = "images/2020-landscape-1-2.png"
 [params.blog]
-heading = "Get Quality Tech, Cybersecurity, Development, Artificial Intelligence, Cryptocurrency, Blockchain and Fintech Content."
+heading = "Our Latest Articles"
 [params.call_to_action]
 button_label = "Newsletter"
 button_url = "contact"
