@@ -50,7 +50,7 @@ title = "Sign Up To Our Newsletter"
 address = "Nairobi, Kenya"
 content = "We are a Tech, Cybersecurity and  Development Blog focusing on delivering quality content to keep you up to date and informed."
 copyright = "Copyright &copy; 2020 [TechWit Kenya](https://techwit2.netlify.app). All Rights Reserved"
-hours = "Blog: 24/7"
+hours = "24/7"
 title = "About"
 [params.gallery]
 enable = false
