@@ -43,7 +43,7 @@ heading = "Our Latest Articles"
 [params.call_to_action]
 button_label = "I Want to Sign Up"
 button_url = "#"
-content = "Sign up and stay up to date by receiving quality content such as tips, tricks, news, howto's, insights, deals, savings, promotions and more right in your inbox. Never miss an article or a giveaway. \nBecome a member of our community. Join us!\nAlso download this <a href=\"#\">Cyber Security Guide</a>"
+content = "Sign up and stay up to date by receiving quality content such as tips, tricks, news, howto's, insights, deals, savings, promotions and more right in your inbox. Never miss an article or a giveaway. \nBecome a member of our community. Join us!\nAlso download this free <a href=\"#\">Cyber Security Guide For Individuals</a> and protect yourself and data from hackers."
 enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
