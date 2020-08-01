@@ -71,11 +71,11 @@ title = "Privacy Policy"
 <ul>
 
     <li>
-
+    
         <p>Google</p>
-
+    
         <p><a href="[https://policies.google.com/technologies/ads](https://policies.google.com/technologies/ads "https://policies.google.com/technologies/ads")">[https://policies.google.com/technologies/ads](https://policies.google.com/technologies/ads "https://policies.google.com/technologies/ads")</a></p>
-
+    
     </li>
 
 </ul>
