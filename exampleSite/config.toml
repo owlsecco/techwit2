@@ -49,7 +49,7 @@ title = "Sign Up To Our Newsletter"
 [params.footer]
 address = "Physical Location: Nairobi, Kenya"
 content = "We are a Tech, Cybersecurity and  Development Blog focusing on delivering quality content to keep you up to date and informed."
-copyright = "Copyright &copy; 2020 [TechWit Kenya](https://techwit2.netlify.app)"
+copyright = "Copyright &copy; 2020 [TechWit Kenya](https://techwit2.netlify.app). All Rights Reserved"
 hours = "Blog Availability: 24/7<br><b>Chat</b><br>Monday-Friday: 9:00AM - 4:00PM<br>Saturday and Sunday: 11:00AM - 3:00PM"
 title = "About"
 [params.gallery]
