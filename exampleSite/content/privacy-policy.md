@@ -3,7 +3,6 @@ author = ["admin"]
 categories = ["privacy policy"]
 date = 2020-07-31T21:00:00Z
 description = "Here Lies TechWit Ke's Privacy Policy"
-draft = true
 image = "/images/privacypolicy.jpg"
 tags = ["techwit kenya", "techwit's privacy policy", "privacy policy", "techwit"]
 title = "Privacy Policy"
