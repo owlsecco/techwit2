@@ -30,6 +30,10 @@ weight = 3
 URL = "contact"
 name = "Contact"
 weight = 4
+[[menu.main]]
+URL = "privacy-policy"
+name = "Privacy Policy"
+weight = "5"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [params]
