@@ -30,15 +30,11 @@ weight = 3
 URL = "contact"
 name = "Contact"
 weight = 4
-[[menu.main]]
-URL = "sample-page"
-name = "Sample Page"
-weight = 5
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [params]
 author = "Themefisher"
-description = "This is meta description"
+description = "Welcome to TechWit"
 [params.banner]
 heading = "The New UMoMA Opens its Doors"
 image = "images/2020-landscape-1-2.png"
