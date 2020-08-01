@@ -47,10 +47,10 @@ content = "Sign up and stay up to date by receiving quality content such as tips
 enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
-address = "123 Main Street <br> New York, NY 10001"
-content = "This may be a good place to introduce yourself and your site or include some credits."
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
-hours = "Monday–Friday: 9:00AM–5:00PM <br> Saturday & Sunday: 11:00AM–3:00PM"
+address = "Nairobi, Kenya"
+content = "We are a Tech, Cybersecurity and  Development Blog focusing on delivering quality content to keep you up to date and informed."
+copyright = "Copyright &copy; 2020 [TechWit Kenya](https://techwit2.netlify.app)"
+hours = ""
 title = "About This Site"
 [params.gallery]
 enable = false
