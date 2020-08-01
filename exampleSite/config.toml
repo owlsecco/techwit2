@@ -11,8 +11,8 @@ title = "TechWit"
 [markup.goldmark.renderer]
 unsafe = true
 [[menu.desktop]]
-URL = "contact"
-name = "Contact"
+URL = "blog"
+name = "Blog"
 weight = 1
 [[menu.main]]
 URL = "/"
