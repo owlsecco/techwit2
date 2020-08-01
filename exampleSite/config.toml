@@ -36,7 +36,7 @@ home = ["HTML", "RSS", "JSON"]
 author = "Themefisher"
 description = "Welcome to TechWit"
 [params.banner]
-heading = "We are all about Tech, Cybersecurity and Development"
+heading = "A Look Into Tech, Cybersecurity, Development and More"
 image = "images/2020-landscape-1-2.png"
 [params.blog]
 heading = "Your Source of Quality Tech, Cybersecurity, Development, Artificial Intelligence, Cryptocurrency, Blockchain and Fintech Content"
