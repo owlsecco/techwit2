@@ -52,7 +52,7 @@ home = ["HTML", "RSS", "JSON", "jsonfeed"]
 author = "Admin"
 description = "Welcome to The TechWit Kenya Blog. Your Source of Cutting Edge Tech, Cybersecurity and Development Content."
 [params.banner]
-heading = "Quality Tech, Cybersec and Dev Content For All Your Needs"
+heading = "Quality Tech Content For All"
 image = "images/2020-landscape-1-2.png"
 [params.blog]
 heading = "Our Latest Articles"
