@@ -34,6 +34,10 @@ weight = 4
 URL = "privacy-policy"
 name = "Privacy Policy"
 weight = "5"
+[outputFormats.jsonfeed]
+baseName = "feed"
+isPlainText = true
+mediaType = "application/json"
 [outputs]
 home = ["HTML", "RSS", "JSON", "jsonfeed"]
 [params]
@@ -73,7 +77,3 @@ yelp = "#"
 author = "author"
 category = "categories"
 tag = "tags"
-[outputFormats.jsonfeed]
-mediaType = "application/json"
-baseName = "feed"
-isPlainText = true
