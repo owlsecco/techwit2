@@ -40,7 +40,7 @@ name = "XML RSS Feed"
 weight = "6"
 [[menu.main]]
 URL = "feed.json"
-name = "JSON RSS Feed"
+name = "Json RSS Feed"
 weight = "7"
 [outputFormats.jsonfeed]
 baseName = "feed"
