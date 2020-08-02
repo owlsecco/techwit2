@@ -36,8 +36,12 @@ name = "Privacy Policy"
 weight = "5"
 [[menu.main]]
 URL = "index.xml"
-name = "RSS Format: XML"
+name = "RSS/Feed: XML"
 weight = "6"
+[[menu.main]]
+URL = "feed.json"
+name = "RSS/Feed: JSON"
+weight = "7"
 [outputFormats.jsonfeed]
 baseName = "feed"
 isPlainText = true
