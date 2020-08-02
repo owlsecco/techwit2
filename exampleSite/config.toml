@@ -35,7 +35,7 @@ URL = "privacy-policy"
 name = "Privacy Policy"
 weight = "5"
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON", "jsonfeed"]
 [params]
 author = "Admin"
 description = "Welcome to The TechWit Kenya Blog. Your Source of Cutting Edge Tech, Cybersecurity and Development Content."
@@ -77,5 +77,3 @@ tag = "tags"
 mediaType = "application/json"
 baseName = "feed"
 isPlainText = true
-[outputs]
-  home = ["html", "jsonfeed", "rss"]
