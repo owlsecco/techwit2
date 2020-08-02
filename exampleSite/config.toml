@@ -1,7 +1,7 @@
 baseURL = "https://techwit2.netlify.app/"
 disableLanguages = []
 disqusShortname = "techwitke"
-googleAnalytics = ""
+googleAnalytics = "UA-132349593-10"
 languageCode = "en-us"
 languageName = "En"
 paginate = "7"
