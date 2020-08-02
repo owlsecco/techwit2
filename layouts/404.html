@@ -1,0 +1,31 @@
+{{ define "main"}}
+    <main id="main">
+    
+    <!-- 404 -->
+      <div>
+      <h1 align="center">Whoops, Page Not Found!</h1>
+       <h2 id="title" align="center">Kindly Go Back <a href="{{ "/" | relURL }}">Home</a> or <a href="{{ "/" | relURL }}">Search</a></h1>
+      </div>
+      <!-- End of 404 -->
+      
+      <!-- Our Latest Posts -->
+      <div class="wp-block-columns columns alignwide">
+        {{ range (where .Site.RegularPages "Section" "blog")}}
+        <div class="column">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
+              <figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}"
+                  alt="{{.Title }}" class="wp-image-37" /></figure>
+              <h3>{{ .Title }}</h3>
+              <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
+              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
+                  href="{{ .Permalink }}">Read More</a></div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- End of Our Latest Posts -->
+      
+    </main>
+{{ end }}
