@@ -20,6 +20,10 @@
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
 
+  <!--Json Feed-->
+  <link href="{{ with .OutputFormats.Get "jsonfeed"  }}{{ .Permalink }}{{ end }}"
+  rel="alternate" type="application/json" title="{{ .Site.Title }}" />
+
   <script>
 		document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
