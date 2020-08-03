@@ -46,21 +46,15 @@ So we would like to send a special "Thank You" to the following:
 * [**Forestry CMS**](https://forestry.io/?utm_source=techwit2.netlify.app "Forestry CMS")
 * [**Stephen Ajulu**](https://stephenajulu.com/?utm_source=techwit2.netlify.app "Stephen Ajulu")
 
-{{ if .Site.Params.call_to_action.enable }}
-{{ with .Site.Params.call_to_action }}
 <div class="wp-block-group alignwide has-background" style="background-color:#ffffff">
-<div class="wp-block-group__inner-container">
-<div class="wp-block-group">
-<div class="wp-block-group__inner-container">
-<h2 class="has-text-align-center">{{ .title | markdownify }}</h2>
-<p class="has-text-align-center">{{ .content | markdownify }}</p>
-<div class="wp-block-button aligncenter"><a class="wp-block-button__link"
-href="{{ .button_url | absURL }}">{{ .button_label }}</a></div>
-</div>
-</div>
-</div>
-
-
-</div>
-{{ end }}
-{{ end }}
+    <div class="wp-block-group__inner-container">
+      <div class="wp-block-group">
+        <div class="wp-block-group__inner-container">
+          <h2 class="has-text-align-center">Sign Up To Our Newsletter</h2>
+          <p class="has-text-align-center">Sign up and stay up to date by receiving quality content such as tips, tricks, news, howto’s, insights, deals, savings, promotions, freebies, ebooks and more right in your inbox. Never miss an article or a giveaway. Become a member of our community. Join us!</p>
+          <div class="wp-block-button aligncenter"><a class="wp-block-button__link"
+              href="/newsletter">I Want To Sign Up</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
