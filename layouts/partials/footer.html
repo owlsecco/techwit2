@@ -1,7 +1,7 @@
 <div class="footer-nav-widgets-wrapper header-footer-group">
   <div class="footer-inner section-inner">
     <div class="footer-top has-social-menu">
-      <nav aria-label="Social links" class="footer-social-wrapper">
+      <nav aria-label="Social links" class="footer-social-wrapper" align="center">
         {{partial "social.html" .}}
       </nav>
     </div><!-- .footer-top -->
@@ -21,10 +21,10 @@
         <div class="footer-widgets column-two grid-item">
           <div class="widget widget_text">
             <div class="widget-content">
-              <h2 class="widget-title subheading heading-size-3">Find Us</h2>
+              <h2 class="widget-title subheading heading-size-3">Contact Us</h2>
               <div class="textwidget">
-                <p><strong>Address</strong><br/> {{ .address | markdownify }}</p>
-                <p><strong>Hours</strong><br/>{{ .hours | markdownify }}</p>
+                <p><strong>Email:</strong><br/> {{ .email | markdownify }}</p>
+                <p><strong>Tel:</strong><br/>{{ .telephone | markdownify }}</p>
               </div>
             </div>
           </div>
