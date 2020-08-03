@@ -59,6 +59,8 @@ href="{{ .button_url | absURL }}">{{ .button_label }}</a></div>
 </div>
 </div>
 </div>
+
+
 </div>
 {{ end }}
 {{ end }}
