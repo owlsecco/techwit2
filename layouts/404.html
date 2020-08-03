@@ -7,7 +7,39 @@
       <h3 id="title" align="center">Kindly Go Back <a href="{{ "/" | relURL }}">Home</a> , <a href="{{ "/" | relURL }}">Search</a> or Read Our Latest Articles ↓ </h3>
       </div>
       <!-- End of 404 -->
-      
+        
+      <!-- Search -->
+        </div>
+      </div><!-- .header-toggles -->
+    </div><!-- .header-navigation-wrapper -->
+  </div><!-- .header-inner -->
+
+  <div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal">
+    <div class="search-modal-inner modal-inner">
+      <div class="section-inner">
+        <form role="search" class="search-form" action="{{ `search`| relLangURL }}">
+          <label for="search-form-1">
+            <span class="screen-reader-text">Search for:</span>
+            <input id="search-query" type="search" class="search-field" placeholder="Search &hellip;"
+              name="s"/>
+          </label>
+          <input type="submit" class="search-submit" value="Search" />
+        </form>
+
+        <button class="toggle search-untoggle close-search-toggle fill-children-current-color"
+          data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal"
+          data-set-focus=".search-modal .search-field" aria-expanded="false">
+          <span class="screen-reader-text">Close search</span>
+          <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            width="16" height="16" viewbox="0 0 16 16">
+            <polygon fill="" fill-rule="evenodd"
+              points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" />
+          </svg> </button><!-- .search-toggle -->
+      </div><!-- .section-inner -->
+    </div><!-- .search-modal-inner -->
+  </div><!-- .menu-modal -->
+        <!-- Search -->
+        
       <!-- Our Latest Posts -->
       <div class="wp-block-columns columns alignwide">
         {{ range (where .Site.RegularPages "Section" "blog")}}
