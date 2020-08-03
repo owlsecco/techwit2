@@ -64,7 +64,7 @@ enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
 content = "We are a Tech, Cybersecurity and Development Blog focused on delivering quality content to keep you updated and well informed. We make sure content is not only trusted but also understandable for all whether tech savvy or not. Get Tips, Tricks, Tutorials, Reviews, News, Offers and More From One Place: TechWit Ke"
-copyright = "Copyright &copy; 2020 [TechWit Ke](https://techwit2.netlify.app). All Rights Reserved. &nbsp; &nbsp; &nbsp; &nbsp; [Privacy Policy](/privacy-policy) | [Terms and Conditions](#)"
+copyright = "Copyright &copy; 2020 [TechWit Ke](https://techwit2.netlify.app). All Rights Reserved.  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  [Privacy Policy](/privacy-policy) | [Terms and Conditions](/terms-and-conditions) | [Advertise Here](/advertise-here)"
 email = "[techwit.ke@gmail.com](mailto:techwit.ke@gmail.com?cc=alunje73@gmail.com&subject=From%20Blog%20Footer)"
 telephone = "[+ 254 726 024 210](tel:+254726024210)"
 title = "About"
