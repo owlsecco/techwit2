@@ -27,7 +27,7 @@ Our content comes in the following types
 
 But we are not limited to the main 3 topics or the 7 content types. As you know tech is a wide area of study. So expect more quality content.
 
-Our Team
+## Our Team
 
 Coming Soon 
 
