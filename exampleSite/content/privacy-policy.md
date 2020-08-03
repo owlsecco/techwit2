@@ -8,8 +8,6 @@ tags = ["techwit kenya", "techwit's privacy policy", "privacy policy", "techwit"
 title = "Privacy Policy"
 
 +++
-`{{ .TableOfContents }}`
-
 <p>At TechWit Kenya, accessible from https://techwit2.netlify.app, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by TechWit Kenya and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
