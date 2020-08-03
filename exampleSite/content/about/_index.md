@@ -45,3 +45,20 @@ So we would like to send a special "Thank You" to the following:
 * [**Netlify**](https://netlify.com/?utm_source=techwit2.netlify.app "Netlify")
 * [**Forestry CMS**](https://forestry.io/?utm_source=techwit2.netlify.app "Forestry CMS")
 * [**Stephen Ajulu**](https://stephenajulu.com/?utm_source=techwit2.netlify.app "Stephen Ajulu")
+
+{{ if .Site.Params.call_to_action.enable }}
+{{ with .Site.Params.call_to_action }}
+<div class="wp-block-group alignwide has-background" style="background-color:#ffffff">
+<div class="wp-block-group__inner-container">
+<div class="wp-block-group">
+<div class="wp-block-group__inner-container">
+<h2 class="has-text-align-center">{{ .title | markdownify }}</h2>
+<p class="has-text-align-center">{{ .content | markdownify }}</p>
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link"
+href="{{ .button_url | absURL }}">{{ .button_label }}</a></div>
+</div>
+</div>
+</div>
+</div>
+{{ end }}
+{{ end }}
