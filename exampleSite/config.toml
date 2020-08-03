@@ -63,9 +63,9 @@ content = "Sign up and stay up to date by receiving quality content such as tips
 enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
+content = "We are a Tech, Cybersecurity and Development Blog focused on delivering quality content to keep you updated and well informed. We make sure content is not only trusted but also understandable for all whether tech savvy or not. Get Tips, Tricks, Tutorials, Reviews, News, Offers and More From One Place: TechWit Ke"
+copyright = "Copyright &copy; 2020 [TechWit Ke](https://techwit2.netlify.app). All Rights Reserved. [Privacy Policy](/privacy-policy)"
 email = "[techwit.ke@gmail.com](mailto:techwit.ke@gmail.com?cc=alunje73@gmail.com&subject=From%20Blog%20Footer)"
-content = "We are a Tech, Cybersecurity and Development Blog focused on delivering quality content to keep you up to date and informed. We make sure content is not only easy to read but also understandable for all whether tech savvy or not."
-copyright = "Copyright &copy; 2020 [TechWit Kenya](https://techwit2.netlify.app). All Rights Reserved"
 telephone = "[+ 254 726 024 210](tel:+254726024210)"
 title = "About"
 [params.gallery]
