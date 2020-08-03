@@ -63,10 +63,10 @@ content = "Sign up and stay up to date by receiving quality content such as tips
 enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
-address = "Nairobi, Kenya"
+email = "[techwit.ke@gmail.com](mailto:techwit.ke@gmail.com?cc=alunje73@gmail.com&subject=From%20Blog%20Footer)"
 content = "We are a Tech, Cybersecurity and Development Blog focused on delivering quality content to keep you up to date and informed. We make sure content is not only easy to read but also understandable for all whether tech savvy or not."
 copyright = "Copyright &copy; 2020 [TechWit Kenya](https://techwit2.netlify.app). All Rights Reserved"
-hours = "24/7"
+telephone = "[+ 254 726 024 210](tel:+254726024210)"
 title = "About"
 [params.gallery]
 enable = false
@@ -75,11 +75,11 @@ image = "images/2020-square-2.png"
 [[params.gallery.gallery_item]]
 image = "images/2020-square-1.png"
 [params.social]
-email = "#"
-facebook = "#"
-instagram = "#"
+email = "techwit.ke@gmail.com"
+facebook = "https://facebook.com/techwitke"
+instagram = "https://instagram.com/techwitke"
 linkedin = "#"
-twitter = "#"
+twitter = "https://twitter.com/techwitke"
 yelp = "#"
 [taxonomies]
 author = "author"
