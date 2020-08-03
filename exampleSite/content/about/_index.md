@@ -29,7 +29,8 @@ But we are not limited to the main 3 topics or the 7 content types. As you know 
 
 ## Our Team
 
-Coming Soon
+<a href="/author/admin"><img src="#" align="left" width="200" alt="Stephen Ajulu's Potrait"><h4>Stephen Ajulu</h4></a>  
+<p><strong>Chief Editor and Founder</strong></p>
 
 ## Our Stack
 
