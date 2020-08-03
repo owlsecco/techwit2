@@ -32,6 +32,8 @@ But we are not limited to the main 3 topics or the 7 content types. As you know 
 <a href="/author/admin"><img src="#" align="left" width="200" alt="Stephen Ajulu's Potrait"><h4>Stephen Ajulu</h4></a>  
 <p><strong>Chief Editor and Founder</strong></p>
 
+More to come
+
 ## Our Stack
 
 This site uses Hugo, a static site generator that uses Go. The theme is Twenty Twenty by WordPress ported to Themefisher. Using the best Git based headless CMS: Forestry in our opinion. Hosted on GitHub(yes we made this site open source) with Netlify handling deployment. Aside from these, we have custom made shortcodes linked to forestry cms snippets for a smooth shortcode injection. The site isn't complete yet but we are working day and night to make sure we complete it so that you can start enjoying quality content so expect more features.
