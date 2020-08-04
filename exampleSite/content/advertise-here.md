@@ -61,7 +61,7 @@ We offer 3 advertisement spaces in this blog.
 
 Kindly make sure you are a legitimate company with quality products/services.
 
-We love my readers and wouldn’t like to advertise a non existent or poor quality good/service/tool.
+We love our readers and wouldn’t like to advertise a non existent, malicious or poor quality good/service/tool.
 
 > **_No intrusive ads e.g those that pop up, no big ads past 1080p, no racism, no corruption, no fake news, no malware, no malious links. All malicious intended ads will be recorded and reported, hence getting your domain banned and more._**
 
