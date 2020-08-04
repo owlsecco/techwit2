@@ -1,7 +1,7 @@
 ---
 title: Contact Us
 bg_image: images/2020-landscape-2.png
-description: This is meta description
+description: Contact TechWit Ke
 
 ---
 Hi, there? Want to contact us? Do it here.
