@@ -11,7 +11,7 @@ create a list (array) of urls to pre-cache for your application
 
 self.addEventListener( "install", function ( event ) {
 
-    console.log( "Installing the service worker!" );
+    console.log( "Installing TechWit Ke Service Worker!" );
 
     self.skipWaiting();
 
@@ -38,7 +38,7 @@ self.addEventListener( "activate", function ( event ) {
 
             } );
 
-            console.log( "service worker activated" );
+            console.log( "TechWit Ke Service Worker Activated" );
 
             return;
 
@@ -69,11 +69,3 @@ self.addEventListener( "fetch", function ( event ) {
     );
 
 } );
-
-
-/* service worker resources
-
-https: //love2dev.com/blog/what-is-the-service-worker-cache-storage-limit/
-https: //love2dev.com/blog/service-worker-cache/
-
-*/
