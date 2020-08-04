@@ -2,7 +2,6 @@
 title: About
 description: TechWit Ke is a Tech, Cybersecurity and Development Blog focused on delivering
   quality and easy to understand content to all.
-image: /images/techwit-about.png
 
 ---
 
