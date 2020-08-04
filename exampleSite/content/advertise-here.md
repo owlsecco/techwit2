@@ -63,7 +63,15 @@ Kindly make sure you are a legitimate company with quality products/services.
 
 We love our readers and wouldn’t like to advertise a non existent, malicious or poor quality good/service/tool.
 
-> **_No intrusive ads e.g those that pop up, no big ads past 1080p, no racism, no corruption, no fake news, no malware, no malious links. All malicious intended ads will be recorded and reported, hence getting your domain banned and more._**
+> ### Rules:
+>
+> * **_NO Intrusive ads e.g those that pop up_**
+> * **_NO Big ads past 1080p_**
+> * **_NO Racism_**
+> * **_NO Corruption_**
+> * **_NO Fake news_**
+> * **_NO Malware_**
+> * **_NO Malicious links. - All malicious ads/links will be taken down, recorded and reported, hence getting your domain banned or worse, you'll be exposed and arrested._**
 
 This blog keeps getting steady increase in views. So you can be sure your ad will receive attention and engagement, especially if it deals with topics we talk about on this blog, that is Technology, Cybersecurity and Personal Development.
 
