@@ -42,12 +42,9 @@ weight = "6"
 URL = "feed.json"
 name = "RSS Feed(.json)"
 weight = "7"
-[outputFormats.jsonfeed]
-baseName = "feed"
-isPlainText = true
-mediaType = "application/json"
 [outputs]
-home = ["HTML", "RSS", "JSON", "jsonfeed"]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML","RSS", "JSON"]
 [params]
 author = "Admin"
 description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Content."
