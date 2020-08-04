@@ -3,6 +3,7 @@ const version = "1.00",
     preCache = "PRECACHE-" + version,
     cacheList = [ 
         "/*" 
+        "/"
     ];
 
 /*
