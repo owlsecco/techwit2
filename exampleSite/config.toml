@@ -47,9 +47,13 @@ URL = "advertise-here"
 name = "Advertise Here"
 weight = "8"
 [[menu.main]]
+URL = "https://links.collect.chat/5f295075cac8ec33b6a2c151"
+name = "Chat with Our Bot"
+weight = "9"
+[[menu.main]]
 URL = "index.xml"
 name = "RSS Feed"
-weight = "9"
+weight = "10"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 section = ["HTML", "RSS", "JSON"]
