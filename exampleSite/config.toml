@@ -39,7 +39,7 @@ URL = "terms-and-conditions"
 name = "Terms and Conditions"
 weight = "6"
 [[menu.main]]
-URL = "i-want-to-sign-up-to-your-newsletter"
+URL = "newsletter"
 name = "Newsletter"
 weight = "7"
 [[menu.main]]
