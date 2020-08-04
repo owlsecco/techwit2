@@ -58,7 +58,7 @@ image = "images/2020-landscape-1-2.png"
 heading = "Our Latest Articles"
 [params.call_to_action]
 button_label = "I Want to Sign Up"
-button_url = "/newsletter"
+button_url = "/i-want-to-sign-up-to-your-newsletter"
 content = "Sign up and stay up to date by receiving quality content such as tips, tricks, news, howto's, insights, deals, savings, promotions, freebies, ebooks and more right in your inbox. Never miss an article or a giveaway. \nBecome a member of our community. Join us!"
 enable = true
 title = "Sign Up To Our Newsletter"
