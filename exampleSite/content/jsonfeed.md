@@ -1,6 +1,0 @@
-{
-	"outputs":["json"],
-	"layout":"feed"
-}
-
-
