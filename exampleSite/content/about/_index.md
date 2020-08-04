@@ -4,7 +4,7 @@ description: TechWit Ke is a Tech, Cybersecurity and Development Blog focused on
   quality and easy to understand content to all.
 
 ---
-
+![techwit ke full text logo](/images/techwit-about-1.png "techwit ke full text logo")
 
 TechWit Kenya is a Tech, Cybersecurity and Development Blog focused on delivering quality and easy to understand content. Our aim is to make our content applicable to all our readers whether you are tech savvy or not.
 
@@ -49,14 +49,14 @@ So we would like to send a special "Thank You" to the following:
 * [**Stephen Ajulu**](https://stephenajulu.com/?utm_source=techwit2.netlify.app "Stephen Ajulu")
 
 <div class="wp-block-group alignwide has-background" style="background-color:#ffffff">
-    <div class="wp-block-group__inner-container">
-      <div class="wp-block-group">
-        <div class="wp-block-group__inner-container">
-          <h2 class="has-text-align-center">Sign Up To Our Newsletter</h2>
-          <p class="has-text-align-center">Sign up and stay up to date by receiving quality content such as tips, tricks, news, howto’s, insights, deals, savings, promotions, freebies, ebooks and more right in your inbox. Never miss an article or a giveaway. Become a member of our community. Join us!</p>
-          <div class="wp-block-button aligncenter">
-            <a class="wp-block-button__link" href="/i-want-to-sign-up-to-your-newsletter">I Want To Sign Up</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="wp-block-group__inner-container">
+<div class="wp-block-group">
+<div class="wp-block-group__inner-container">
+<h2 class="has-text-align-center">Sign Up To Our Newsletter</h2>
+<p class="has-text-align-center">Sign up and stay up to date by receiving quality content such as tips, tricks, news, howto’s, insights, deals, savings, promotions, freebies, ebooks and more right in your inbox. Never miss an article or a giveaway. Become a member of our community. Join us!</p>
+<div class="wp-block-button aligncenter">
+<a class="wp-block-button__link" href="/i-want-to-sign-up-to-your-newsletter">I Want To Sign Up</a></div>
+</div>
+</div>
+</div>
+</div>
