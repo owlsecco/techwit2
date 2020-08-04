@@ -5,7 +5,7 @@ date = 2020-08-03T21:00:00Z
 description = "Have information on something e.g illegal activity or top secret? You can tip us here and we'll share it with the world without revealing you."
 image = "/images/techwitke-topsecret.jpg"
 tags = ["top secret", "leak", "confidential", "tip us"]
-title = "Tip Us"
+title = "Tip Us Securely"
 
 +++
 **Note: this is only for editorial tips. For advertising** [**go here**](/advertise-here)**, for technical support** [**go here**](/support)**, and for other inquiries** [**go here**](https://www.voxmedia.com/contact)**.**
