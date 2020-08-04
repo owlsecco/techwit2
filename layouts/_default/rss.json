@@ -16,7 +16,7 @@
 		{ {{ $page := .}}
 			"id": "{{ .Permalink }}",
 			"title": "{{ .Title | plainify}}",
-			"content_text": {{ .Summary | plainify | jsonify }},
+			"content_text": {{ .Content | plainify | jsonify }},
 			"url": "{{ .Permalink }}",
 			"date_published": "{{ $page.PublishDate.UTC.Format .Site.Params.dateFormatFeed  }}",
 			"date_modified" : "{{ $page.Lastmod.UTC.Format .Site.Params.dateFormatFeed  }}",
