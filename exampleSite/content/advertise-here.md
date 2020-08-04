@@ -3,7 +3,7 @@ author = ["admin"]
 categories = ["advertise here"]
 date = 2020-08-03T21:00:00Z
 description = "Would you like to advertise on TechWit Ke? Here's some notes for potential ad partners"
-image = "/images/techwit-advertisehere-1.png"
+image = "/images/techwit-advertisehere2.png"
 tags = ["advertised ", "advertise", "ads", "ad", "advertising", "advertise"]
 title = "Advertise Here"
 
