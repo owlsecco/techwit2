@@ -34,8 +34,6 @@ title = "I Want To Sign Up To Your Newsletter"
 <p><a href="https://buttondown.email" target="_blank" align="center">Powered by Buttondown.Email</p>
 
 </form>
-  <blockquote class="embedly-card" data-card-theme="dark"><h4><a href="https://buttondown.email/techwitke">TechWit Ke Newsletter</a></h4><p>TechWit Ke is a Tech, Cybersecurity and Development Newsletter focused on delivering quality and easy to understand content right in your Inbox. We deliver Tips, Tricks, Tutorials, Reviews, News, Offers, Giveaway Information and more. Our Motto: Delivering Quality Tech Content For All Meaning you don't have to be tech savvy to understand our content.</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
   </div>
 </div>
 </div>
