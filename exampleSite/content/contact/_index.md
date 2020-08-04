@@ -11,7 +11,7 @@ Hi, there? Want to contact us? Do it here.
 <fieldset>
 
 <!-- Form Name -->
-<legend>Form Name</legend>
+<legend>Contact Us</legend>
 
 <!-- Text input-->
 <div class="form-group">
