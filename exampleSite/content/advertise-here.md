@@ -20,6 +20,8 @@ You can take a look into our [**editor in chief's personal tech blog**](https://
 
 ## Letter To Early Potential Advertisers
 
+Hi there! 👋
+
 If you would like to advertise here. Now's your chance to create a long lasting relationship with us. Advertisers who are interested in advertising here now(early stages of this blog) get benefits. Such as
 
 * Permanent Partnership with us
@@ -35,13 +37,17 @@ In addition, you can expect a review of your tool. NB: Please don't rush us when
 
 ## Letter To Indecisive Advertisers
 
-We understand the risk involved in advertising here(TechWit Ke v0 - 2). We wouldn't ask you to take that risk without knowing the potential outcome. But we ask take a look around and spend as much time to make a decision as possible. But if you do come to a "negative" decision. You will be missing out 😉 of the potential benefits for your company/tool/service. The benefit list is still not over. So think some more and we hope you come around to a "positive" decision.
+Hi there! 👋
+
+We understand the risk involved in advertising here(TechWit Ke version 0 - 2). We wouldn't ask you to take that risk without knowing the potential outcome. But we would like to ask you to look around(again) and spend as much time to make a decision as possible. But if you do come to a "negative" decision. You will be missing out 😉 of the potential benefits for your company/tool/service. The benefit list is still growing. Eventually your ad could be embedded in our newsletter.. So think some more and we hope you come around to a "positive" decision.
 
 ## Letter To Late Advertisers
 
+Hi there! 👋
+
 Don't worry the fun isn't over yet. You could still partner with us and get some of the benefits. So cheer up and go to our [Contact Page ](/contact "Contact Page")and partner with us.
 
-## General
+## General Notice to All Advertisers
 
 Would you like to advertise your company here?
 
@@ -53,7 +59,11 @@ We offer 3 advertisement spaces in this blog.
 * At the bottom of an article/post
 * On the homepage(location of our choosing)
 
-Kindly make sure you are a legitimate company with quality products/services. We love my readers and wouldn’t like to advertise a non existent or poor quality good/service/tool.
+Kindly make sure you are a legitimate company with quality products/services.
+
+We love my readers and wouldn’t like to advertise a non existent or poor quality good/service/tool.
+
+> **_No intrusive ads e.g those that pop up, no big ads past 1080p, no racism, no corruption, no fake news, no malware, no malious links. All malicious intended ads will be recorded and reported, hence getting your domain banned and more._**
 
 This blog keeps getting steady increase in views. So you can be sure your ad will receive attention and engagement, especially if it deals with topics we talk about on this blog, that is Technology, Cybersecurity and Personal Development.
 
