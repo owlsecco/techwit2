@@ -25,13 +25,13 @@ title = "I Want To Sign Up To Your Newsletter"
 
 <form action="https://buttondown.email/api/emails/embed-subscribe/techwitke" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/techwitke', 'popupwindow')" class="embeddable-buttondown-form" align="center"> 
 
-<label for="bd-email">Enter your email</label><input type="email" name="email" id="bd-email">
+<label for="bd-email" align="center">Enter your email</label><input type="email" name="email" id="bd-email" align="center">
 
-<input type="hidden" value="1" name="embed"></input>
+<input type="hidden" value="1" name="embed" align="center"></input>
 
-<input type="submit" value="Sign Up"></input>
+<input type="submit" value="Sign Up" align="center"></input>
 
-<p><a href="https://buttondown.email" target="_blank">Powered by Buttondown.Email</p>
+<p><a href="https://buttondown.email" target="_blank" align="center">Powered by Buttondown.Email</p>
 
 </form>
   </div>
