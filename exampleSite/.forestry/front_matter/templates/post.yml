@@ -25,6 +25,7 @@ fields:
   label: description
   description: Meta description
 pages:
+- exampleSite/content/advertise-here.md
 - exampleSite/content/i-want-to-sign-up-to-your-newsletter.md
 - exampleSite/content/privacy-policy.md
 - exampleSite/content/terms-and-conditions.md
