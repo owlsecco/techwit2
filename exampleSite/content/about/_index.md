@@ -29,6 +29,10 @@ Our content comes in the following types
 
 But we are not limited to the main 3 topics or the 7 content types. As you know tech is a wide area of study. So expect more quality content.
 
+Got a tip for us? [Here's how to send it securely](/tip-us) 
+
+Want to guest post? [Here's how to send it](/guest-posting)
+
 ## Our Team
 
 <a href="/author/admin"><img src="#" align="left" width="200" alt="Stephen Ajulu's Potrait"><h4>Stephen Ajulu</h4></a>  
