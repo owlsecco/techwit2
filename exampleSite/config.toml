@@ -55,19 +55,23 @@ URL = "tip-us"
 name = "Tip Us Securely"
 weight = "10"
 [[menu.main]]
+URL = "guest-posting"
+name = "Guest Post Here"
+weight = "11"
+[[menu.main]]
 URL = "index.xml"
 name = "RSS Feed"
-weight = "11"
+weight = "12"
 [[menu.main]]
 URL = "index.json"
 name = "RSS Feed Json"
-weight = "12"
+weight = "13"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 # section = ["HTML", "RSS", "JSON"]
 [params]
 author = "Admin"
-description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Content."
+description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content."
 [params.banner]
 heading = "Quality Tech Content For All"
 image = "images/2020-landscape-1-2.png"
