@@ -35,9 +35,17 @@ URL = "privacy-policy"
 name = "Privacy Policy"
 weight = "5"
 [[menu.main]]
+URL = "terms-and-conditions"
+name = "Terms and Conditions"
+weight = "6"
+[[menu.main]]
+URL = "i-want-to-sign-up-to-your-newsletter"
+name = "Newsletter"
+weight = "7"
+[[menu.main]]
 URL = "index.xml"
 name = "RSS Feed"
-weight = "6"
+weight = "8"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 section = ["HTML", "RSS", "JSON"]
