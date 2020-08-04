@@ -51,9 +51,13 @@ URL = "https://links.collect.chat/5f295075cac8ec33b6a2c151"
 name = "Chat with Our Bot"
 weight = "9"
 [[menu.main]]
+URL = "tip-us"
+name = "Tip Us Securely"
+weight = "10"
+[[menu.main]]
 URL = "index.xml"
 name = "RSS Feed"
-weight = "10"
+weight = "11"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 section = ["HTML", "RSS", "JSON"]
