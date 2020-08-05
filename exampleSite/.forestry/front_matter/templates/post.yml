@@ -26,6 +26,7 @@ fields:
   description: Meta description
 pages:
 - exampleSite/content/advertise-here.md
+- exampleSite/content/blog/tools-and-precesses-used-to-create-this-site.md
 - exampleSite/content/guest-posting.md
 - exampleSite/content/privacy-policy.md
 - exampleSite/content/review-request.md
