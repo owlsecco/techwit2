@@ -3,7 +3,7 @@ author = ["admin"]
 categories = ["tip us"]
 date = 2020-08-03T21:00:00Z
 description = "Have information on something e.g illegal activity or top secret? You can tip us here and we'll share it with the world without revealing you."
-image = "/images/techwitke-topsecret.jpg"
+image = ""
 tags = ["top secret", "leak", "confidential", "tip us"]
 title = "Tip Us Securely"
 
