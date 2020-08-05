@@ -59,8 +59,7 @@
 </script>
 
 <!-- Manup -->
-{{ $manup := resources.Get "js/manup.js" | minify}}
-<script src="{{ $manup.Permalink }}"></script>
+<script src="js/manup.js"></script>
 
 <!-- jquery -->
 {{ $jquery := resources.Get "js/jquery.min.js" | minify}}
