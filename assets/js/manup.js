@@ -1,3 +1,4 @@
+
 //this is the object we build for an ajax call to get the content of the manifest
 //it's a JSON, so we can parse it like a man-child
 //verion 0.7
