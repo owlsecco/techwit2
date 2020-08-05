@@ -126,9 +126,9 @@ html {
 }
 
 body {
-	background: #000; /* #f5efe0; */
+	background: #f5efe0;
 	box-sizing: border-box;
-	color: #fff; /* #000; */
+	color: #000;
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1.8rem;
 	letter-spacing: -0.015em;
@@ -1356,7 +1356,7 @@ ul.social-icons li {
 
 
 #site-header {
-	background: #000; /* #fff */
+	background: #fff;
 	position: relative;
 }
 
