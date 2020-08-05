@@ -58,9 +58,6 @@
   var indexURL = {{"index.json" | absURL}}
 </script>
 
-<!-- Manup -->
-<script src="js/manup.js"></script>
-
 <!-- jquery -->
 {{ $jquery := resources.Get "js/jquery.min.js" | minify}}
 <script src="{{ $jquery.Permalink }}"></script>
