@@ -8,4 +8,4 @@ tags = ["no"]
 title = "Example Post"
 
 +++
-Hi, how are you peri?
+Hi, how are you perry?
