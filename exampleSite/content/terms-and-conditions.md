@@ -3,7 +3,7 @@ author = ["admin"]
 categories = []
 date = 2020-08-03T21:00:00Z
 description = "These are the terms and conditions that outline the rules and regulations for the use of TechWit Ke's Website, located at https://techwit2.netlify.app."
-image = "/images/ts-and-cs-techwitke-1.jpg"
+image = ""
 tags = ["terms and conditions", "conditions", "terms"]
 title = "Terms and Conditions"
 
