@@ -1,0 +1,180 @@
+{
+    "dir": "ltr",
+    "lang": "English",
+    "name": "TechWit Ke",
+    "short_name": "TechWit Ke",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "description": "Welcome to TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content.",
+    "orientation": "any",
+    "related_applications": [],
+	"categories": ["tech", "cybersecurity", "data", "development", "business", "startup", "techwit", "wit", "witty", "machine learning", "blog", "magazine", "newsletter", "tech blog", "tech online magazine", "tech savvy", "savvy", "techsavvy", "data privacy", "security", "kenya", "ke", "pwa", "progressive web applications", "progressive web pplication", "jamstack", "static site", "windows ", "linux", "foss", "news", "android", "hacker"],
+	"shortcuts" : [
+   {
+    "name": "Latest Articles",
+    "url": "/#latestarticles",
+    "description": "Check Out Our Latest Articles and Stay Up To Date"
+  },
+  {
+    "name": "Read Articles",
+    "url": "/blog",
+    "description": "Stay Informed by Reading Some of Our Articles"
+  },
+  {
+    "name": "Learn More",
+    "url": "/about"
+	"description": "Learn More About TechWit Ke"
+  },
+  {
+    "name": "Say Hi ",
+    "url": "/contact"
+	"description": "Say Hi, Report an Issue, Ask for a Job and more"
+  }
+]
+    "icons": [
+        {
+            "src": "/meta/1e291287-d38c-76e3-f8fb-be899b8d5f16.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/b99744f9-196b-7478-e64d-018ef1132675.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/758d3321-11b0-2ec2-20bc-917068a95a79.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/1e2abf9c-0ed0-48b0-baad-18ddb3117c1f.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/89c1557d-7568-717b-e7a8-8b9471bfa01f.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/5cc9f321-01da-7f9f-54bf-0057b9089e68.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/7abe9098-94ab-7549-6f03-9b2103c602c9.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/a9c83ead-ffd2-c707-beb2-d88379e372ce.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/c1e066f0-f317-3296-cd0b-29b98ce3e174.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/8c8bede8-71dc-1a35-0060-3c84c4779ee2.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/beb5796d-b19f-6507-fb85-310e5addb10e.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/6ba78be6-7c78-b15f-c217-d1f02c6ef399.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/b21c675c-e8b2-161b-ddbe-e886e52e33fb.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/134f6744-6632-db31-e195-6da70b9b2662.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/62eb5c4d-6ece-e415-30ad-6dd5cb322e2a.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/750ca546-94c6-46f4-5fd0-fbeab40ce173.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/d3360a53-bad7-71d6-85de-3eb03fea9fa0.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/c6315fe0-7e4a-b6c8-f146-c33fa30c60a9.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/meta/2aa6bc96-25c4-e045-eccb-cae9bc00ee3b.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://techwit2.netlify.app",
+    "screenshots": [
+        {
+            "src": "screenshots/screenshot1.png",
+            "sizes": "1280x800",
+            "type": "image/png",
+            "fileName": "screenshots/screenshot1.png",
+            "generated": true
+        },
+        {
+            "src": "screenshots/screenshot2.png",
+            "sizes": "750x1334",
+            "type": "image/png",
+            "fileName": "screenshots/screenshot2.png",
+            "generated": true
+        },
+        {
+            "src": "screenshots/screenshot3.png",
+            "sizes": "1280x800",
+            "type": "image/png",
+            "fileName": "screenshots/screenshot3.png",
+            "generated": true
+        },
+        {
+            "src": "screenshots/screenshot4.png",
+            "sizes": "750x1334",
+            "type": "image/png",
+            "fileName": "screenshots/screenshot4.png",
+            "generated": true
+        },
+        {
+            "src": "screenshots/screenshot5.png",
+            "sizes": "1280x800",
+            "type": "image/png",
+            "fileName": "screenshots/screenshot5.png",
+            "generated": true
+        },
+        {
+            "src": "screenshots/screenshot6.png",
+            "sizes": "750x1334",
+            "type": "image/png",
+            "fileName": "screenshots/screenshot6.png",
+            "generated": true
+        }
+    ]
+}
+}
