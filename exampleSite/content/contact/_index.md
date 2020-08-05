@@ -47,6 +47,7 @@ Hi, there? Want to contact us? Do it here.
       <option value="9">Want us to build you a blog(not free of charge) 🤑</option>
       <option value="10">Want to feature us(Hooray! 🎉)</option>
       <option value="11">DMCA and Other Takedowns 👮‍♂️</option>
+      <option value="12">Other 😃</option>
     </select>
   </div>
 </div>
