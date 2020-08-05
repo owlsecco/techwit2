@@ -19,9 +19,9 @@ Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying ou
 <br>
 {{ printf "<%s>" (.Get 0) | safeHTML }}
 {{ $.Scratch.Set "content" .Inner }}
-{{ range where $.Site.Pages.ByPublishDate.Reverse ".Params.seo" "ne" nil }}
+{{ range where $.Site.Pages.ByPublishDate.Reverse ".Params.tags" "ne" nil }}
     {{ $tmpPage := . }}
-    {{ range .Params.seo }}
+    {{ range .Params.tags }}
         {{ $.Scratch.Set "content" (($.Scratch.Get "content") | replaceRE . (printf "<a href=\"%s\" title=\"%s\">%s</a>" $tmpPage.RelPermalink $tmpPage.Title . ) )  }}
     {{ end }}
 {{ end }}
