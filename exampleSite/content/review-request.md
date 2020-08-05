@@ -5,7 +5,7 @@ date = 2020-08-04T21:00:00Z
 description = "Have an interesting tech product/tool or service? Kindly submit here if you want us to review it."
 image = ""
 tags = ["review guidlines", "review request", "review"]
-title = "ReviewGuidlines and Request Submition"
+title = "Review Guidlines and Request Submition"
 
 +++
 # Review Guidelines and Request Submition
