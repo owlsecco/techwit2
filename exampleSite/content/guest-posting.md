@@ -81,7 +81,7 @@ A great feature pitch for _TechWit Ke_ does three things: it gives the scope of 
 <div class="form-group">
   <label class="col-md-4 control-label" for="pitch">Pitch</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="pitch" name="pitch">Feel free to write in markdown if you know the language. It will save the editor in chief time and will increase viewability.</textarea>
+    <textarea class="form-control" id="pitch" name="pitch" placeholder="Feel free to write in markdown if you know the language. It will save the editor in chief time and will increase your pitch's potental to be approved as this website uses Markdown"></textarea>
   </div>
 </div>
 
