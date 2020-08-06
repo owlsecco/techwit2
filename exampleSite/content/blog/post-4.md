@@ -16,15 +16,15 @@ Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying ou
 
 Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
 
-
+{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}">Previous Post</a> {{ end }} {{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}">Next Post</a> {{ end }}
 
 {{ printf "<%s>" (.Get 0) | safeHTML }}
 {{ $.Scratch.Set "content" .Inner }}
 {{ range where $.Site.Pages.ByPublishDate.Reverse ".Params.tags" "ne" nil }}
-    {{ $tmpPage := . }}
-    {{ range .Params.tags }}
-        {{ $.Scratch.Set "content" (($.Scratch.Get "content") | replaceRE . (printf "<a href=\"%s\" title=\"%s\">%s</a>" $tmpPage.RelPermalink $tmpPage.Title . ) )  }}
-    {{ end }}
+{{ $tmpPage := . }}
+{{ range .Params.tags }}
+{{ $.Scratch.Set "content" (($.Scratch.Get "content") | replaceRE . (printf "<a href="%s" title="%s">%s</a>" $tmpPage.RelPermalink $tmpPage.Title . ) )  }}
+{{ end }}
 {{ end }}
 {{ $.Scratch.Get "content" | safeHTML }}
 {{ printf "</%s>" (.Get 0) | safeHTML }}
