@@ -90,9 +90,8 @@
       </ul><!-- .post-meta -->
 
 <!-- Next and Previous -->
-	    <p>
-{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}">{{ .NextInSection.Title | truncate 50 "..."}}</a> {{ end }}
-{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}">{{ .PrevInSection.Title | truncate 50 "..."}}</a> {{ end }}
+	    <p align="center">
+{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}">{{ .NextInSection.Title | truncate 50 "..."}}</a> {{ end }} &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp {{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}">{{ .PrevInSection.Title | truncate 50 "..."}}</a> {{ end }}
 	    </p>
 
       <!-- Disqus -->
