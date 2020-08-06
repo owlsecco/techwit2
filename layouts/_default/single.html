@@ -81,9 +81,9 @@
 	
 	
 	<!-- Start of Testing Things -->
-	{{ $related := .Site.RegularPages.Related . | first 5 }}
+	{{ $related := .Site.RegularPages.Related . }}
 	{{ with $related }}
-	{{ range . }}
+	{{ range (where .Site.RegularPages "Section" "blog")}}
 	<!-- display related items -->
 	{{ end }}
 	<!-- End of Testing Things -->
