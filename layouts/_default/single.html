@@ -73,8 +73,8 @@
 	
 	<!-- Start of Next and Previous Buttons -->
 	    <p align="center" class="aligncenter wp-block-button">
-{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link">←{{ .PrevInSection.Title | truncate 20 "..."}}</a> {{ end }} &nbsp 
-{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link">{{ .NextInSection.Title | truncate 20 "..."}}→</a> {{ end }}
+{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link">←{{ .PrevInSection.Title | truncate 25 "..."}}</a> {{ end }} &nbsp 
+{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link">{{ .NextInSection.Title | truncate 25 "..."}}→</a> {{ end }}
 	    </p>
 	<!-- End of Next and Previous Buttons -->
 	
