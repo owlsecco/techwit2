@@ -90,20 +90,11 @@
       </ul><!-- .post-meta -->
 
 <!-- Next and Previous -->
-{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}">Previous Post</a> {{ end }} {{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}">Next Post</a> {{ end }}
-<!-- test-->
-      <div class="next-post">
-	{{ if .NextPage }}
-	<a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer">« {{ .NextPage.Title | truncate 50 "..." }}</a>
-	{{ end }}
-</div>
+	    <p>
+{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}">{{ .NextInSection.Title | truncate 50 "..."}}</a> {{ end }}
+{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}">{{ .PrevInSection.Title | truncate 50 "..."}}</a> {{ end }}
+	    </p>
 
-<div class="previous-post">
-	{{ if .PrevPage }}
-	<a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
-	{{ end }}
-</div>
-      
       <!-- Disqus -->
       {{ if .Site.DisqusShortname }}
       <hr class="styled-separator is-style-wide" aria-hidden="true">
