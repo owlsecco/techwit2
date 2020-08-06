@@ -19,7 +19,11 @@ Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying ou
 {{with .Site.RegularPages.Next . }}{{.RelPermalink}}{{end}}
 
 {{< rawhtml >}}
+
+
 <p>
 {{with .Site.RegularPages.Next . }}{{.RelPermalink}}{{end}}
 </p>
+
+
 {{< /rawhtml >}}
