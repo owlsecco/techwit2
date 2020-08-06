@@ -81,7 +81,11 @@
 	
 	
 	<!-- Start of Testing Things -->
-
+	{{ $related := .Site.RegularPages.Related . | first 5 }}
+	{{ with $related }}
+	{{ range . }}
+	<!-- display related items -->
+	{{ end }}
 	<!-- End of Testing Things -->
 
 	
