@@ -19,6 +19,10 @@
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+	
+<!-- Manifest, Meta and Image Linking -->
+{{ partial "partials/headlinks.html" . }}
+
 
   <!-- JSON Feed -->
 <!-- <link rel="alternate" type="application/rss+xml" title="JSON RSS Feed for TechWit Ke" href="/index.json" /> -->
