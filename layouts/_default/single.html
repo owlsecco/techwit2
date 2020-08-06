@@ -90,8 +90,8 @@
       </ul><!-- .post-meta -->
 
 <!-- Next and Previous -->
-	    <p align="center">
-{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}">{{ .PrevInSection.Title | truncate 50 "..."}}</a> {{ end }} &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp {{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}">{{ .NextInSection.Title | truncate 50 "..."}}→</a> {{ end }}
+	    <p align="center" class="aligntextcenter has-text-align-center aligncenter textaligncenter wp-block-button is-style-outline">
+{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link">{{ .PrevInSection.Title | truncate 50 "..."}}</a> {{ end }} &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp {{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link">{{ .NextInSection.Title | truncate 50 "..."}}→</a> {{ end }}
 	    </p>
 
       <!-- Disqus -->
