@@ -110,9 +110,9 @@ tag = "tags"
 [related]
 includeNewer = true
 threshold = 80
-toLower = false
+toLower = true
 [[related.indices]]
-name = "keywords"
+name = "tags"
 weight = 100
 [[related.indices]]
 name = "date"
