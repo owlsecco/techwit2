@@ -115,5 +115,11 @@ toLower = true
 name = "tags"
 weight = 100
 [[related.indices]]
+name = "categories"
+weight = 100
+[[related.indices]]
 name = "date"
+weight = 10
+[[related.indices]]
+name = "author"
 weight = 10
