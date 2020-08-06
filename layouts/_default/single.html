@@ -70,7 +70,31 @@
       {{ .Content }}
     </div><!-- .entry-content -->
   </div><!-- .post-inner -->
+	
+	<!-- Start of Next and Previous Buttons -->
+	    <p align="center" class="aligncenter wp-block-button">
+{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link">←{{ .PrevInSection.Title | truncate 20 "..."}}</a> {{ end }} &nbsp 
+{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link">{{ .NextInSection.Title | truncate 20 "..."}}→</a> {{ end }}
+	    </p>
+	<!-- End of Next and Previous Buttons -->
+	
+	<br>
+	
+	<!-- Start of Test SEO/Tags Autolinking Related Content -->
+{{ printf "<%s>" (.Get 0) | safeHTML }}
+{{ $.Scratch.Set "content" .Inner }}
+{{ range where $.Site.Pages.ByPublishDate.Reverse ".Params.seo" "ne" nil }}
+{{ $tmpPage := . }}
+{{ range .Params.tags }}
+{{ $.Scratch.Set "content" (($.Scratch.Get "content") | replaceRE . (printf "<a href="%s" title="%s">%s</a>" $tmpPage.RelPermalink $tmpPage.Title . ) )  }}
+{{ end }}
+{{ end }}
+{{ $.Scratch.Get "content" | safeHTML }}
+{{ printf "</%s>" (.Get 0) | safeHTML }}
+	<!-- End of Test SEO/Tags Autolinking Related Content -->
 
+	<br>
+	
   <div class="section-inner">
     <div class="post-meta-wrapper post-meta-single post-meta-single-bottom">
       <ul class="post-meta">
@@ -88,12 +112,6 @@
             {{end}} </span>
         </li>
       </ul><!-- .post-meta -->
-
-<!-- Next and Previous -->
-	    <p align="center" class="aligncenter wp-block-button">
-{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link">←{{ .PrevInSection.Title | truncate 20 "..."}}</a> {{ end }} &nbsp 
-{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link">{{ .NextInSection.Title | truncate 20 "..."}}→</a> {{ end }}
-	    </p>
 
       <!-- Disqus -->
       {{ if .Site.DisqusShortname }}
