@@ -89,7 +89,29 @@
         </li>
       </ul><!-- .post-meta -->
 
-
+<!-- Next and Previous -->
+      {{ if gt .Paginator.TotalPages 1}}
+  <!-- Pagination -->
+  <nav class="pagination">
+    {{ $paginator := .Paginator }}
+    {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}" class="pagination__page pagination__icon pagination__page--next">Previous Post</a>
+    {{ end }}
+    {{ range .Paginator.Pagers }}
+      {{ if eq .PageNumber $paginator.PageNumber }}
+    <span class="pagination__page pagination__page--current">{{ .PageNumber }}</span>
+      {{ else }}
+    <a href="{{ .URL }}" class="pagination__page">{{ .PageNumber }}</a>
+      {{ end }}
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}" class="pagination__page pagination__icon pagination__page--next">Next Post</a>
+    {{ end }}
+  </nav>
+  {{ end }}
+</div>
+      
+      
       {{ if .Site.DisqusShortname }}
       <hr class="styled-separator is-style-wide" aria-hidden="true">
       <!-- comments -->
