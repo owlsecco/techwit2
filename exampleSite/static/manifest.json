@@ -25,15 +25,15 @@
   },
   {
     "name": "Learn More",
-    "url": "/about"
+    "url": "/about",
 	"description": "Learn More About TechWit Ke"
   },
   {
     "name": "Say Hi ",
-    "url": "/contact"
+    "url": "/contact",
 	"description": "Say Hi, Report an Issue, Ask for a Job and more"
   }
-]
+],
     "icons": [
         {
             "src": "/meta/1e291287-d38c-76e3-f8fb-be899b8d5f16.webPlatform.png",
@@ -176,5 +176,4 @@
             "generated": true
         }
     ]
-}
 }
