@@ -107,3 +107,13 @@ whatsapp = "https://chat.whatsapp.com/C7whEtGOcsY3eJU1mbiveB"
 author = "author"
 category = "categories"
 tag = "tags"
+[related]
+includeNewer = true
+threshold = 80
+toLower = false
+[[related.indices]]
+name = "keywords"
+weight = 100
+[[related.indices]]
+name = "date"
+weight = 10
