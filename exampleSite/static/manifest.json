@@ -129,7 +129,13 @@
             "src": "/meta/2aa6bc96-25c4-e045-eccb-cae9bc00ee3b.webPlatform.png",
             "sizes": "76x76",
             "type": "image/png"
-        }
+        },
+	{
+      "src": "/meta/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+   	 }
     ],
     "url": "https://techwit2.netlify.app",
     "screenshots": [
