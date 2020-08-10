@@ -1,0 +1,97 @@
+<!-- Primary Meta Tag -->
+<meta name="title" content="{{ .Title }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink | absURL }}" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
+<meta property="og:image" content="{{ if .IsPage }}{{.Site.BaseURL}}{{.Params.image}}{{else}}{{.Site.BaseURL}}images/hero.webp{{ end }}?width=1080&height=600" /> <!--{{.Site.BaseURL}}{{.Params.image}}">-->
+<meta property="og:image:alt" content="{{.Title}}" />
+<meta property="og:image:width" content="1080" />
+<meta property="og:image:height" content="600" />
+<meta property="article:author" content="{{ .Params.Author" />
+<meta property="article:publisher" content="{{ .Params.Author }}" />
+<meta property="article:section" content="{{ .Section }}" />
+<meta property="article:tag" content="{{ .Params.tags }}" />
+
+<!-- Unknown -->
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- if .IsPage }}
+{{- if not .PublishDate.IsZero }}<meta property="article:published_time" {{ .PublishDate.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+{{ else if not .Date.IsZero }}<meta property="article:published_time" {{ .Date.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+{{ end }}
+{{- if not .Lastmod.IsZero }}<meta property="article:modified_time" {{ .Lastmod.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />{{ end }}
+{{- else }}
+{{- if not .Date.IsZero }}<meta property="og:updated_time" {{ .Lastmod.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+{{- end }}
+{{- end }}{{/* .IsPage */}}
+
+{{- with .Params.audio }}<meta property="og:audio" content="{{ . }}" />{{ end }}
+{{- with .Params.locale }}<meta property="og:locale" content="{{ . }}" />{{ end }}
+{{- with .Site.Params.title }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
+{{- with .Params.videos }}
+{{- range . }}
+<meta property="og:video" content="{{ . | absURL }}" />
+{{ end }}{{ end }}
+
+{{- /* Facebook Page Admin ID for Domain Insights */}}
+{{- with .Site.Social.facebook_admin }}<meta property="fb:admins" content="{{ . }}" />{{ end }}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{.RelPermalink}}" />
+<meta property="twitter:title" content="{{.Title}}" />
+<meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
+<meta property="twitter:image" content="{{ if .IsPage }}{{.Site.BaseURL}}{{.Params.image}}{{else}}{{.Site.BaseURL}}images/hero.webp{{ end }}" /> <!--{{.Site.BaseURL}}{{.Params.image}}">-->
+<meta property="twitter:image:alt" content="{{.Title}}" />
+<meta name="twitter:site" content="@{{ .Params.Author }}" />
+<meta name="twitter:creator" content="@{{ .Params.Author }}" />
+
+<!-- Schema.org Meta Tags -->
+<meta itemprop="name" content="{{ .Title }}">
+<meta itemprop="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+<!-- Schema JSON-LD Markup -->
+<script type="application/ld+json">
+{
+	"@context":"http://schema.org",
+	"@type": "BlogPosting",
+	"headline": {{ .Title }},
+	"image": "{{ .Site.BaseURL }}images/hero.webp",
+	"url": {{ .Permalink }},
+	"dateCreated": "{{ .PublishDate.Format "2006-01-02" }}",
+	"datePublished": "{{ .PublishDate.Format "2006-01-02" }}",
+	"dateModified": "{{ .Page.Lastmod.Format "2006-01-02" }}",
+	"inLanguage": "en-US",
+	"isFamilyFriendly": "true",
+	"copyrightYear": "{{ .PublishDate.Format "2006" }}",
+	"copyrightHolder": "{{ .Title }}",
+	"accountablePerson": {
+		"@type": "Person",
+		"name": "Stephen Ajulu",
+		"url": "https://stephenajulu.com"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "{{ .Params.Auhtor }}",
+		"url": "{{ .Site.BaseURL }}/author/{{ .Params.Author }}"
+	},
+	"creator": {
+		"@type": "Person",
+		"name": "Stephen Ajulu",
+		"url": "https://stephenajulu.com"
+	},
+		"publisher": {
+		"@type": "Organization",
+		"name": "{{ .Title }}",
+		"url": "{{ .Site.BaseURL }}",
+		"logo": {
+			"@type": "ImageObject",
+			"url": {{ .Site.BaseURL }}/images/hero.webp"
+		}
+	},
+	"mainEntityOfPage": "True",
+	"articleBody": {{ .Content | safeJS | htmlUnescape | plainify }}
+}
+</script>
