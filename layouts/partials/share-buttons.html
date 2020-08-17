@@ -20,12 +20,14 @@ text-align: center;
 #share-buttons > div.gplus:hover > svg {fill: #dd4b39;}
 #share-buttons > div.mail:hover > svg {fill: #7D7D7D;}
 #share-buttons > div.instagram:hover > svg {fill: #C73B92;}
+#share-buttons > div.urltoclipboard:hover > svg {fill: #4691f6;}
 #share-buttons > div.facebook > svg {height: 18px; margin-top: 9px;}
 #share-buttons > div.twitter > svg {height: 20px; margin-top: 8px;}
 #share-buttons > div.linkedin > svg {height: 19px; margin-top: 7px;}
 #share-buttons > div.pinterest > svg {height: 20px; margin-top: 9px;}
 #share-buttons > div.gplus > svg {height: 17px; margin-top: 9px; position: relative; left: 1px;}
 #share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
+#share-buttons > div.urltoclipboard > svg {height: 18px; margin-top: 9px;}
 </style>
 <!-- Original Color #share-buttons > div > svg {height: 16px; fill: #d5d5d5; margin-top: 10px;} -->
 <span style="color: silver;">Share on: </span><div id="share-buttons">
@@ -35,4 +37,68 @@ text-align: center;
 {{ if .Params.image }}<div class="pinterest" title="Share this on Pinterest" onclick="window.open('https://pinterest.com/pin/create/button/?url=&media={{ .Params.image }}&description=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M256 597q0-108 37.5-203.5t103.5-166.5 152-123 185-78 202-26q158 0 294 66.5t221 193.5 85 287q0 96-19 188t-60 177-100 149.5-145 103-189 38.5q-68 0-135-32t-96-88q-10 39-28 112.5t-23.5 95-20.5 71-26 71-32 62.5-46 77.5-62 86.5l-14 5-9-10q-15-157-15-188 0-92 21.5-206.5t66.5-287.5 52-203q-32-65-32-169 0-83 52-156t132-73q61 0 95 40.5t34 102.5q0 66-44 191t-44 187q0 63 45 104.5t109 41.5q55 0 102-25t78.5-68 56-95 38-110.5 20-111 6.5-99.5q0-173-109.5-269.5t-285.5-96.5q-200 0-334 129.5t-134 328.5q0 44 12.5 85t27 65 27 45.5 12.5 30.5q0 28-15 73t-37 45q-2 0-17-3-51-15-90.5-56t-61-94.5-32.5-108-11-106.5z"/></svg></div>{{ end }}
 <div class="gplus" title="Share this on Google Plus" onclick="window.open('https://plus.google.com/share?url={{ $pageurl }}');"><svg viewBox="0 0 2304 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1437 913q0 208-87 370.5t-248 254-369 91.5q-149 0-285-58t-234-156-156-234-58-285 58-285 156-234 234-156 285-58q286 0 491 192l-199 191q-117-113-292-113-123 0-227.5 62t-165.5 168.5-61 232.5 61 232.5 165.5 168.5 227.5 62q83 0 152.5-23t114.5-57.5 78.5-78.5 49-83 21.5-74h-416v-252h692q12 63 12 122zm867-122v210h-209v209h-210v-209h-209v-210h209v-209h210v209h209z"/></svg></div>
 <div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body={{ $pageurl }}');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
+<div class="urltoclipboard"  title="Copy Url To Clipboard" onclick="CopyLink()"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M19.175,4.856L15.138,0.82c-0.295-0.295-0.817-0.295-1.112,0L8.748,6.098c-0.307,0.307-0.307,0.805,0,1.112l1.462,1.462l-1.533,1.535L7.215,8.746c-0.307-0.307-0.805-0.307-1.112,0l-5.278,5.276c-0.307,0.307-0.307,0.805,0,1.112l4.037,4.037c0.154,0.153,0.355,0.23,0.556,0.23c0.201,0,0.403-0.077,0.556-0.23l5.28-5.276c0.148-0.148,0.23-0.347,0.23-0.556c0-0.209-0.083-0.409-0.23-0.556l-1.464-1.464l1.533-1.535l1.462,1.462c0.153,0.153,0.355,0.23,0.556,0.23c0.201,0,0.402-0.077,0.556-0.23l5.278-5.278c0.147-0.147,0.23-0.347,0.23-0.556C19.406,5.203,19.322,5.004,19.175,4.856zM9.585,13.339l-4.167,4.164l-2.925-2.925l4.166-4.164l0.906,0.905l-0.67,0.668c-0.307,0.307-0.307,0.805,0,1.112c0.154,0.153,0.356,0.23,0.556,0.23c0.203,0,0.403-0.077,0.556-0.23l0.67-0.668L9.585,13.339z M13.341,9.578l-0.906-0.906l0.663-0.662c0.307-0.307,0.307-0.805,0-1.112c-0.307-0.307-0.805-0.307-1.112,0L11.322,7.56l-0.906-0.906l4.166-4.166l2.925,2.925L13.341,9.578z"/></svg></div>
 </div>
+
+  <script>
+    function copyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+
+  //
+  // *** This styling is an extra step which is likely not required. ***
+  //
+  // Why is it here? To ensure:
+  // 1. the element is able to have focus and selection.
+  // 2. if element was to flash render it has minimal visual impact.
+  // 3. less flakyness with selection and copying which **might** occur if
+  //    the textarea element is not visible.
+  //
+  // The likelihood is the element won't even render, not even a flash,
+  // so some of these are just precautions. However in IE the element
+  // is visible whilst the popup box asking the user for permission for
+  // the web page to copy to the clipboard.
+  //
+
+  // Place in top-left corner of screen regardless of scroll position.
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+
+  // Ensure it has a small width and height. Setting to 1px / 1em
+  // doesn't work as this gives a negative w/h on some browsers.
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+
+  // We don't need padding, reducing the size if it does flash render.
+  textArea.style.padding = 0;
+
+  // Clean up any borders.
+  textArea.style.border = 'none';
+  textArea.style.outline = 'none';
+  textArea.style.boxShadow = 'none';
+
+  // Avoid flash of white box if rendered for any reason.
+  textArea.style.background = 'transparent';
+
+
+  textArea.value = text;
+
+  document.body.appendChild(textArea);
+
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+
+  document.body.removeChild(textArea);
+}
+
+function CopyLink() {
+  copyTextToClipboard(location.href);
+}
+  </script>
