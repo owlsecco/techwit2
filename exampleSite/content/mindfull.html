@@ -1,22 +1,15 @@
-+++
-author = ["admin"]
-categories = ["mindful", "mindfullness", "art", "colors"]
-date = 2020-08-03T21:00:00Z
-description = "This is a space you can come to admire or engage in mindfullness"
-image = ""
-tags = ["terms and conditions", "conditions", "terms"]
-title = "Mindfullness Space"
-+++
-
-<style>
-  *{
+<html>
+ <head>
+  <title>Mindfullness</title>
+    <style>
+    *{
           padding: 0;
           margin: 0;
       }
-</style>
-
-
-<div id="container"></div>
+  </style>
+ </head>
+    <body>
+      <div id="container"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
 
       <script id="vertexShader" type="x-shader/x-vertex">
@@ -24,7 +17,6 @@ title = "Mindfullness Space"
               gl_Position = vec4( position, 1.0 );
           }
       </script>
-    
     
 <!--  参考 http://glslsandbox.com/e#64851.4 -->
       <script id="fragmentShader" type="x-shader/x-fragment">
@@ -84,9 +76,8 @@ title = "Mindfullness Space"
 
       </script>
       
-      
       <script>
-       var container;
+            var container;
           var camera, scene, renderer;
           var uniforms;
 
@@ -142,4 +133,6 @@ title = "Mindfullness Space"
               uniforms.time.value += 0.05;
               renderer.render( scene, camera );
           }
-      </script>
+      </sript>
+  </body> 
+ </html>
