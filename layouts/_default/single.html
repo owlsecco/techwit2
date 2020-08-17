@@ -104,7 +104,7 @@
 	<h5>Related Articles</h5>
 	{{ $related := .Site.RegularPages.Related . }}
 	{{ range first 7  $related }}
-	<a href="{{ .Permalink }}"><h6>{{ .Title }}  -  {{ .PublishDate.Format "January 6, 2006"}}</h6></a>
+	<a href="{{ .Permalink }}"><h6> &nbsp {{ .Title }} &nbsp - &nbsp {{ .PublishDate.Format "January 6, 2006"}} &nbsp </h6></a>
 	    {{ end }}
 	    </div>
 	    <!-- Related Content -->
