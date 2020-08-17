@@ -77,7 +77,7 @@ description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, C
 image = ["images/hero.webp"]
 [params.banner]
 heading = "Quality Tech Content For All"
-image = "images/banner0.png"
+image = "images/banner8.png"
 [params.blog]
 heading = "Our Latest Articles"
 [params.call_to_action]
