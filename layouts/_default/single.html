@@ -87,7 +87,7 @@
 			{{ $related := .Site.Pages.Related . }}
 			{{ range first 3  $related }}
 	            <a href="{{ .Permalink }}" class="mr-3">
-	              <img src="{{ .Params.Image | absURL }} alt="{{.Title}}>
+	              <figure><img src="{{ .Params.Image | absURL }} alt="{{.Title}}></figure>
 	            </a>
 	            <div class="post-body">
 	              <span class="text-capitalize">- {{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
