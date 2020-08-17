@@ -15,7 +15,7 @@
       <img width="1200" height="769" src="{{ . | absURL }}"
         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
         sizes="(max-width: 1200px) 100vw, 1200px" />
-     <!-- Test --> <p style="position: absolute; top: 120px; width: 500px; padding-left: 30px;">TechWit Ke</p>
+     <!-- Test --> <p style="position: absolute; top: 120px; width: 500px; padding-left: 30px; color: white; align: center;">{{- range ( where site.RegularPages "Section" "blog" | first 1 ) }} &nbsp | &nbsp {{ now.Format "Monday, January 2, 2006"}}</p>
     </div>
   </figure>
   {{end}}
