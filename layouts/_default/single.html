@@ -71,22 +71,30 @@
     </div><!-- .entry-content -->
   </div><!-- .post-inner -->
 	
+	<!-- Share Buttons -->
+	<p align="center"> {{ partial "share-buttons.html" . }} </p>
+	
 	<!-- Start of Next and Previous Buttons -->
 	    <p align="center" class="aligncenter wp-block-button">
-{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link">←{{ .PrevInSection.Title | truncate 25 "..."}}</a> {{ end }} &nbsp 
-{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link">{{ .NextInSection.Title | truncate 25 "..."}}→</a> {{ end }}
+{{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link" align="left">←{{ .PrevInSection.Title | truncate 25 "..."}}</a> {{ end }} &nbsp 
+{{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link" align="right">{{ .NextInSection.Title | truncate 25 "..."}}→</a> {{ end }}
 	    </p>
 	<!-- End of Next and Previous Buttons -->
-	
-
-	{{ partial "share-buttons.html" . }}
-
 
 	<!-- Start of Testing Things -->
 	{{ $related := .Site.RegularPages.Related . }}
+	
+	<ul>
+  	{{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+    	<li class="relatedPost">
+		<p align="left">{{ .Params.image }}</p>
+      	<a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
+      	{{ .Description | markdownify }}
+   	 </li>
+  	{{ end }}
+	</ul>
 	<!-- End of Testing Things -->
 
-	
 	
   <div class="section-inner">
     <div class="post-meta-wrapper post-meta-single post-meta-single-bottom">
