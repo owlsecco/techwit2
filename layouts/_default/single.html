@@ -72,7 +72,7 @@
   </div><!-- .post-inner -->
 	
 	<!-- Share Buttons -->
-	<p align="center" class="aligncenter"> {{ partial "share-buttons.html" . }} </p>
+	<div class="sharebuttons aligncenter"<p align="center"> {{ partial "share-buttons.html" . }} </p></div>
 	
 	<!-- Start of Next and Previous Buttons -->
 	    <p align="center" class="aligncenter wp-block-button">
@@ -84,7 +84,7 @@
 	<!-- Start of Testing Things -->
 	<!--{{ $related := .Site.Pages.Related . }}-->
 	
-	     <div class="widget mb-5 aligncenter">
+	     <div class="widget mb-5 aligncenter" align="center">
 	        <h4 class="mb-4 widget-title">Related Posts</h4>
 	        <ul class="list-unstyled">
 			{{ $related := .Site.Pages.Related . }}
