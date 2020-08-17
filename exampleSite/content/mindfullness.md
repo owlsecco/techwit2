@@ -8,11 +8,8 @@ tags = ["material", "beauty", "art", "mindfullness"]
 title = "Mindfullness"
 
 +++
-
 <div id="container"></div>
-
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
-
       <script id="vertexShader" type="x-shader/x-vertex">
 
           void main() {
@@ -22,11 +19,7 @@ title = "Mindfullness"
           }
 
       </script>
-
-    
-
 <!--  参考 http://glslsandbox.com/e#64851.4 -->
-
       <script id="fragmentShader" type="x-shader/x-fragment">
 
     #ifdef GL_ES
