@@ -72,7 +72,7 @@
   </div><!-- .post-inner -->
 	
 	<!-- Share Buttons -->
-	<p align="center"> {{ partial "share-buttons.html" . }} </p>
+	<p align="center" class="aligncenter"> {{ partial "share-buttons.html" . }} </p>
 	
 	<!-- Start of Next and Previous Buttons -->
 	    <p align="center" class="aligncenter wp-block-button">
@@ -82,12 +82,13 @@
 	<!-- End of Next and Previous Buttons -->
 
 	<!-- Start of Testing Things -->
-	{{ $related := .Site.Pages.Related . }}
+	<!--{{ $related := .Site.Pages.Related . }}-->
 	
-	     <div class="widget mb-5">
-	        <h4 class="mb-4 widget-title">Latest Posts</h4>
+	     <div class="widget mb-5 aligncenter">
+	        <h4 class="mb-4 widget-title">Related Posts</h4>
 	        <ul class="list-unstyled">
-	          {{ range first 3 ( where .Site.Pages "Type" "blog" )}}
+			{{ $related := .Site.Pages.Related . }}
+			{{ range first 3  $related }}
 	          <li class="d-flex mb-4">
 	            <a href="{{ .Permalink }}" class="mr-3">
 	              {{ with .Params.image }}<img src=""....>{{ end }}
