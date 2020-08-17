@@ -84,7 +84,23 @@
 	<!-- Start of Testing Things -->
 	{{ $related := .Site.Pages.Related . }}
 	
-	
+	     <div class="widget mb-5">
+	        <h4 class="mb-4 widget-title">Latest Posts</h4>
+	        <ul class="list-unstyled">
+	          {{ range first 3 ( where .Site.Pages "Type" "blog" )}}
+	          <li class="d-flex mb-4">
+	            <a href="{{ .Permalink }}" class="mr-3">
+	              {{ with .Params.image }}<img src=""....>{{ end }}
+	            </a>
+	            <div class="post-body">
+	              <span class="text-capitalize">- {{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
+	              <a href="{{ .Permalink }}">
+	                <h5>{{ .Title }}</h5>
+	              </a>
+	            </div>
+	          </li>{{ end }}
+	        </ul>
+	      </div>
 	<!-- End of Testing Things -->
 
 	
