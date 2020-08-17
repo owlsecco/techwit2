@@ -99,7 +99,7 @@
       </ul><!-- .post-meta -->
 	    
 	<hr class="styled-separator is-style-wide" aria-hidden="true">
-	<h3>Raed More Related Articles</h3>
+	<h4>Related Articles</h4>
 	{{ $related := .Site.RegularPages.Related . }}
 	{{ range first 7  $related }}
 	<a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
@@ -116,7 +116,7 @@
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-              <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+              <a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
               <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
               <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
                   href="{{ .Permalink }}">Read This Article</a></div>-->
