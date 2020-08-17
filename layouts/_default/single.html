@@ -91,7 +91,7 @@
 			{{ range first 3  $related }}
 	          <li class="d-flex mb-4">
 	            <a href="{{ .Permalink }}" class="mr-3">
-	              }<img src="{{ .Params.image }}" alt="{{ .Params.image }} for Related Content">
+	              <img src="{{ .Params.image }}" alt="{{ .Params.image }} for Related Content">
 	            </a>
 	            <div class="post-body">
 	              <span class="text-capitalize">- {{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
