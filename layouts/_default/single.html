@@ -82,8 +82,6 @@
 	<!-- End of Next and Previous Buttons -->
 
 	<!-- Start of Testing Things -->
-	<!--{{ $related := .Site.Pages.Related . }}-->
-	
 	     <div class="widget mb-5 aligncenter" align="center">
 	        <h4 class="mb-4 widget-title">Related Posts</h4>
 	        <ul class="list-unstyled">
@@ -91,7 +89,7 @@
 			{{ range first 3  $related }}
 	          <li class="d-flex mb-4">
 	            <a href="{{ .Permalink }}" class="mr-3">
-	              <img src="{{ .Params.Image }}" alt="Image for Related Content">
+	              <img src="{{ .Params.Image | absURL }} alt="{{.Title}}>
 	            </a>
 	            <div class="post-body">
 	              <span class="text-capitalize">- {{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
@@ -104,7 +102,6 @@
 	      </div>
 	<!-- End of Testing Things -->
 
-	
   <div class="section-inner">
     <div class="post-meta-wrapper post-meta-single post-meta-single-bottom">
       <ul class="post-meta">
