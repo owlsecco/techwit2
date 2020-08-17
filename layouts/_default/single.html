@@ -82,7 +82,7 @@
 	<!-- End of Next and Previous Buttons -->
 
 	<!-- Start of Testing Things -->
-	     <div class="widget mb-5 aligncenter" align="center">
+	     <!--<div class="widget mb-5 aligncenter" align="center">
 	        <h4 class="mb-4 widget-title">Related Posts</h4>
 			{{ $related := .Site.Pages.Related . }}
 			{{ range first 3  $related }}
@@ -96,7 +96,24 @@
 	              </a>
 	            </div>
 	          {{ end }}
-	      </div>
+	      </div>-->
+	
+	<div class="wp-block-columns columns alignwide">
+        {{ $related := .Site.Pages.Related . }}
+			{{ range first 3  $related }}
+        <div class="column">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
+              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+              <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
+              <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
+                  href="{{ .Permalink }}">Read This Article</a></div>-->
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
 	<!-- End of Testing Things -->
 
   <div class="section-inner">
