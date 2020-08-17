@@ -83,17 +83,17 @@
 
 	
 	<!-- Start of Testing Things -->
-	
+		
 	   <!-- Start of Related Content -->
+	<h3 align="center" class="aligncenter">Related Content</h3>
 	<div class="wp-block-columns columns alignwide is-style-wide">
-
         {{ $related := .Site.RegularPages.Related . }}
 	{{ range first 2  $related }}
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-              <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+              <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
               <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
               <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
                   href="{{ .Permalink }}">Read This Article</a></div>-->
