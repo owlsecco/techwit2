@@ -84,20 +84,9 @@
 	<!-- Start of Testing Things -->
 	{{ $related := .Site.RegularPages.Related . }}
 	
-	<h3 align="center">See More</h3>
-	<ul>
-  	{{ range first 2 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
-    	<div class="post-inner thin">
-    <div class="entry-content">
-      {{ with .Site.Params.blog.heading }}
-      <div class="wp-block-group alignwide">
-        <div class="wp-block-group__inner-container">
-          <h2 class="has-text-align-center" id="latestarticles">{{ . | markdownify }}</h2>
-        </div>
-      </div>
-      {{ end }}
+	    <h3 align="center">See More</h3>
       <div class="wp-block-columns columns alignwide">
-        {{ range (where .Site.RegularPages "Section" "blog")}}
+        {{ range first 2 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
