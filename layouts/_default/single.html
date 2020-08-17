@@ -86,10 +86,10 @@
 		
 	<!-- Start of Related Content -->
 	<div class="wp-block-columns columns alignwide is-style-wide">
-	<h2 align="center" class="aligncenter">Related Content</h2>
-		<br>
         {{ $related := .Site.RegularPages.Related . }}
 	{{ range first 2  $related }}
+		<h2 align="center" class="aligncenter">Related Content</h2>
+		<br>
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
@@ -126,9 +126,10 @@
       </ul><!-- .post-meta -->
 	   <!-- Start of Related Content -->
 	<div class="wp-block-columns columns alignwide is-style-wide">
-	<h3 align="center" class="aligncenter">Related Content</h3>
         {{ $related := .Site.RegularPages.Related . }}
 	{{ range first 2  $related }}
+		<h3 align="center" class="aligncenter">Related Content</h3>
+		<br>
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
