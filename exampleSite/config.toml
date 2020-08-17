@@ -1,12 +1,12 @@
 baseURL = "https://techwit2.netlify.app/"
 disableLanguages = []
 disqusShortname = "techwitke"
+enableEmoji = true
+enableRobotsTXT = true
 googleAnalytics = "UA-132349593-10"
 languageCode = "en-us"
 languageName = "En"
 paginate = "10"
-enableEmoji = true
-enableRobotsTXT = true
 summaryLength = "15"
 theme = "twentytwenty"
 title = "TechWit v0.7"
@@ -71,13 +71,13 @@ weight = "13"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [params]
+Images = ["images/hero.webp"]
 author = "Admin"
 description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content."
 image = ["images/hero.webp"]
-Images = ["images/hero.webp"]
 [params.banner]
 heading = "Quality Tech Content For All"
-image = "images/hero.webp"
+image = "images/banner0.webp"
 [params.blog]
 heading = "Our Latest Articles"
 [params.call_to_action]
@@ -106,10 +106,6 @@ instagram = "https://instagram.com/techwitke"
 linkedin = "https://linkedin.com/techwitke"
 twitter = "https://twitter.com/techwitke"
 whatsapp = "https://chat.whatsapp.com/C7whEtGOcsY3eJU1mbiveB"
-[taxonomies]
-author = "author"
-category = "categories"
-tag = "tags"
 [related]
 includeNewer = true
 threshold = 10
@@ -132,3 +128,7 @@ weight = 10
 [[related.indices]]
 name = "author"
 weight = 10
+[taxonomies]
+author = "author"
+category = "categories"
+tag = "tags"
