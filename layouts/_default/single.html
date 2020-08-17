@@ -83,7 +83,25 @@
 
 	
 	<!-- Start of Testing Things -->
-	
+	<!-- Start of Related Content -->
+	<div class="wp-block-columns columns alignwide is-style-wide">
+	<!--<h3 align="center" class="aligncenter">Related Content</h3>-->
+        {{ $related := .Site.RegularPages.Related . }}
+	{{ range first 2  $related }}
+        <div class="column">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
+              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+              <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
+              <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
+                  href="{{ .Permalink }}">Read This Article</a></div>-->
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+<!-- End of Related Content -->
 	<!-- End of Testing Things -->
 
   <div class="section-inner">
@@ -103,25 +121,6 @@
             {{end}} </span>
         </li>
       </ul><!-- .post-meta -->
-	   <!-- Start of Related Content -->
-	<div class="wp-block-columns columns alignwide is-style-wide">
-	<!--<h3 align="center" class="aligncenter">Related Content</h3>-->
-        {{ $related := .Site.RegularPages.Related . }}
-	{{ range first 2  $related }}
-        <div class="column">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-              <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
-              <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
-              <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
-                  href="{{ .Permalink }}">Read This Article</a></div>-->
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-<!-- End of Related Content -->
       <!-- Disqus -->
       {{ if .Site.DisqusShortname }}
       <hr class="styled-separator is-style-wide" aria-hidden="true">
