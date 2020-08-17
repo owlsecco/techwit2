@@ -84,9 +84,10 @@
 	<!-- Start of Testing Things -->
 	{{ $related := .Site.RegularPages.Related . }}
 	
+	<h3 align="center">See More</h3>
 	<ul>
-  	{{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
-    	<div class="post-inner thin aligncenter">
+  	{{ range first 2 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+    	<div class="post-inner thin">
     <div class="entry-content">
       {{ with .Site.Params.blog.heading }}
       <div class="wp-block-group alignwide">
