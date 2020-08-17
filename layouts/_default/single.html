@@ -87,7 +87,7 @@
 	<ul>
   	{{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
     	<li class="relatedPost">
-		<p align="left">{{ .Params.image }}</p>
+		<img src="{{ .Params.image }}" align="left" alt="{{ .Title }}"/>
       	<a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
       	{{ .Description | markdownify }}
    	 </li>
