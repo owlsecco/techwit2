@@ -9,7 +9,7 @@ languageName = "En"
 paginate = "10"
 summaryLength = "15"
 theme = "twentytwenty"
-title = "TechWit v0.7"
+title = "TechWit Ke v0.7"
 [markup.goldmark.renderer]
 unsafe = true
 [[menu.desktop]]
