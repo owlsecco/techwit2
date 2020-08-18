@@ -65,11 +65,15 @@ URL = "index.xml"
 name = "RSS Feed"
 weight = "12"
 [[menu.main]]
-URL = "index.json"
+URL = "Feed.json"
 name = "RSS Feed Json"
 weight = "13"
+[outputFormats.Feed]:
+  mediaType= "application/json"
+  baseName= "feed"
+  isPlainText= true
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON", "Feed"]
 [params]
 Images = ["images/hero.webp"]
 author = "Admin"
