@@ -75,7 +75,7 @@
 	<div class="sharebuttons aligncenter" align="center"><p align="center"> {{ partial "share-buttons.html" . }} </p></div>
 	
 	<!-- Start of Next and Previous Buttons -->
-	    <p class="wp-block-button">
+	    <p align="center"class="aligncenter wp-block-button">
 {{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link" align="left">←{{ .PrevInSection.Title | truncate 25 "..."}}</a> {{ end }} &nbsp 
 {{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link" align="right">{{ .NextInSection.Title | truncate 25 "..."}}→</a> {{ end }}
 	    </p>
