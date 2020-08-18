@@ -56,7 +56,6 @@
       </div><!-- .post-meta-wrapper -->
     </div><!-- .entry-header-inner -->
   </header><!-- .entry-header -->
-	<span class="screen-reader-text has-text-align-center">Reading time: {{ math.Round (div (countwords .Content) 220.0) }} minutes.</span>
   {{if .Params.Image }}
   <figure class="featured-media">
     <div class="featured-media-inner section-inner medium">
@@ -76,7 +75,7 @@
 	<div class="sharebuttons aligncenter" align="center"><p align="center"> {{ partial "share-buttons.html" . }} </p></div>
 	
 	<!-- Start of Next and Previous Buttons -->
-	    <p align="center" class="aligncenter wp-block-button">
+	    <p class="wp-block-button">
 {{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link" align="left">←{{ .PrevInSection.Title | truncate 25 "..."}}</a> {{ end }} &nbsp 
 {{ if .NextInSection }} <a href="{{.NextInSection.Permalink}}" class="wp-block-button__link" align="right">{{ .NextInSection.Title | truncate 25 "..."}}→</a> {{ end }}
 	    </p>
