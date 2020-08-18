@@ -68,7 +68,7 @@ weight = "12"
 URL = "Feed.json"
 name = "RSS Feed Json"
 weight = "13"
-[outputFormats.Feed]:
+[outputFormats.Feed]
   mediaType= "application/json"
   baseName= "feed"
   isPlainText= true
