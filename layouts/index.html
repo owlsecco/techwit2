@@ -15,11 +15,12 @@
       <img width="1200" height="769" src="{{ . | absURL }}"
         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
         sizes="(max-width: 1200px) 100vw, 1200px" />
-     <!-- Test --> <p style="position: absolute; top: 120px; width: 500px; padding-left: 30px; color: white; align: center;">{{ now.Format "Monday, January 2, 2006"}}</p>
+      <p>{{ now.Format "Monday, January 2, 2006"}}</p>
     </div>
   </figure>
   {{end}}
-
+<p>{{ now.Format "Monday, January 2, 2006"}}</p>
+  
   <div class="post-inner thin">
     <div class="entry-content">
       {{ with .Site.Params.blog.heading }}
@@ -36,7 +37,7 @@
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
-              <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
+              <p>{{ .PublishDate.Format "Monday, January 6, 2006"}} &nbsp; - &nbsp; By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize | lower }}">{{ . }}</a>{{ end }}</p>
               <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
                   href="{{ .Permalink }}">Read This Article</a></div>-->
             </div>
