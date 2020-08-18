@@ -15,11 +15,10 @@
       <img width="1200" height="769" src="{{ . | absURL }}"
         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
         sizes="(max-width: 1200px) 100vw, 1200px" />
-      <p align="center" class="has-text-align-center">{{ now.Format "Monday, January 2, 2006"}}</p>
+      <p align="center" class="has-text-align-center">{{ now.Format "Monday, January 2, 2006"}} &nbsp; - &nbsp; {{- range ( where site.RegularPages "Section" "blog" | first 1 ) }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }} </p>
     </div>
   </figure>
   {{end}}
-<p align="center" class="has-text-align-center">{{ now.Format "Monday, January 2, 2006"}}</p>
   
   <div class="post-inner thin">
     <div class="entry-content">
@@ -31,7 +30,7 @@
       </div>
       {{ end }}
       <div class="wp-block-columns columns alignwide">
-        {{ range (where .Site.RegularPages "Section" "blog")}}
+        {{ range first 6 (where .Site.RegularPages "Section" "blog")}}
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
