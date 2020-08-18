@@ -107,16 +107,20 @@
 	<a href="{{ .Permalink }}"><h6> &nbsp &nbsp {{ .Title }} &nbsp &nbsp </h6></a>
 	    {{ end }}
 	    </div>
+	    
 	    <!-- Related Content -->
+	    <!-- Disqus Comments with Show Comments Button -->
+	    {{ partial "disqus.html" . }}
+	    <!-- Disqus Comments with Show Comments Button -->
 	    
       <!-- Disqus -->
-      {{ if .Site.DisqusShortname }}
+      <!-- {{ if .Site.DisqusShortname }}
       <hr class="styled-separator is-style-wide" aria-hidden="true">
-      <!-- comments -->
-      <div id="comments">
+      <!-- comments --> -->
+      <!--<div id="comments">
         {{ template "_internal/disqus.html" . }}
       </div>
-      {{ end }}
+      {{ end }}-->
     </div><!-- .post-meta-wrapper -->
   </div><!-- .section-inner -->
 </article>
