@@ -8,8 +8,6 @@ tags = ["review guidlines", "review request", "review"]
 title = "Review Guidlines and Request Submition"
 
 +++
-# Review Guidelines and Request Submition
-
 At _TechWit Ke_, we are dedicated to provide the most useful and accurate information to our users, and reviewing products/services is a part of the same. If you want to get your product/service reviewed by us, submit it down below
 
 Read our guidelines mentioned ahead that must be fulfilled by your product/service to make them eligible for review. We accept apps, extensions, electronic gadgets, web apps, and other products/services that suit the theme of _TechWit Ke_.
@@ -23,8 +21,6 @@ Read our guidelines mentioned ahead that must be fulfilled by your product/servi
 7. For gadgets and other products that will be shipped to us, we need 3 weeks as we test them accordingly and our aim is to provide complete and accurate information to our readers.
 8. The gadgets must be sent with the complete specification, manufacturing, and pricing details.
 
-
-
 <form class="form-horizontal" data-netlify="true">
 <fieldset>
 
@@ -33,58 +29,57 @@ Read our guidelines mentioned ahead that must be fulfilled by your product/servi
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="fullname">Full Name/Company Name</label>  
-  <div class="col-md-5">
-  <input id="fullname" name="fullname" type="text" placeholder="e.g John Doe" class="form-control input-md">
-    
-  </div>
+<label class="col-md-4 control-label" for="fullname">Full Name/Company Name</label>  
+<div class="col-md-5">
+<input id="fullname" name="fullname" type="text" placeholder="e.g John Doe" class="form-control input-md">
+
+</div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="subject">Product/Service/Tool?</label>  
-  <div class="col-md-5">
-  <input id="subject" name="subject" type="text" placeholder="e.g Formspree" class="form-control input-md">
-    
-  </div>
+<label class="col-md-4 control-label" for="subject">Product/Service/Tool?</label>  
+<div class="col-md-5">
+<input id="subject" name="subject" type="text" placeholder="e.g Formspree" class="form-control input-md">
+
+</div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="stoew">Where is it?</label>  
-  <div class="col-md-5">
-  <input id="stoew" name="stoew" type="text" placeholder="e.g https://playstore.google.com/app/numbytes" class="form-control input-md">
-  <span class="help-block">help</span>  
-  </div>
+<label class="col-md-4 control-label" for="stoew">Where is it?</label>  
+<div class="col-md-5">
+<input id="stoew" name="stoew" type="text" placeholder="e.g https://playstore.google.com/app/numbytes" class="form-control input-md">
+<span class="help-block">help</span>  
+</div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="email">Email</label>  
-  <div class="col-md-5">
-  <input id="email" name="email" type="text" placeholder="e.g johndoe@gmail.com" class="form-control input-md">
-    
-  </div>
+<label class="col-md-4 control-label" for="email">Email</label>  
+<div class="col-md-5">
+<input id="email" name="email" type="text" placeholder="e.g johndoe@gmail.com" class="form-control input-md">
+
+</div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="pitch">Pitch</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="pitch" name="pitch">Feel free to write in markdown</textarea>
-  </div>
+<label class="col-md-4 control-label" for="pitch">Pitch</label>
+<div class="col-md-4">  
+<textarea class="form-control" id="pitch" name="pitch">Feel free to write in markdown</textarea>
+</div>
 </div>
 
 <!-- Button -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="submit"></label>
-  <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-default">Submit</button>
-  </div>
+<label class="col-md-4 control-label" for="submit"></label>
+<div class="col-md-4">
+<button id="submit" name="submit" class="btn btn-default">Submit</button>
+</div>
 </div>
 
 </fieldset>
 </form>
 
-
-**Note:** The final decision to accept or decline any review request is ours. 
+**Note:** The final decision to accept or decline any review request is ours.
