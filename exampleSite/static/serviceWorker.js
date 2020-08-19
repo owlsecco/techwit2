@@ -5,7 +5,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
 */
 
 (function() {
-  const version = 'v7';
+  const version = 'v8';
   const cacheName = version + '::techwit2:';
 
   const staticCacheName = cacheName + 'static';
@@ -36,7 +36,8 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
     '/blog/post-4',
     '/blog/post-3',
     '/blog/post-2',
-    '/blog/post-1'
+    '/blog/post-1',
+    '/fonts/inter/Inter-upright-var.woff2'
   ];
 
   function updateStaticCache() {
