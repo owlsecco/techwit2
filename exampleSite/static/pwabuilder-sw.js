@@ -12,16 +12,7 @@ self.addEventListener("message", (event) => {
 
 workbox.routing.registerRoute(
   new RegExp('/*'),
-  new workbox.strategies.CacheFirst({
+  new workbox.strategies.StaleWhileRevalidate({
     cacheName: CACHE
   })
-);
-
-
-import {registerRoute} from 'workbox-routing';
-import {StaleWhileRevalidate} from 'workbox-strategies';
-
-registerRoute(
-  ({url}) => url.pathname.startsWith('/images/avatars/'),
-  new StaleWhileRevalidate()
 );
