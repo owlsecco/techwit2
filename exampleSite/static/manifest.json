@@ -9,7 +9,7 @@
     "background_color": "#000000",
     "theme_color": "#000000",
     "description": "Welcome to TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content.",
-    "orientation": "any",
+    "orientation": "potrait",
     "related_applications": [],
 	"categories": ["tech", "cybersecurity", "data", "development", "business", "startup", "techwit", "wit", "witty", "machine learning", "blog", "magazine", "newsletter", "tech blog", "tech online magazine", "tech savvy", "savvy", "techsavvy", "data privacy", "security", "kenya", "ke", "pwa", "progressive web applications", "progressive web pplication", "jamstack", "static site", "windows ", "linux", "foss", "news", "android", "hacker"],
 	"shortcuts" : [
