@@ -16,3 +16,12 @@ workbox.routing.registerRoute(
     cacheName: CACHE
   })
 );
+
+
+import {registerRoute} from 'workbox-routing';
+import {StaleWhileRevalidate} from 'workbox-strategies';
+
+registerRoute(
+  ({url}) => url.pathname.startsWith('/images/avatars/'),
+  new StaleWhileRevalidate()
+);
