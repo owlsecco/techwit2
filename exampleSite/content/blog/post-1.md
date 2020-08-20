@@ -7,7 +7,7 @@ author:
 categories:
 - Working days
 tags:
-- Visit
+- featured
 - visit
 - work
 - day
