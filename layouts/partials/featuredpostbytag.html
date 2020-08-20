@@ -1,4 +1,4 @@
-<h2 class="has-text-align-center">Featured Posts</h2>
+<h2 class="has-text-align-center">Featured Post</h2>
     <div class="alignwide">
         {{ range first 1 .Site.Taxonomies.tags.featured }}
         <div>
@@ -6,6 +6,8 @@
             <div>
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}" class="has-text-align-center"><h3>{{ .Title }}</h3></a>
+                <p>{{ .Content | truncate 400 }}</p>
+                <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="{{ .Permalink }}" style="background-color:#000;color:#fff;">Read Full Post +</a></div>
           </div>
         </div>
         {{ end }}
