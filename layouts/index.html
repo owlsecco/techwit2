@@ -36,7 +36,7 @@
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
-              <p>{{ .PublishDate.Format "Monday, January 6, 2006"}} &nbsp; - &nbsp; By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize }}" style="text-transform: capitalize;">{{ . }}</a>{{ end }}</p>
+              <p>{{ .PublishDate.Format "Monday, January 6, 2006"}} &nbsp; &nbsp; By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize }}" style="text-transform: capitalize;">{{ . }}</a>{{ end }}</p>
               <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
                   href="{{ .Permalink }}">Read This Article</a></div>-->
             </div>
