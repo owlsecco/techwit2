@@ -6514,7 +6514,7 @@ a.to-the-top>* {
         /* default color #cd2653; 
          * if you are using a custom color, update this to reflect your color scheme and appropriate contract for darkened theme.
          * */
-        color: #cd2653;
+        color: #ec7595;
     }
     .color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus):first-letter, .wp-block-button.is-style-outline, a {
         /* default color #cd2653; 
