@@ -6537,4 +6537,8 @@ a.to-the-top>* {
     .footer-nav-widgets-wrapper, #site-footer {
         background-color: #000;
     }
+    .archive-header, .archive-title, .vcard{
+	background-color: #000;
+	color: #fff
+	}
 }
