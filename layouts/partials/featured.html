@@ -1,7 +1,7 @@
 <div align="center" class="aligncenter has-text-align-center">
 <div class="wp-block-column alignwide">
                 {{ range first 1 .Site.Taxonomies.tags.featured }}
-        <div class="column">
+        <div>
           <div>
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
