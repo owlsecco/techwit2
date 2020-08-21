@@ -8,6 +8,10 @@ tags = ["our newsletter", "newsletter"]
 title = "I Want To Sign Up To Your Newsletter"
 
 +++
+Ever wonder to yourself: how do I stay up to date with all the new stuff in this fast-moving industry? We hope our newsletter is part of an answer to that for you.
+
+We hand-craft this newsletter every week to include the most interesting and relevant news and information published that week both on TechWit Ke and off.
+
 {{< rawhtml >}}
 <div class="wp-block-group alignwide has-background" style="background-color:#ffffff">
 
@@ -23,7 +27,7 @@ title = "I Want To Sign Up To Your Newsletter"
 
 <br>
 
-<form action="https://buttondown.email/api/emails/embed-subscribe/techwitke" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/techwitke', 'popupwindow')" class="embeddable-buttondown-form" align="center"> 
+<form action="https://buttondown.email/api/emails/embed-subscribe/techwitke" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/techwitke', 'popupwindow')" class="embeddable-buttondown-form" align="center">
 
 <label for="bd-email" align="center">Enter your email</label><input type="email" name="email" id="bd-email" align="center">
 
@@ -34,7 +38,7 @@ title = "I Want To Sign Up To Your Newsletter"
 <p><a href="https://buttondown.email" target="_blank" align="center">Powered by Buttondown.Email</p>
 
 </form>
-  </div>
+</div>
 </div>
 </div>
 </div>
