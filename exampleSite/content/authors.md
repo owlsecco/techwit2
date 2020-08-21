@@ -8,3 +8,4 @@ tags = ["author", "authors"]
 title = "Authors"
 
 +++
+{{< authors >}}
