@@ -25,7 +25,6 @@ fields:
   label: description
   description: Meta description
 pages:
-- exampleSite/content/advertise-here.md
 - exampleSite/content/advertise.md
 - exampleSite/content/blog/tools-and-precesses-used-to-create-this-site.md
 - exampleSite/content/blog/tools-and-precesses-used-to-create-this-site.md
