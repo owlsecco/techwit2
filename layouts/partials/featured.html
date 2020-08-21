@@ -1,13 +1,13 @@
 <div class="wp-block-column column alignwide has-text-align-center">
                 {{ range first 1 .Site.Taxonomies.tags.featured }}
-        <div class="column">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
+        <div class="column aligncenter">
+          <div class="wp-block-group aligncenter">
+            <div class="wp-block-group__inner-container aligncenter">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
               <p>{{ .Summary }}</p>
-              <p>{{ .PublishDate.Format "Monday, January 6, 2006"}} &nbsp; &nbsp; By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize }}" style="text-transform: capitalize;">{{ . }}</a>{{ end }}</p>
-              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
+              <p class="aligncenter has-text-align-center">{{ .PublishDate.Format "Monday, January 6, 2006"}} &nbsp; &nbsp; By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize }}" style="text-transform: capitalize;">{{ . }}</a>{{ end }}</p>
+              <div class="wp-block-button is-style-outline aligncenter"><a class="wp-block-button__link"
                   href="{{ .Permalink }}">Read This Article +</a></div>
             </div>
           </div>
