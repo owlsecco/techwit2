@@ -29,6 +29,21 @@
             </div>
           </div>
         </div>
+        
+        
+        <div class="footer-widgets column-three grid-item">
+          <div class="widget widget_text">
+            <div class="widget-content">
+              <h2 class="widget-title subheading heading-size-3">Contact Us</h2>
+              <div class="textwidget">
+                <p><strong>Email:</strong><br/> {{ .email | markdownify }}</p>
+                <p><strong>Tel:</strong><br/>{{ .telephone | markdownify }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
       </div><!-- .footer-widgets-wrapper -->
     </aside><!-- .footer-widgets-outer-wrapper -->
     {{ end }}
