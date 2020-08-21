@@ -6,61 +6,30 @@ description: TechWit Ke is a Tech, Cybersecurity and Development Blog focused on
 ---
 ![techwit ke full text logo](/images/techwit-about-1.png "techwit ke full text logo")
 
-TechWit Kenya is a Tech, Cybersecurity and Development Blog focused on delivering quality and easy to understand content. Our aim is to make our content applicable to all our readers whether you are tech savvy or not.
+Hi there and welcome to TechWit Ke.
 
-Stephen Ajulu formed this blog on August 1st 2020 in an attempt to teach, encourage and help individuals to learn about our 3 main topics:
+TechWit Ke is and Informative Tech, Cybersecurity and Development Blog formed by Stephen Ajulu on August 1st 2020 with the sole purpose of delivering quality, easy to understand content to keep you updated, knowledgeable and well informed.
 
-* Technology
-* Cybersecurity
-* Development
+We have writers and guest authors from all over the world, so the content you find here will be as diverse as they are.
 
-Since it's founding 3 people have joined TechWit Ke as content creators and we are still accepting more.
+This site was built and maintained by [Stephen Ajulu](https://techwit2.netlify.app/author/stephenajulu/ "Stephen Ajulu") and [other awesome writers/developers](https://techwit2.netlify.app/author "other awesome writers and developers").
 
-Our content comes in the following types
+In here our aim is to provide you with Tips, Tricks, Tutorials, Reviews, News, Offers and More so as to help you build your project, become technologically savvy, fix an issue and/or expand your knowledge base.
 
-* Tips
-* Tricks
-* Tutorials/Howtos
-* News
-* Offers
-* Biased Reviews
-* Reviews
-* and more .....
+Aside from the usual tech stuff we also talk about business, startups among other topics. We also accept guest posts and tips.
 
-But we are not limited to the main 3 topics or the 7 content types. As you know tech is a wide area of study. So expect more quality content.
-
-Got a tip for us? [Here's how to send it securely](/tip-us) 
+Got a tip for us? [Here's how to send it securely](/tip-us)
 
 Want to guest post? [Here's how to send it](/guest-posting)
 
 ## Our Team
 
-<a href="/author/admin"><img src="#" align="left" width="200" alt="Stephen Ajulu's Potrait"><h4>Stephen Ajulu</h4></a>  
-<p><strong>Chief Editor and Founder</strong></p>
+#### **_Coming Soon_**
 
-More to come
+Meanwhile check out [our authors](/author "Authors")
 
 ## Our Stack
 
-This site uses Hugo, a static site generator that uses Go. The theme is Twenty Twenty by WordPress ported to Themefisher. Using the best Git based headless CMS: Forestry in our opinion. Hosted on GitHub(yes we made this site open source) with Netlify handling deployment. Aside from these, we have custom made shortcodes linked to forestry cms snippets for a smooth shortcode injection. The site isn't complete yet but we are working day and night to make sure we complete it so that you can start enjoying quality content so expect more features.
+This site is built using [Hugo](https://gohugo.io "Hugo") the fastest static site generator when it comes to build speed, it's backend/CMS is [Forestry CMS](https://forestry.io "Forestry CMS") the most beautiful git-based CMS, with it's deployment and forms being handled by [Netlify](https://netlify.com "Netlify") and finally hosted on [GitHub](https://github.com "GitHub").
 
-So we would like to send a special "Thank You" to the following:
-
-* [**Hugo**](https://gohugo.io/?utm_source=techwit2.netlify.app "Hugo")
-* [**Themefisher**](https://github.com/themfisher/?utm_source=techwit2.netlify.app "Themefisher")
-* [**Netlify**](https://netlify.com/?utm_source=techwit2.netlify.app "Netlify")
-* [**Forestry CMS**](https://forestry.io/?utm_source=techwit2.netlify.app "Forestry CMS")
-* [**Stephen Ajulu**](https://stephenajulu.com/?utm_source=techwit2.netlify.app "Stephen Ajulu")
-
-<div class="wp-block-group alignwide has-background" style="background-color:#ffffff">
-<div class="wp-block-group__inner-container">
-<div class="wp-block-group">
-<div class="wp-block-group__inner-container">
-<h2 class="has-text-align-center">Sign Up To Our Newsletter</h2>
-<p class="has-text-align-center">Sign up and stay up to date by receiving quality content such as tips, tricks, news, howto’s, insights, deals, savings, promotions, freebies, ebooks and more right in your inbox. Never miss an article or a giveaway. Become a member of our community. Join us!</p>
-<div class="wp-block-button aligncenter">
-<a class="wp-block-button__link" href="/newsletter">I Want To Sign Up</a></div>
-</div>
-</div>
-</div>
-</div>
+Special Thanks to: [Themefisher](https://themefisher.com/?utm_source=techwitke "Themefisher"), [Simple Sharing Buttons](https://sharingbuttons.io/ "Simple Sharing Buttons"), [Bootsnipp Form Builder](https://bootsnipp.com/forms "Bootsnip Form Builder") and [JSON Formatter from Curious Concept](https://jsonformatter.curiousconcept.com/ "JSON Formatter") as they helped in the development of this site, e.g We are using Simple Sharing Buttons in our posts and pages to help you share an article that may be useful to someone else.
