@@ -13,11 +13,7 @@
             <div class="widget-content">
               <h2 class="widget-title subheading heading-size-3">{{ .title | markdownify }}</h2>
               <div class="textwidget">
-                <p>
-                  {{ .content | markdownify }}
-                <br />
-                  <a href="/about" class="wp-block-button__link aligncenter" align="center">Learn More</a>
-                </p>
+                <p>{{ .content | markdownify }}</p>
               </div>
             </div>
           </div>
@@ -34,7 +30,6 @@
             </div>
           </div>
         </div>
-        
         
         <div class="footer-widgets column-three grid-item">
           <div class="widget widget_text">
@@ -54,8 +49,7 @@
             </div>
           </div>
         </div>
-        
-        
+
       </div><!-- .footer-widgets-wrapper -->
     </aside><!-- .footer-widgets-outer-wrapper -->
     {{ end }}
