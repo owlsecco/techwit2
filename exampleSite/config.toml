@@ -95,6 +95,7 @@ content = "TechWit Ke is an Informative Tech, Cybersecurity and Development Blog
 copyright = "Copyright &copy; 2020 [TechWit Ke](https://techwit2.netlify.app). All Rights Reserved.  "
 email = "[techwit.ke@gmail.com](mailto:techwit.ke@gmail.com?cc=alunje73@gmail.com&subject=From%20Blog%20Footer)"
 telephone = "[+ 254 726 024 210](tel:+254726024210)"
+postal = "P.O.Box 0740128010 - 00100<br>Nairobi, Kenya"
 title = "About"
 [params.gallery]
 enable = false
