@@ -2,7 +2,7 @@
 <div class="wp-block-column alignwide">
                 {{ range first 1 .Site.Taxonomies.tags.featured }}
         <div class="column">
-          <div class="wp-block-group">
+          <div>
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3 align="center">{{ .Title }}</h3></a>
