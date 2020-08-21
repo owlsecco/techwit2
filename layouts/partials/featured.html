@@ -211,7 +211,7 @@ body {
   </div>
   {{ end }}
   
-  {{ range first 1 .Site.Taxonomies.tags.news }}
+  {{ range first 1 .Site.Taxonomies.tags.featured }}
   <div class="card content">
     <div class="card-content">
       <div class="card-img"><img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}"></div>
