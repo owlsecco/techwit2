@@ -44,26 +44,17 @@ Our features take the rigorous, forward-looking journalism _TechWit Ke_ is known
 
 A great feature pitch for _TechWit Ke_ does three things: it gives the scope of the narrative, it lays out an ambitious reporting plan, and it shows us that you can write with a strong voice. (A sense of humor never hurts!) Also, there’s no need to send a whole CV — just one or two examples of feature-length pieces you’ve written is all we need.
 
-<form class="form-horizontal" data-netlify="true">
+<form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
-<legend>Submit Your Pitch</legend>
+<legend>Form Name</legend>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="fullname">Full Name</label>  
-  <div class="col-md-5">
-  <input id="fullname" name="fullname" type="text" placeholder="e.g John Doe" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="subject">Topic</label>  
-  <div class="col-md-5">
-  <input id="subject" name="subject" type="text" placeholder="e.g The Lady Who Reinvented Insurance!" class="form-control input-md">
+  <label class="col-md-4 control-label" for="name">Full Name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="John Doe" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -71,17 +62,69 @@ A great feature pitch for _TechWit Ke_ does three things: it gives the scope of 
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="email">Email</label>  
-  <div class="col-md-5">
-  <input id="email" name="email" type="text" placeholder="e.g johndoe@gmail.com" class="form-control input-md">
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="johndoe@gmail.com" class="form-control input-md" required="">
     
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="writtenforus">Have you ever written for us?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="writtenforus-0">
+      <input type="radio" name="writtenforus" id="writtenforus-0" value="1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="writtenforus-1">
+      <input type="radio" name="writtenforus" id="writtenforus-1" value="2">
+      No
+    </label>
+	</div>
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="pitch">Pitch</label>
+  <label class="col-md-4 control-label" for="pitch">What your idea? Pitch it. Who is it for? What will they learn? What would someone google to find it?</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="pitch" name="pitch" placeholder="Feel free to write in markdown if you know the language. It will save the editor in chief time and will increase your pitch's potental to be approved as this website uses Markdown"></textarea>
+    <textarea class="form-control" id="pitch" name="pitch">Markdown Supported</textarea>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Are you hoping to promote something?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      No, this is purely informative
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Yes, indirectly though
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="3">
+      Yes i am promoting something
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Anything else you would like to add?</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea"></textarea>
   </div>
 </div>
 
@@ -89,7 +132,7 @@ A great feature pitch for _TechWit Ke_ does three things: it gives the scope of 
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit"></label>
   <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-default">Submit Pitch</button>
+    <button id="submit" name="submit" class="btn btn-primary">Submit Pitch</button>
   </div>
 </div>
 
