@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <article class="page type-page status-publish hentry">
+	
 	<header class="entry-header has-text-align-center header-footer-group">
 		<div class="entry-header-inner section-inner medium">
 			<h1 class="entry-title">{{ .Params.name }}</h1>
@@ -9,14 +10,13 @@
 
     <figure class="featured-media">
     <div class="featured-media-inner section-inner medium">
-      <img src="{{ .Params.photo | absURL }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ .Params.name }}" sizes="(max-width: 1200px) 100vw, 1200px">
+      <img src="{{ .Params.photo }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ .Params.name }}" sizes="(max-width: 1200px) 100vw, 1200px">
     </div><!-- .featured-media-inner -->
   </figure><!-- .featured-media -->
     
     
-<div class="post-inner thin">
+<div class="post-inner thin has-text-align-center">
 		<div class="entry-content">
-            <h2>Bio</h2>
 			{{ .Content }}
             {{ with .Params.twitter }}<p><a href="https://twitter.com/{{ substr . 1 }}">Follow {{ $.Params.name }} on Twitter</a></p>{{ end }}
 		</div>
@@ -24,6 +24,7 @@
 
 
 <h2>Articles</h2>
+	<div class="wp-block-columns columns alignwide">
 {{ range .Data.Pages }}
         <div class="column">
           <div class="wp-block-group">
