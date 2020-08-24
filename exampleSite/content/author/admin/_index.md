@@ -1,6 +1,6 @@
 +++
 name = "Admin"
-photo = "/images/stephenajulu.webp"
+photo = "/images/favicon.png"
 twitter = "@techwitke"
 +++
 
