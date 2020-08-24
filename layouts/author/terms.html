@@ -16,13 +16,13 @@
 
   <p class="has-text-align-center aligncenter" align="center">Meet the awesome people working and writing here at TechWit Ke</p>
   
-<ul class="has-text-align-center aligncenter" align="center" style="list-style-type: none;">
+<ul class="has-text-align-center aligncenter" align="center">
 <div class="wp-block-columns columns alignwide">
         {{ range .Data.Pages }}
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
-              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.photo |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Params.name }}</h3></a>
               <p>{{ .Params.position }}</p>
             </div>
