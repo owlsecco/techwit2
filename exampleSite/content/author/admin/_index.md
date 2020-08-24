@@ -2,6 +2,7 @@
 name = "Admin"
 photo = "/images/favicon.png"
 twitter = "@techwitke"
+title = "Admin"
 +++
 
 Hi there! 
