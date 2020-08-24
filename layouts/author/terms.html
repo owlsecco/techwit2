@@ -18,9 +18,7 @@
 
 <div class="has-text-align-center aligncenter" align="center">
         {{ range .Data.Pages }}
-              <ul style="list-style-type:none;">
-		      <li><p>{{ .Params.position }}: <a href="{{ .Permalink }}"> {{ .Params.name }}</a></p></li>
-	      </ul>
+		      <p class="has-text-align-center aligncenter" align="center">{{ .Params.position }}: <a href="{{ .Permalink }}"> {{ .Params.name }}</a></p>
         {{ end }}
       </div>
 	
