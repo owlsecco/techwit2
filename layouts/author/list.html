@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <article class="page type-page status-publish hentry">
 	
 	<header class="entry-header has-text-align-center header-footer-group">
@@ -19,6 +20,8 @@
 		</div>
 	</div>
 	
+<p><a href="https://twitter.com/{{ .Params.twitter }}">Follow {{ .Params.name }} on Twitter</a></p>
+	
 	<div class="post-inner thin">
     <div class="entry-content">
       <div class="wp-block-group alignwide">
@@ -35,15 +38,12 @@
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
               <p>{{ .PublishDate.Format "Monday, January 6, 2006"}}</p>
-              <!--<div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
-                  href="{{ .Permalink }}">Read This Article</a></div>-->
             </div>
           </div>
         </div>
         {{ end }}
       </div>
 	
-	
-	
 </article>
+		
 {{ end }}
