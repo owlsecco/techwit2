@@ -1,7 +1,11 @@
 +++
 name = "Admin"
 photo = "/images/favicon.png"
-twitter = "@techwitke"
+twitter = "techwitke"
+facebook = "techwitke"
+instagram = "techwitke"
+linkedin = "company/techwitke"
+email = "techwit.ke@gmail.com"
 title = "Admin"
 +++
 
