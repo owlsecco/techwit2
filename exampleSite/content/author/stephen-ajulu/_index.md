@@ -3,5 +3,4 @@ name: Stephen Ajulu
 photo: '/images/author.webp'
 twitter: @stephenajulu
 ---
-Ursula Kroeber Le Guin (October 21, 1929 – January 22, 2018) was an American
-novelist. The New York Times described her as “America’s greatest  science fiction writer”, although she said that she would prefer to be known as an “American novelist”.
+Hi there! My Name is Stephen Ajulu. I am a Front End Web Developer, Graphic Designer, Content Creator and I.T/Cybersecurity Consultant. Want to contact me? → ajulu[at]stephenajulu.com Like, Share, Comment and Subscribe to TechWit! 😉 [Learn More](https://stephenajulu.com)
