@@ -1,6 +1,6 @@
 +++
 name = "Stephen Ajulu"
-photo = "images/author.webp"
+photo = "/images/author.webp"
 twitter = "@stephenajulu"
 +++
 
