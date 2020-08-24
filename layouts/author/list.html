@@ -9,17 +9,17 @@
 
     <figure class="featured-media">
     <div class="featured-media-inner section-inner medium">
-      <img height="300" src="{{ .Params.photo }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ .Params.name }}" sizes="(max-width: 400px) 100vw, 400px">
+      <img height="300px" width="400px" src="{{ .Params.photo }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ .Params.name }}" sizes="(max-width: 400px) 100vw, 400px">
     </div><!-- .featured-media-inner -->
   </figure><!-- .featured-media -->
     
 <div class="post-inner thin has-text-align-center">
 		<div class="entry-content">
 			{{ .Content }}
-            {{ with .Params.twitter }}<p><a href="https://twitter.com/{{ substr . 1 }}">Follow {{ $.Params.name }} on Twitter</a></p>{{ end }}
 		</div>
 	</div>
 	
+	<div class="has-text-align-center aligncenter" align="center">
 <ul class="social-menu reset-list-style social-icons fill-children-current-color aligncenter has-text-align-center" align="center">
   {{ with .Params.facebook }}
   <li id="menu-item-1" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a
@@ -71,6 +71,7 @@
       </svg></a></li>
   {{ end }}
 </ul>
+	</div>
 	
 	<div class="post-inner thin">
     <div class="entry-content">
