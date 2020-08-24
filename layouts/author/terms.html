@@ -19,8 +19,7 @@
 	<li>
 <div class="has-text-align-center aligncenter" align="center">
         {{ range .Data.Pages }}
-              <a href="{{ .Permalink }}"><h3>{{ .Params.name }}</h3></a>
-              <p>{{ .Params.position }}</p>
+              <p>{{ .Params.position }}: <a href="{{ .Permalink }}">{{ .Params.name }}</a></p>   
         {{ end }}
       </div>
 	</li>
