@@ -7,7 +7,7 @@ instagram = "techwitke"
 linkedin = "company/techwitke"
 email = "techwit.ke@gmail.com"
 title = "Admin"
-position = "Administrator"
+position = "Administrator and Moderator"
 +++
 
 Hi there! 
