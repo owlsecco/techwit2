@@ -16,20 +16,14 @@
 
   <p class="has-text-align-center aligncenter" align="center">Meet the awesome people working and writing here at TechWit Ke</p>
   
-
+<ul>
 <div class="wp-block-columns columns alignwide">
         {{ range .Data.Pages }}
-        <div class="column">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-              <a href="{{ .Permalink }}"><figure class="wp-block-image"><img width="100" height="300" src="{{ .Params.photo |absURL }}" alt="{{ .Params.name }}" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Params.name }}</h3></a>
               <p>{{ .Params.position }}</p>
-            </div>
-          </div>
-        </div>
         {{ end }}
       </div>
+</ul>
 
 </article>
 		
