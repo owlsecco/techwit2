@@ -9,22 +9,20 @@
   
       <figure class="featured-media">
     <div class="featured-media-inner section-inner medium">
-      <img src="/images/publish.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ .Title }}" sizes="(max-width: 1200px) 100vw, 1200px">
+      <img src="/images/publish.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ .Title }}" sizes="(max-width: 1200px) 100vw, 1200px">
     </div><!-- .featured-media-inner -->
   </figure><!-- .featured-media -->
 
   <p class="has-text-align-center aligncenter" align="center">Meet the awesome people working and writing here at TechWit Ke</p>
   
-<ul>
-	<li>
+
 <div class="has-text-align-center aligncenter" align="center">
         {{ range .Data.Pages }}
-              <p>{{ .Params.position }}: <a href="{{ .Permalink }}">{{ .Params.name }}</a></p>   
+              <ul style="list-style-type:none;">
+		      <li><p>{{ .Params.position }}: <a href="{{ .Permalink }}"> {{ .Params.name }}</a></p></li>
+	      </ul>
         {{ end }}
       </div>
-	</li>
-</ul>
-
 	
 </article>	
 {{ end }}
