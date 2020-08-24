@@ -1,3 +1,4 @@
+{{ define "main" }}
 <h1>{{ .Params.name }}</h1>
 <img src="{{ .Params.photo }}" alt=""/>
 
@@ -17,3 +18,4 @@
     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{ end }}
 </ul>
+{{ end }}
