@@ -1,5 +1,5 @@
 +++
-name = "Stephen Ajulu:
+name = "Stephen Ajulu"
 photo = "images/author.webp"
 twitter = "@stephenajulu"
 +++
