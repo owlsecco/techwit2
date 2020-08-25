@@ -1,0 +1,34 @@
+{{ define "main" }}
+<article class="page type-page status-publish hentry">
+	
+	<header class="entry-header has-text-align-center header-footer-group">
+		<div class="entry-header-inner section-inner medium">
+			<h1 class="entry-title">Authors</h1>
+		</div>
+	</header>
+
+  <h2 class="has-text-align-center aligncenter" align="center">Meet the awesome people working and writing here at TechWit Ke</h2>
+
+<div class="has-text-align-center aligncenter" align="center">
+
+        {{ range .Data.Pages }}
+		      <p class="has-text-align-center aligncenter" align="center">{{ .Params.position }}: <a href="{{ .Permalink }}"> {{ .Params.name }}</a></p>
+		      <br>
+		      
+		      div class="column">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
+              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.photo }}" alt="{{.Params.name }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><h3>{{ .Params.name }}</h3></a>
+              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
+                  href="{{ .Permalink }}">Learn More about {{ .Params.name }}</a></div>
+            </div>
+          </div>
+        </div>
+	
+        {{ end }}
+	
+      </div>
+	
+</article>	
+{{ end }}
