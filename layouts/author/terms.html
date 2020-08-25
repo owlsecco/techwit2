@@ -12,7 +12,7 @@
 <div class="has-text-align-center aligncenter" align="center">
 
         {{ range .Data.Pages }}
-		      <p class="has-text-align-center aligncenter" align="center">{{ .Params.position }}: <a href="{{ .Permalink }}"> {{ .Params.name }}</a></p>
+		      
 		      <br>
 		      
 		      <div class="column">
@@ -20,6 +20,7 @@
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.photo }}" alt="{{.Params.name }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Params.name }}</h3></a>
+	      <p>{{ .Params.position }}</p>
               <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
                   href="{{ .Permalink }}">Learn More about {{ .Params.name }}</a></div>
             </div>
