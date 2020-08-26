@@ -3,11 +3,11 @@
 	
 	<header class="entry-header has-text-align-center header-footer-group">
 		<div class="entry-header-inner section-inner medium">
-			<h1 class="entry-title">Authors</h1>
+			<h2 class="entry-title">Authors</h2>
 		</div>
 	</header>
 
-  <h2 class="has-text-align-center aligncenter" align="center">Meet the awesome people working and writing here at TechWit Ke</h2>
+  <h3 class="has-text-align-center aligncenter" align="center">Meet the awesome people. <br> Who work and write here at TechWit Ke</h3>
 
 <div class="has-text-align-center aligncenter" align="center">
 
@@ -16,15 +16,14 @@
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
-              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img width="200" height="400" src="{{ .Params.photo }}" alt="{{ .Params.name }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull"><img width="200" height="400" src="{{ .Params.photo }}" alt="{{ .Params.name }}" class="wp-image-37" /></figure></a>
               <a href="{{ .Permalink }}"><h3>{{ .Params.name }}</h3></a>
 	      <p>{{ .Params.position }}</p>
-              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
-                  href="{{ .Permalink }}">Learn More About {{ .Params.name }}</a></div>
             </div>
           </div>
         </div>
         {{ end }}
+		
       </div>  
 
 </article>	
