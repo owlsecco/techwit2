@@ -3,7 +3,7 @@ author = ["stephenajulu"]
 categories = ["subscription", "subscribe"]
 date = 2020-08-20T21:00:00Z
 description = "There are numerous of ways to stay up to date with new and updated content here at TechWit Ke."
-image = ""
+image = "/images/subscribe.svg"
 tags = ["feed", "newsletter", "subscription options", "subscription", "subscribe"]
 title = "Subscription Options"
 

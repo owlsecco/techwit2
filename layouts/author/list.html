@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<article class="page type-page status-publish hentry">
+	
+	<header class="entry-header has-text-align-center header-footer-group">
+		<div class="entry-header-inner section-inner medium">
+			<h1 class="entry-title">{{ .Params.name }}</h1>
+		</div>
+	</header>
+
+    <figure class="featured-media">
+    <div class="featured-media-inner section-inner medium">
+      <img height="300px" width="400px" src="{{ .Params.photo }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ .Params.name }}" sizes="(max-width: 400px) 100vw, 400px">
+    </div><!-- .featured-media-inner -->
+  </figure><!-- .featured-media -->
+    
+	<h3 class="has-text-align-center aligncenter" align="center">{{ .Params.position }}</h3>
+	
+<div class="post-inner thin has-text-align-center">
+		<div class="entry-content">
+			{{ .Content }}
+		</div>
+	</div>
+	
+<p align="center" class="has-text-align-center aligncenter"><a href="https://twitter.com/{{ .Params.twitter }}">Follow {{ .Params.name }} on Twitter</a></p>
+	
+	<div class="post-inner thin">
+    <div class="entry-content">
+      <div class="wp-block-group alignwide">
+        <div class="wp-block-group__inner-container">
+          <h2 class="has-text-align-center" id="writtenby">Articles/Pages Written by {{ .Params.name }}</h2>
+        </div>
+      </div>
+
+      <div class="wp-block-columns columns alignwide">
+        {{ range .Data.Pages }}
+        <div class="column">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
+              <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+              <p>{{ .PublishDate.Format "Monday, January 6, 2006"}}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+	
+</article>
+		
+{{ end }}
