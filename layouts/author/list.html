@@ -23,16 +23,12 @@
 	</div>
 	
 <p align="center" class="has-text-align-center aligncenter">
-	<a href="https://twitter.com/{{ .Params.twitter }}">Follow @{{ .Params.twitter }} on Twitter</a>
+	<a href="https://twitter.com/{{ .Params.twitter }}" style="color:#1DA1F2">Follow @{{ .Params.twitter }} on Twitter</a>
 	</p>
-	
-	<div class="post-inner thin">
-    <div class="entry-content">
+
       <div class="wp-block-group alignwide">
         <div class="wp-block-group__inner-container">
           <h2 class="has-text-align-center" id="writtenby">Articles/Pages Written by {{ .Params.name }}</h2>
-        </div>
-      </div>
 
       <div class="wp-block-columns columns alignwide">
         {{ range .Data.Pages }}
