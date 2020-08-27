@@ -70,16 +70,12 @@
       {{ .Content }}
     </div><!-- .entry-content -->
   </div><!-- .post-inner -->
-	<!-- Newsletter -->
-	{{partial "newsletterwithform.html" .}}
 	<!-- Share Buttons -->
-	<!--<div class="sharebuttons aligncenter" align="center">
-		<h4 style="color:silver;">Share This</h4>
-		{{ partial "sharebuttons.html" .}}
-	</div> -->
 	<div class="sharebuttons aligncenter thin" align="center">
 		{{ partial "share-buttons.html" .}}
 	</div>
+	<!-- Newsletter -->
+	{{partial "newsletterwithform.html" .}}
 	<!-- Start of Next and Previous Buttons -->
 	    <p align="center"class="aligncenter wp-block-button">
 {{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link" align="left">← Previous</a> {{ end }} &nbsp 
