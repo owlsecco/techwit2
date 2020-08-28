@@ -81,14 +81,11 @@
 	{{partial "simplesharingbuttons.html" .}}
 	</div>
 	
-	
 	<!-- Newsletter -->
 	<div class="embeddable-buttondown-form wp-block-group__inner-container has-text-align-center aligncenter thin">
 	{{partial "newsletterform.html" .}}
 	</div>
-	
-	<!-- Newsletter -->
-	{{partial "newsletterwithform.html" .}}
+
 	<!-- Start of Next and Previous Buttons -->
 	    <p align="center"class="aligncenter wp-block-button">
 {{ if .PrevInSection }} <a href="{{.PrevInSection.Permalink}}" class="wp-block-button__link" align="left">← Previous</a> {{ end }} &nbsp 
