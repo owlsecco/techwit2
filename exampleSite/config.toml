@@ -7,7 +7,7 @@ googleAnalytics = "UA-132349593-10"
 languageCode = "en-us"
 languageName = "En"
 paginate = "10"
-summaryLength = "15"
+summaryLength = "70"
 theme = "twentytwenty"
 title = "TechWit Ke v0.8"
 [markup.goldmark.renderer]
