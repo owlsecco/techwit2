@@ -7,9 +7,9 @@ author:
 categories:
 - visit
 - operations
-- featured
 tags:
 - tags
+- featured
 description: This is meta description
 
 ---
