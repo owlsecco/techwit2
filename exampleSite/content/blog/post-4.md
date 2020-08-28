@@ -9,6 +9,7 @@ categories:
 tags:
 - tour
 - visit
+- featured
 description: This is meta description
 
 ---
