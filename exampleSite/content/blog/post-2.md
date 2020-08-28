@@ -5,9 +5,9 @@ image: images/2020-three-quarters-3.png
 author:
 - Admin
 categories:
-- Visit
 - visit
 - operations
+- featured
 tags:
 - tags
 description: This is meta description
