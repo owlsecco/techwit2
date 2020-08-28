@@ -79,6 +79,11 @@ Images = ["images/hero.webp"]
 author = "Admin"
 description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content."
 image = ["images/hero.webp"]
+[params.staticman]
+ endpoint = "https://techwit-comments.herokuapp.com/v2/entry"
+ username = "stephenajulu"
+ repository = "techwit2"
+ branch = "master"
 [params.banner]
 heading = "Quality Tech Content For All"
 image = "images/bannersmall.webp"
