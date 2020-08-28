@@ -6,7 +6,6 @@
 
 <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
 <a href="{{ .Permalink }}"><h3 align="center">{{ .Title }}</h3></a>
-<p>{{ .Content | truncate 300 }}</p>
 <p>{{ .PublishDate.Format "Monday, January 6, 2006"}}<br>By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize }}" style="text-transform: capitalize;">{{ . }}</a>{{ end }}</p>
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="{{ .Permalink }}">Read This Article +</a></div>
 
