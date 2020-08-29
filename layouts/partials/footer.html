@@ -1,14 +1,14 @@
-<div class="footer-nav-widgets-wrapper header-footer-group">
-  <div class="footer-inner section-inner">
-    <div class="footer-top has-social-menu" align="center">
-      <nav aria-label="Social links" class="footer-social-wrapper aligncenter has-text-align-center" align="center">
+<div class="footer-nav-widgets-wrapper header-footer-group aligncenter has-text-align-center" align="center">
+  <div class="footer-inner section-inner has-text-align-center" align="center">
+    <div class="footer-top has-social-menu aligncenter has-text-align-center" align="center">
+      <nav aria-label="Social links" class="footer-social-wrapper">
         {{partial "social.html" .}}
       </nav>
     </div><!-- .footer-top -->
     {{ with .Site.Params.footer }}
     <aside class="footer-widgets-outer-wrapper" role="complementary">
       <div class="footer-widgets-wrapper">
-        <div class="footer-widgets column-one grid-item">
+        <div class="footer-widgets">
           <div class="widget widget_text">
             <div class="widget-content">
               <h2 class="widget-title subheading heading-size-3">{{ .title | markdownify }}</h2>
@@ -31,7 +31,7 @@
           </div>
         </div>-->
         
-        <div class="footer-widgets column-two grid-item">
+        <div class="footer-widgets">
           <div class="widget widget_text">
             <div class="widget-content">
               <h2 class="widget-title subheading heading-size-3 has-text-align-center" align="center">Other Nav</h2>
@@ -79,17 +79,6 @@
 <script>
   var indexURL = {{"index.json" | absURL}}
 </script>
-
-<pwaupdate></pwaupdate>
-
-<!--
-<script type="module">
-import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-const el = document.createElement('pwa-update');
-document.body.appendChild(el);
-</script>
-<pwaupdate></pwaupdate>
--->
   
 <!-- jquery -->
 {{ $jquery := resources.Get "js/jquery.min.js" | minify}}
