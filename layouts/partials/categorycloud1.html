@@ -1,5 +1,16 @@
-<div class="wp-block-group wp-block-group__inner-container thin has-text-align-center aligncenter" align="center" style="width:500px;">
+<style>
+   .categorycloud {
+      text-align: center;
+   }
+   .categorycloud .categorieslist {
+      display: inline-block;
+   }
+</style>
+
+<div class="wp-block-group wp-block-group__inner-container thin has-text-align-center aligncenter" align="center">
+   <ul class="categorycloud">
 {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-   ●&nbsp;<a href="{{.Permalink}}" style="text-transform: capitalize;">{{.Title}}</a>&nbsp;
+      <li class="categorieslist"><a href="{{.Permalink}}" style="text-transform: capitalize;">{{.Title}}</a></li>
 {{end}}
+   </ul>
 </div>
