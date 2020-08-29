@@ -1,5 +1,5 @@
 <div class="wp-block-group wp-block-group__inner-container thin has-text-align-center aligncenter" align="center" style="width:500px;">
 {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-   <a href="{{.Permalink}}" style="text-transform: capitalize;">{{.Title}}</a>
+   ●&nbsp;<a href="{{.Permalink}}" style="text-transform: capitalize;">{{.Title}}</a>&nbsp;
 {{end}}
 </div>
