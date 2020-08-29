@@ -10,6 +10,10 @@
     color: #cd2653;
     border-radius: 3%;
   }
+	
+  input:placeholder-shown {
+   font-style: italic;
+}
 </style>
 
 <form action="https://buttondown.email/api/emails/embed-subscribe/techwitke" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/techwitke', 'popupwindow')" class="newsletterform" style="width: 350px;">
@@ -24,7 +28,7 @@
 <div class="form-group">
   <!--<label class="col-md-4 control-label" for="email">Your Email Address</label>-->
   <div class="col-md-4">
-  <input id="email" name="email" type="text" for="bd-email" placeholder="Your E-mail" class="form-control input-md aligncenter" required="">
+  <input id="email" name="email" type="text" for="bd-email" placeholder="Your email" class="form-control input-md aligncenter" required="">
   <input type="hidden" value="1" name="embed" align="center"></input>  
   </div>
 </div>
