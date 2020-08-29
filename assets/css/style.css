@@ -6487,10 +6487,10 @@ a.to-the-top>* {
         background: #010101;
     }
     .singular .featured-media::before{
-        background-color: #000;
+        background-color: #121212;
     }
     .singular .entry-header {
-        background-color: #000;
+        background-color: #121212;
     }
     .header-footer-group, body:not(.overlay-header) #site-header .toggle, .menu-modal .toggle {
         color: #fff;
@@ -6499,13 +6499,13 @@ a.to-the-top>* {
         background: rgba(255,255,255,0.2);
     }
     .search-modal-inner {
-        background: #000;
+        background: #121212;
     }
     .menu-modal.active {
         background: rgba(255, 255, 255, 0.2);
     }
     .menu-modal-inner {
-        background: #000;
+        background: #121212;
     }
     .header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .menu-modal nav *, .footer-widgets-outer-wrapper, .footer-top {
         border-color: #70674e;
@@ -6538,7 +6538,7 @@ a.to-the-top>* {
         background-color: #010101;
     }
     .archive-header, .archive-title, .vcard{
-	background-color: #000;
+	background-color: #121212;
 	color: #fff
 	}
 }
