@@ -1,31 +1,57 @@
-<div class="footer-nav-widgets-wrapper header-footer-group aligncenter has-text-align-center" align="center">
-  <div class="footer-inner section-inner has-text-align-center" align="center">
-    <div class="footer-top has-social-menu aligncenter has-text-align-center" align="center">
-      <nav aria-label="Social links" class="footer-social-wrapper">
+<div class="footer-nav-widgets-wrapper header-footer-group">
+  <div class="footer-inner section-inner">
+    <div class="footer-top has-social-menu" align="center">
+      <nav aria-label="Social links" class="footer-social-wrapper aligncenter has-text-align-center" align="center">
         {{partial "social.html" .}}
       </nav>
     </div><!-- .footer-top -->
-    <aside class="footer-widgets-outer-wrapper" role="complementary">
-          {{partial "categorycloud1.html" .}}
     {{ with .Site.Params.footer }}
-      <div class="aligncenter has-text-align-center" align="center">
-              <h2>{{ .title | markdownify }}</h2>
-              <div>
+    <aside class="footer-widgets-outer-wrapper" role="complementary">
+      <div class="footer-widgets-wrapper">
+        <div class="footer-widgets column-one grid-item">
+          <div class="widget widget_text">
+            <div class="widget-content">
+              <h2 class="widget-title subheading heading-size-3">{{ .title | markdownify }}</h2>
+              <div class="textwidget">
                 <p>{{ .content | markdownify }}</p>
               </div>
             </div>
+          </div>
+        </div>
+        <!--<div class="footer-widgets column-two grid-item">
+          <div class="widget widget_text">
+            <div class="widget-content">
+              <h2 class="widget-title subheading heading-size-3">Contact Us</h2>
+              <div class="textwidget">
+                <p><strong>Email:</strong><br/> {{ .email | markdownify }}</p>
+                <p><strong>Tel:</strong><br/>{{ .telephone | markdownify }}</p>
+                <p><strong>Postal:</strong><br/>{{ .postal | markdownify }}</p>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        
+        <div class="footer-widgets column-two grid-item">
+          <div class="widget widget_text">
+            <div class="widget-content">
               <h2 class="widget-title subheading heading-size-3 has-text-align-center" align="center">Other Nav</h2>
               <div class="textwidget">
-                <p align="center" class="has-text-align-center"><a href="/privacy-policy">Privacy Policy</a>&nbsp; &nbsp;
-                  <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp; &nbsp;
-                  <a href="/guest-posting">Guest Posting</a>&nbsp; &nbsp;
-                  <a href="/sponsered-posting">Sponsered Posting</a>&nbsp; &nbsp;
-                  <a href="/advertise">Advertise</a>&nbsp; &nbsp;
-                  <a href="/donate">Donate</a>&nbsp; &nbsp;
-                  <a href="/subscription-options">Subscribe</a>&nbsp; &nbsp;
+                <p  align="center" class="has-text-align-center">
+                  <a href="/privacy-policy">Privacy Policy</a><br />
+                  <a href="/terms-and-conditions">Terms and Conditions</a><br />
+                  <a href="/guest-posting">Guest Posting</a><br />
+                  <a href="/sponsered-posting">Sponsered Posting</a><br />
+                  <a href="/advertise">Advertise</a><br />
+                  <a href="/donate">Donate</a><br />
+                  <a href="/subscription-options">Subscribe</a><br />
                   <a href="https://links.collect.chat/5f295075cac8ec33b6a2c151">Chat</a>
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- .footer-widgets-wrapper -->
     </aside><!-- .footer-widgets-outer-wrapper -->
     {{ end }}
 
