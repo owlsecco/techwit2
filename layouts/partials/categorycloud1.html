@@ -1,5 +1,5 @@
 <div id="theme-categoriescloud" class="col-sm-12" style="margin-bottom: 15px;">
-{{ $categories := $.Site.Taxonomies.Categories.ByCount }}
+{{ $categories := .Site.Taxonomies.Categories.ByCount }}
 {{ $v1 := where $categories "Count" ">=" 3 }}
 {{ $v2 := where $v1 "Term" "not in" (slice "hugo" "categories" "rss") }}
 {{ range $v2 }}
