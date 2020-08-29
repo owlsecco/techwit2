@@ -1,4 +1,11 @@
-<div class="wp-block-columns columns alignwide">
+<ul>
+    {{ range $key, $value := .Site.Taxonomies.Categories }}
+    <li>
+        <a href="/categories/{{ $key | urlize }}">{{ $key | title }}</a>
+    </li>
+    {{ end }}
+</ul>
+<!--<div class="wp-block-columns columns alignwide">
         {{ range .Site.Taxonomies.Categories }}
         <div class="column">
           <div class="wp-block-group">
@@ -9,7 +16,7 @@
         </div>
         {{ end }}
       </div>
-<!--<div id="theme-tagcloud" class="col-sm-12" style="margin-bottom: 15px;">
+<div id="theme-tagcloud" class="col-sm-12" style="margin-bottom: 15px;">
 {{ $tags := $.Site.Taxonomies.tags.ByCount }}
 {{ $v1 := where $tags "Count" ">=" 3 }}
 {{ $v2 := where $v1 "Term" "not in" (slice "hugo" "tags" "rss") }}
