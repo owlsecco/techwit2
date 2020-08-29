@@ -1,4 +1,34 @@
-<form width="100%" action="https://buttondown.email/api/emails/embed-subscribe/techwitke" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/techwitke', 'popupwindow')" style="background: rgb(2,0,36);background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(205,38,83,1) 100%);color: white;width: 350px;">
+<style>
+  @media (prefers-color-scheme: light) {
+	.newsletterform {
+    background: rgb(205,38,83);
+    background: linear-gradient(0deg, rgba(205,38,83,1) 0%, rgba(255,255,255,1) 100%);
+		color: black;
+    width: 350px;
+	}
+  .newsletterbutton {
+    background-color:white;
+    color:#cd2653;
+    border-radius:3%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+	.newsletterform {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(205,38,83,1) 100%);
+    color: white;
+    width: 350px;
+	}
+  .newsletterbutton {
+    background-color:white;
+    color:#cd2653;
+    border-radius:3%;
+  }
+}
+</style>
+
+<form width="100%" action="https://buttondown.email/api/emails/embed-subscribe/techwitke" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/techwitke', 'popupwindow')" class="newsletterform">
 <fieldset>
 
 <!-- Form Name -->
@@ -19,7 +49,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit"></label>
   <div class="col-md-4">
-    <button id="submit" name="submit" style="background-color:white;color:#cd2653;border-radius:3%;">Sign Me Up!</button>
+    <button id="submit" name="submit" class="newsletterbutton">Sign Me Up!</button>
   </div>
 </div>
 
