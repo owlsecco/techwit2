@@ -6484,7 +6484,7 @@ a.to-the-top>* {
         color: #f5efe0;
     }
     #site-header {
-        background: #000;
+        background: #020024;
     }
     .singular .featured-media::before{
         background-color: #000;
@@ -6535,7 +6535,7 @@ a.to-the-top>* {
         color: #9a9a9a;
     }
     .footer-nav-widgets-wrapper, #site-footer {
-        background-color: #000;
+        background-color: #020024;
     }
     .archive-header, .archive-title, .vcard{
 	background-color: #000;
