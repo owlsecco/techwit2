@@ -6477,7 +6477,7 @@ a.to-the-top>* {
 }
 @media (prefers-color-scheme: dark) {
     body {
-        background: #060606; /* Original color #040404 */
+        background: #040404; /* Original color #040404 */
         color: #f5efe0;
     }
     body, .entry-title a, :root .has-primary-color {
@@ -6487,10 +6487,10 @@ a.to-the-top>* {
         background: #000; /* Original color #000*/
     }
     .singular .featured-media::before{
-        background-color: #060606; /* Original color #000*/
+        background-color: #040404; /* Original color #000*/
     }
     .singular .entry-header {
-        background-color: #060606; /* Original color #000*/
+        background-color: #040404; /* Original color #000*/
     }
     .header-footer-group, body:not(.overlay-header) #site-header .toggle, .menu-modal .toggle {
         color: #fff;
@@ -6499,13 +6499,13 @@ a.to-the-top>* {
         background: rgba(255,255,255,0.2);
     }
     .search-modal-inner {
-        background: #060606; /* Original color #000*/
+        background: #040404; /* Original color #000*/
     }
     .menu-modal.active {
         background: rgba(255, 255, 255, 0.2);
     }
     .menu-modal-inner {
-        background: #060606; /* Original color #000*/
+        background: #040404; /* Original color #000*/
     }
     .header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .menu-modal nav *, .footer-widgets-outer-wrapper, .footer-top {
         border-color: #70674e;
@@ -6538,7 +6538,7 @@ a.to-the-top>* {
         background-color: #000; /* Original color #000*/
     }
     .archive-header, .archive-title, .vcard{
-	background-color: #060606; /* Original color #000*/
+	background-color: #040404; /* Original color #000*/
 	color: #fff
 	}
 }
