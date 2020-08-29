@@ -1,36 +1,5 @@
+<div class="wp-block-group wp-block-group__inner-container thin has-text-align-center aligncenter" align="center" style="width:500px;">
 {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-   <a href="{{.Permalink}}">{{.Title}}</a>
+   <a href="{{.Permalink}}" style="text-transform: capitalize;">{{.Title}}</a>
 {{end}}
-
-
-
-
-<!--<ul>
-    {{ range $key, $value := .Site.Params.Categories }}
-    <li>
-        <a href="/categories/{{ $key | urlize }}">{{ $key | title }}</a>
-    </li>
-    {{ end }}
-</ul>
-<div class="wp-block-columns columns alignwide">
-        {{ range .Site.Taxonomies.Categories }}
-        <div class="column">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-              <a href="{{ .Permalink }}"><p>{{ .Title }}</p></a>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-<div id="theme-tagcloud" class="col-sm-12" style="margin-bottom: 15px;">
-{{ $tags := $.Site.Taxonomies.tags.ByCount }}
-{{ $v1 := where $tags "Count" ">=" 3 }}
-{{ $v2 := where $v1 "Term" "not in" (slice "hugo" "tags" "rss") }}
-{{ range $v2 }}
-{{ if .Term }}
-{{ $tagURL := printf "tags/%s" .Term | relURL }}
-<a href="{{ $tagURL }}" class="btn btn-default" role="button" style="text-transform: uppercase; font-size: 12px; padding-right: 5px; padding-left: 5px;" >{{ .Term }} <span class="badge">({{ .Count }})</span></a>
-{{ end }}
-{{ end }}
-</div>-->
+</div>
