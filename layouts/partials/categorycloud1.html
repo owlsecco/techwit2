@@ -1,5 +1,5 @@
 <ul>
-    {{ range $key, $value := .Site.Taxonomies.Categories }}
+    {{ range $key, $value := .Site.Params.Categories }}
     <li>
         <a href="/categories/{{ $key | urlize }}">{{ $key | title }}</a>
     </li>
