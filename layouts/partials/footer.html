@@ -7,7 +7,7 @@
     </div><!-- .footer-top -->
     {{ with .Site.Params.footer }}
     <aside class="footer-widgets-outer-wrapper" role="complementary">
-      <div class="footer-widgets-wrapper">
+      <div class="footer-widgets-wrapper aligncenter has-text-align-center" align="center">
         <div class="footer-widgets column-one grid-item">
           <div class="widget widget_text">
             <div class="widget-content">
@@ -18,19 +18,7 @@
             </div>
           </div>
         </div>
-        <!--<div class="footer-widgets column-two grid-item">
-          <div class="widget widget_text">
-            <div class="widget-content">
-              <h2 class="widget-title subheading heading-size-3">Contact Us</h2>
-              <div class="textwidget">
-                <p><strong>Email:</strong><br/> {{ .email | markdownify }}</p>
-                <p><strong>Tel:</strong><br/>{{ .telephone | markdownify }}</p>
-                <p><strong>Postal:</strong><br/>{{ .postal | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-        </div>-->
-        
+
         <div class="footer-widgets column-two grid-item">
           <div class="widget widget_text">
             <div class="widget-content">
@@ -54,7 +42,7 @@
       </div><!-- .footer-widgets-wrapper -->
     </aside><!-- .footer-widgets-outer-wrapper -->
     {{ end }}
-
+{{partial "categorycloud1.html" .}}
   </div><!-- .footer-inner -->
 
 </div><!-- .footer-nav-widgets-wrapper -->
