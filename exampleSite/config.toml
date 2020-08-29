@@ -14,6 +14,10 @@ title = "TechWit Ke v0.8"
 includeFields = ".*"
 [markup.goldmark.renderer]
 unsafe = true
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
 [[menu.desktop]]
 URL = "blog"
 name = "Blog"
