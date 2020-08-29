@@ -98,7 +98,7 @@ enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
 content = "__TechWit Ke__ is an Informative Tech Magazine committed to delivering quality and concise content that can be relied upon in keeping you updated, helping you build a project, and/or ensure you are well versed in all matters Tech, Cyber Security, Law, Business and Development.\n<br>\nPowered by [Hugo](https://gohugo.io), [Forestry CMS](https://forestry.io), [Netlify](https://netlify.com) & [GitHub](https://github.com)"
-copyright = "Copyright &copy; 2020 [TechWit Ke](https://techwit2.netlify.app). All Rights Reserved.  "
+copyright = "Copyright &copy; 2020 [TechWit Ke](https://techwit2.netlify.app). "
 email = "[techwit.ke@gmail.com](mailto:techwit.ke@gmail.com?cc=alunje73@gmail.com&subject=From%20Blog%20Footer)"
 postal = "P.O.Box 0740128010 - 00100<br>Nairobi, Kenya"
 telephone = "[+ 254 726 024 210](tel:+254726024210)"
