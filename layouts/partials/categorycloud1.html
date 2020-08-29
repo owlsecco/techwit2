@@ -1,11 +1,18 @@
-<ul>
+{{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+   <a href="{{.Permalink}}">{{.Title}}</a>
+{{end}}
+
+
+
+
+<!--<ul>
     {{ range $key, $value := .Site.Params.Categories }}
     <li>
         <a href="/categories/{{ $key | urlize }}">{{ $key | title }}</a>
     </li>
     {{ end }}
 </ul>
-<!--<div class="wp-block-columns columns alignwide">
+<div class="wp-block-columns columns alignwide">
         {{ range .Site.Taxonomies.Categories }}
         <div class="column">
           <div class="wp-block-group">
