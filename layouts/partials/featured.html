@@ -1,18 +1,20 @@
 <div align="center" class="aligncenter has-text-align-center">
-  <h3>This Week's Featured Article</h3>
-<div class="wp-block-column alignwide">
-                {{ range first 1 .Site.Taxonomies.tags.featured }}
-        <div>
-          <div>
+  <h3>Featured Articles</h3>
+  <div class="wp-block-columns columns alignwide">
+                {{ range first 2 .Site.Taxonomies.tags.featured }}
+        <div class="column">
+          <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-              <a href="{{ .Permalink }}"><h3 align="center">{{ .Title }}</h3></a>
-              <p>{{ .Content | truncate 300 }}</p>
+              <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
               <p>{{ .PublishDate.Format "Monday, January 6, 2006"}}<br>By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize }}" style="text-transform: capitalize;">{{ . }}</a>{{ end }}</p>
-              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="{{ .Permalink }}">Read This Article +</a></div>
+              <p>{{ .Content | truncate 250 }}</p>
+              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
+                  href="{{ .Permalink }}">Read The Full Story +</a></div>
             </div>
           </div>
         </div>
         {{ end }}
       </div>
+</div>
 </div>
