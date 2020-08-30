@@ -48,6 +48,8 @@
       <div class="wp-block-button aligncenter"><a class="wp-block-button__link"
                   href="blog">Read More Articles 👉</a></div>
       
+            {{partial "featured.html" .}}
+      
 <!--
       <figure class="wp-block-image alignfull size-full"><img src="images/2020-landscape-2.png" alt=""
           class="wp-image-37" />
@@ -84,8 +86,6 @@
       </div>
       {{ end }}
       {{ end }}
-
-      {{partial "featured.html" .}}
       
       {{ if .Site.Params.gallery.enable }}
       {{ with .Site.Params.gallery }}
