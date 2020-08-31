@@ -14,6 +14,10 @@ title = "TechWit Ke v0.8"
 includeFields = ".*"
 [markup.goldmark.renderer]
 unsafe = true
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
 [[menu.desktop]]
 URL = "blog"
 name = "Blog"
@@ -77,13 +81,13 @@ mediaType = "application/json"
 [outputs]
 home = ["HTML", "RSS", "JSON", "Feed"]
 [params]
-Images = ["images/header5.webp"]
+Images = ["images/hero.webp"]
 author = "Admin"
 description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content."
-image = ["images/header5.webp"]
+image = ["images/hero.webp"]
 [params.banner]
-heading = "Tech, Cybersecurity, Development, Science and More"
-image = "images/rsz_1header5.webp"
+heading = "Tech, Cybersecurity, Development, Science, Business & More"
+image = "images/ rsz_header5.webp"
 [params.blog]
 heading = "Our Latest Articles"
 [params.call_to_action]
@@ -93,8 +97,8 @@ content = "Sign up and stay up to date by receiving quality content such as tips
 enable = true
 title = "Sign Up To Our Newsletter"
 [params.footer]
-content = "__TechWit Ke__ is an Informative Tech Blog committed to delivering quality content to keep you updated and well informed. We make sure articles are easy to understand, clear and concise requiring little to no prior knowledge.\nGet Tips, Tricks, Tutorials, Reviews, News, Offers and More at TechWit Ke.\n<br>\nProudly Powered by [Hugo](https://gohugo.io), [Forestry CMS](https://forestry.io), [Netlify](https://netlify.com), [GitHub](https://github.com) and [Amazing People](https://techwit2.netlify.app/author)\n"
-copyright = "Copyright &copy; 2020 [TechWit Ke](https://techwit2.netlify.app). All Rights Reserved.  "
+content = "__TechWit Ke__ is an Informative Tech Magazine committed to delivering quality, concise and easy to understand content that can be relied upon for the purposes of keeping you updated, helping you build a project, and making sure you are well informed.\n<br>\nProudly Powered by [Hugo](https://gohugo.io), [Forestry CMS](https://forestry.io), [Netlify](https://netlify.com) & [GitHub](https://github.com)"
+copyright = "&copy; 2020 [TechWit Ke](https://techwit2.netlify.app). All Rights Reserved.  "
 email = "[techwit.ke@gmail.com](mailto:techwit.ke@gmail.com?cc=alunje73@gmail.com&subject=From%20Blog%20Footer)"
 postal = "P.O.Box 0740128010 - 00100<br>Nairobi, Kenya"
 telephone = "[+ 254 726 024 210](tel:+254726024210)"
