@@ -112,16 +112,16 @@
 	 <div class="aligncenter has-text-align-center" align="center">
 	<h5>Related Articles</h5>
 	<{{ $related := .Site.RegularPages.Related . }}
-	    {{ range first 4 $related }}
+	    {{ range first 2 $related }}
 	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
 	    {{ end }}
 		 </div>
 	    <!-- Related Content -->
 	  
 	  <!-- More Content -->
-	  <h5>More Articles</h5>
+	  <h5 class="has-text-align-center aligncenter">More Articles</h5>
 	  <div class="wp-block-columns columns alignwide">
-        {{ range first 10 (where .Site.RegularPages "Section" "blog")}}
+        {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
