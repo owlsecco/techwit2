@@ -19,7 +19,7 @@
 <div class="wp-block-group wp-block-group__inner-container thin has-text-align-center aligncenter" align="center">
    <h4>Browse All TechWit Ke Topics</h4>
    <ul class="categorycloud">
-{{range ($.Site.GetPage "taxonomyTerm" "categories").RegularPages }}
+{{range ($.Site.GetPage "taxonomyTerm" "categories").RegularPages "Section" "blog"}}
       <li class="categorieslist"><a href="{{.Permalink}}" style="text-transform: capitalize;">{{.Title}}</a></li>
 {{end}}
    </ul>
