@@ -107,7 +107,7 @@
       </ul><!-- .post-meta -->
 	    
 	
-	    <!-- Related Content -->
+	    <!-- Related Content 
 	  <hr class="styled-separator is-style-wide" aria-hidden="true">
 	 <div class="aligncenter has-text-align-center" align="center">
 	<h5>Related Articles</h5>
@@ -117,7 +117,25 @@
 	    {{ end }}
 		 </div>
 	    <!-- Related Content -->
-	  
+	    
+	    <hr class="styled-separator is-style-wide" aria-hidden="true">
+	    <!-- Related Content -->
+	    	  <h5 class="has-text-align-center aligncenter">More Articles</h5>
+	  <div class="wp-block-columns columns alignwide">
+        	{{ $related := .Site.RegularPages.Related . }}
+	    {{ range first 2 $related }}
+        <div class="column">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
+              <a href="{{ .Permalink }}"><figure class="wp-block-image"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+	    <!-- Related Content -->
+	  <hr class="styled-separator is-style-wide" aria-hidden="true">
 	  <!-- More Content -->
 	  <h5 class="has-text-align-center aligncenter">More Articles</h5>
 	  <div class="wp-block-columns columns alignwide">
