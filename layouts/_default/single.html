@@ -111,7 +111,7 @@
 	  <hr class="styled-separator is-style-wide" aria-hidden="true">
 	 <div class="aligncenter has-text-align-center" align="center">
 	<h5>Related Articles</h5>
-	<{{ $related := .Site.RegularPages.Related . }}
+	{{ $related := .Site.RegularPages.Related . }}
 	    {{ range first 2 $related }}
 	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
 	    {{ end }}
