@@ -105,29 +105,19 @@
             {{end}} </span>
         </li>
       </ul><!-- .post-meta -->
-
+	    
+	<!-- related and more content -->
 	    <div class="wide alignwide alignfull section-inner columns">
 	<hr class="styled-separator is-style-wide" aria-hidden="true">
-	    <!-- Related Content -->
-	 <div class="column-one grid-item wp-block-group" align="left">   
-	<h5>Related Articles</h5>
-	{{ $related := .Site.RegularPages.Related . }}
-	{{ range first 2 $related }}
-	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
-	    {{ end }}
+	    <!-- Related Content --><!-- More Content -->
+	 <div class="column-one grid-item wp-block-group" align="left"> &nbsp; <div class="column-two grid-item wp-block-group" align="right">
+	<h5>Related Articles</h5> &nbsp; <h5>More Articles</h5>
+	{{ range first 2 .Site.RegularPages.Related . }} &nbsp; {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
+	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a> &nbsp; <a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
+	    {{ end }} &nbsp; {{ end }}
+		 </div> &nbsp; </div>
+	    <!-- Related Content --><!-- More Content -->
 	    </div>
-	    <!-- Related Content -->
-	    
-	    	    <!-- More Content -->
-	 <div class="column-two grid-item wp-block-group" align="right">   
-	<h5>More Articles</h5>
-	{{ range first 2 (where .Site.RegularPages "Section" "blog")}}
-	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
-	    {{ end }}
-	    </div>
-	    <!-- More Content -->
-	    </div>
-	    
 
 	    <!-- Disqus Comments with Show Comments Button -->
 	    <hr class="styled-separator is-style-wide" aria-hidden="true">
