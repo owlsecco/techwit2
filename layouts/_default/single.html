@@ -106,25 +106,13 @@
         </li>
       </ul><!-- .post-meta -->
 	    
-	
-	    <!-- Related Content 
-	  <hr class="styled-separator is-style-wide" aria-hidden="true">
-	 <div class="aligncenter has-text-align-center" align="center">
-	<h5>Related Articles</h5>
-	{{ $related := .Site.RegularPages.Related . }}
-	    {{ range first 2 $related }}
-	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
-	    {{ end }}
-		 </div>
 	    <!-- Related Content -->
-	    
-	    <hr class="styled-separator is-style-wide" aria-hidden="true">
-	    <!-- Related Content -->
-	    	  <h5 class="has-text-align-center aligncenter">More Articles</h5>
-	  <div class="wp-block-columns columns alignwide">
-        	{{ $related := .Site.RegularPages.Related . }}
+	    <hr class="styled-separator is-style-wide" aria-hidden="true" width="90%">
+	    <h5 class="has-text-align-center aligncenter">Related Articles</h5>
+	    <div class="wp-block-columns columns alignwide">
+            {{ $related := .Site.RegularPages.Related . }}
 	    {{ range first 2 $related }}
-        <div class="column">
+            <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
               <a href="{{ .Permalink }}"><figure class="wp-block-image"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
@@ -135,22 +123,6 @@
         {{ end }}
       </div>
 	    <!-- Related Content -->
-	  <hr class="styled-separator is-style-wide" aria-hidden="true">
-	  <!-- More Content -->
-	  <h5 class="has-text-align-center aligncenter">More Articles</h5>
-	  <div class="wp-block-columns columns alignwide">
-        {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
-        <div class="column">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-              <a href="{{ .Permalink }}"><figure class="wp-block-image"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-              <a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-	  <!-- More Content -->
 
 	    <!-- Disqus Comments with Show Comments Button -->
 	    <hr class="styled-separator is-style-wide" aria-hidden="true">
