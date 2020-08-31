@@ -111,7 +111,8 @@
 	    <!-- Related Content -->
 	 <div class="column-one grid-item" align="left">   
 	<h5>Related Articles</h5>
-	{{ range first 2 (where .Site.RegularPages.Related .)}}
+	{{ $related := .Site.RegularPages.Related . }}
+	{{ range first 2 $related }}
 	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
 	    {{ end }}
 	    </div>
