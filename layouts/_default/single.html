@@ -72,15 +72,33 @@
   </div><!-- .post-inner -->
 	<!-- Share Buttons -->
 	<div class="sharebuttons aligncenter thin" align="center">
-		<!--{{ partial "share-buttons.html" .}}-->
+		{{ partial "share-buttons.html" .}}
 		<br>
-		{{ partial "share1.html" .}}
+		<!--{{ partial "share1.html" .}}-->
 	</div>
 	
 	<!-- Newsletter -->
-	<div class="embeddable-buttondown-form wp-block-group__inner-container has-text-align-center aligncenter thin">
+	<!--<div class="embeddable-buttondown-form wp-block-group__inner-container has-text-align-center aligncenter thin">
 	{{partial "newsletterform.html" .}}
-	</div>
+	</div>-->
+	
+	<!-- Related Content -->
+	    <hr class="styled-separator is-style-wide" aria-hidden="true" width="17%">
+	    <h5 class="has-text-align-center aligncenter">Related Articles</h5>
+	    <div class="wp-block-columns columns alignwide">
+            {{ $related := .Site.RegularPages.Related . }}
+	    {{ range first 2 $related }}
+            <div class="column">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
+              <a href="{{ .Permalink }}"><figure class="wp-block-image"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+              <a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+<!-- Related Content -->
 
 	<!-- Start of Next and Previous Buttons -->
 	    <p align="center"class="aligncenter wp-block-button">
@@ -105,24 +123,6 @@
             {{end}} </span>
         </li>
       </ul><!-- .post-meta -->
-	    
-<!-- Related Content -->
-	    <hr class="styled-separator is-style-wide" aria-hidden="true" width="17%">
-	    <h5 class="has-text-align-center aligncenter">Related Articles</h5>
-	    <div class="wp-block-columns columns alignwide">
-            {{ $related := .Site.RegularPages.Related . }}
-	    {{ range first 2 $related }}
-            <div class="column">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-              <a href="{{ .Permalink }}"><figure class="wp-block-image"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-              <a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-<!-- Related Content -->
 
 	    <!-- Disqus Comments with Show Comments Button -->
 	    <hr class="styled-separator is-style-wide" aria-hidden="true">
