@@ -83,7 +83,7 @@ description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, C
 image = ["images/header5.webp"]
 [params.banner]
 heading = ""
-image = "images/header5.webp"
+image = "images/rsz_header5.webp"
 [params.blog]
 heading = "Our Latest Articles"
 [params.call_to_action]
