@@ -31,7 +31,7 @@
 </style>
 
 <div class="wp-block-group wp-block-group__inner-container thin has-text-align-center aligncenter" align="center">
-   <h4>Browse All TechWit Ke Topics</h4>
+   <h3>Browse All TechWit Ke Topics</h3>
    <ul class="categorycloud">
 {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages}}
       <li class="categorieslist"><a href="{{.Permalink}}" style="text-transform: capitalize;" class="categorylink">{{.Title}}</a></li>
