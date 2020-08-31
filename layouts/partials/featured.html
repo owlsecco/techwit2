@@ -9,7 +9,7 @@
               <p>{{ .PublishDate.Format "Monday, January 6, 2006"}} &nbsp; &nbsp; By {{ range .Params.Author }}<a href="{{ `author/` | relLangURL }}{{ . | urlize }}" style="text-transform: capitalize;">{{ . }}</a>{{ end }}</p>
               <p>{{ .Content | truncate 250 }}</p>
               <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
-                  href="{{ .Permalink }}">Learn The Full Story +</a></div>
+                  href="{{ .Permalink }}">Read The Article +</a></div>
             </div>
           </div>
         </div>
