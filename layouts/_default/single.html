@@ -106,25 +106,34 @@
         </li>
       </ul><!-- .post-meta -->
 	    
-	    <!-- Related Content -->
-	 <div class="aligncenter" align="left">   
+	    
+	    
+	    <div>
 	<hr class="styled-separator is-style-wide" aria-hidden="true">
+	    <!-- Related Content -->
+	 <div class="column-one grid-item" align="left">   
 	<h5>Related Articles</h5>
-	{{ $related := .Site.RegularPages.Related . }}
-	{{ range first 3 $related }}
+	<!--{{ $related := .Site.RegularPages.Related . }}
+	{{ range first 2 $related }}-->
+	{{ range first 2 (where .Site.RegularPages.Related .)}}
 	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
 	    {{ end }}
 	    </div>
 	    <!-- Related Content -->
 	    	    <!-- More Content -->
-	 <div class="aligncenter" align="right">   
-	<hr class="styled-separator is-style-wide" aria-hidden="true">
+	 <div class="column-two grid-item" align="right">   
 	<h5>More Articles</h5>
-	{{ range first 3 (where .Site.RegularPages "Section" "blog")}}
+	{{ range first 2 (where .Site.RegularPages "Section" "blog")}}
 	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
 	    {{ end }}
 	    </div>
 	    <!-- More Content -->
+	<hr class="styled-separator is-style-wide" aria-hidden="true">
+	    </div>
+	    
+	    
+	    
+	    
 	    
 	    <!-- Disqus Comments with Show Comments Button -->
 	    <hr class="styled-separator is-style-wide" aria-hidden="true">
