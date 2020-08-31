@@ -82,7 +82,7 @@ author = "Admin"
 description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content."
 image = ["images/header5.webp"]
 [params.banner]
-heading = "Quality & Reliable Content"
+heading = "Tech, Cybersecurity, Development, Science and More"
 image = "images/rsz_1header5.webp"
 [params.blog]
 heading = "Our Latest Articles"
