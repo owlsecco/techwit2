@@ -1,0 +1,38 @@
+ <style>
+ .postcolumn {
+  float: left;
+  width: 33.33%;
+}
+.postrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .postcolumn {
+    width: 100%;
+  }
+}
+ </style>
+ 
+ <div class="postrow">
+ 
+    <div class="postcolumn">
+    {{ range first 2 .Site.Taxonomies.tags.featured }}
+    <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+     {{ end }}
+     </div>
+ 
+    <div class="postcolumn">
+    {{ range first 2 .Site.Taxonomies.tags.tour }}
+    <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+     {{ end }}
+     </div>
+     
+    <div class="postcolumn">
+    {{ range first 2 .Site.Taxonomies.tags.visit }}
+    <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+     {{ end }}
+     </div>
+     
+</div> 
