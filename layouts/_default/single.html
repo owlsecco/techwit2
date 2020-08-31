@@ -120,8 +120,7 @@
 	 <div class="aligncenter" align="right">   
 	<hr class="styled-separator is-style-wide" aria-hidden="true">
 	<h5>More Articles</h5>
-	{{ $more := .Site.RegularPages . }}
-	{{ range first 3 $more }}
+	{{ range first 3 (where .Site.RegularPages "Section" "blog")}}
 	<a href="{{ .Permalink }}"><h6>{{ .Title }}</h6></a>
 	    {{ end }}
 	    </div>
