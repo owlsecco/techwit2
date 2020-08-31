@@ -15,23 +15,26 @@
 }
  </style>
  
- <div class="postrow">
+ <div class="has-text-align-center aligncenter postrow" align="center">
  
     <div class="postcolumn">
+     <h3>Business</h3>
     {{ range first 2 .Site.Taxonomies.tags.featured }}
-    <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
  
     <div class="postcolumn">
+     <h3>Tech</h3>
     {{ range first 2 .Site.Taxonomies.tags.tour }}
-    <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
      
     <div class="postcolumn">
+     <h3>Science</h3>
     {{ range first 2 .Site.Taxonomies.tags.visit }}
-    <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
      
