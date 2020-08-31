@@ -20,6 +20,7 @@
     <div class="postcolumn">
      <h3>Business</h3>
     {{ range first 2 .Site.Taxonomies.tags.featured }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
     <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
@@ -27,6 +28,7 @@
     <div class="postcolumn">
      <h3>Tech</h3>
     {{ range first 2 .Site.Taxonomies.tags.tour }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
     <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
@@ -34,6 +36,7 @@
     <div class="postcolumn">
      <h3>Science</h3>
     {{ range first 2 .Site.Taxonomies.tags.visit }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
     <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
