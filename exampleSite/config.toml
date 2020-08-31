@@ -83,11 +83,11 @@ home = ["HTML", "RSS", "JSON", "Feed"]
 [params]
 Images = ["images/hero.webp"]
 author = "Admin"
-description = "Welcome to The TechWit Ke. Your Trusted Source of Quality Tech, Cybersecurity and Development Tips, Tricks, Tutorials, Reviews, News, Offers and Other Content."
+description = "Welcome to The TechWit Ke. Your Trusted and Reliable Source of Quality Tech, Cybersecurity, Development, Science, Business & Other Content."
 image = ["images/hero.webp"]
 [params.banner]
 heading = "Tech, Cybersecurity, Development, Science, Business & More"
-image = "images/ rsz_header5.webp"
+image = "images/ rsz_1header5.webp"
 [params.blog]
 heading = "Our Latest Articles"
 [params.call_to_action]
