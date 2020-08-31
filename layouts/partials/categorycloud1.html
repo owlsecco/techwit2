@@ -14,13 +14,27 @@
       width: 1em; /* Also needed for space (tweak if needed) */
       margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+   .categorylink:visited {
+      color: gray;
+      text-decoration: none;
+}
+
+   .categorylink:hover {
+      color: white;
+}
+
+   .categorylink:active {
+      color: green;
+      text-decoration: none;
+}
+  
 </style>
 
 <div class="wp-block-group wp-block-group__inner-container thin has-text-align-center aligncenter" align="center">
-   <h4>Browse All TechWit Ke Topics</h4>
+   <h5>Browse All TechWit Ke Topics</h5>
    <ul class="categorycloud">
 {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages}}
-      <li class="categorieslist"><a href="{{.Permalink}}" style="text-transform: capitalize;">{{.Title}}</a></li>
+      <li class="categorieslist"><a href="{{.Permalink}}" style="text-transform: capitalize;" class="categorylink">{{.Title}}</a></li>
 {{end}}
    </ul>
 </div>
