@@ -25,7 +25,6 @@
      <h3>Related Articles</h3>
      {{ $related := .Site.RegularPages.Related . }}
      {{ range first 2 $related }}
-     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
     <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
@@ -33,7 +32,6 @@
     <div class="postcolumn">
      <h3>Other Articles</h3>
     {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
-     <a href="{{ .RelPermalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
     <a href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
