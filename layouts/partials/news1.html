@@ -2,9 +2,9 @@
         <div class="wp-block-group__inner-container">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
-                    <em><h3>Dont Miss</h3></em>
+                    <em><h4>Dont Miss</h4></em>
                     {{ range first 3 .Site.Taxonomies.tags.featured }}
-                    <em><p class="has-text-align-center" style="color:purple;"><a href="{{ .Permalink }}">{{ .Title }}</a></p></em>
+                    <em><p class="has-text-align-center"><a href="{{ .Permalink }}" style="color:purple;">{{ .Title }}</a></p></em>
                     {{ end }}
             </div>
           </div>
