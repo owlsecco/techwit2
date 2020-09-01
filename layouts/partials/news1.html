@@ -2,7 +2,10 @@
         <div class="wp-block-group__inner-container">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
-              <p class="has-text-align-center">Test</p>
+                    <em><h3>Dont Miss</h3></em>
+                    {{ range first 2 .Site.Taxonomies.tags.featured }}
+                    <em><p class="has-text-align-center"><a href="{{ .Permalink }}">{{ .Title }}</a></p></em>
+                    {{ end }}
             </div>
           </div>
         </div>
