@@ -72,5 +72,3 @@ Hi, there? Want to contact us? Do it here.
 
 </fieldset>
 </form>
-
-</br>
