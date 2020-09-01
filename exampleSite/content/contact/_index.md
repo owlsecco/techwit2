@@ -2,6 +2,7 @@
 title: Contact Us
 bg_image: images/2020-landscape-2.png
 description: Contact TechWit Ke
+date: 2020-08-03T21:00:00Z
 
 ---
 Hi, there? Want to contact us? Do it here.
