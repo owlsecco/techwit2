@@ -4,6 +4,8 @@
   width: 33.33%;
   border-spacing: 5px 1rem;
   padding:0 15px;
+  border: 2px solid #cd2653;
+  height: 500px;
 }
 .postrow:after {
   content: "";
@@ -17,10 +19,7 @@
     width: 100%;
   }
   }
-.vl {
-   border-left: 2px solid #cd2653;
-   height: 500px;
-}
+
  </style>
  
  <div class="has-text-align-center aligncenter postrow alignfull alignwide is-size-full" align="center">
@@ -34,7 +33,6 @@
      </div>
   
     <div class="postcolumn">
-     <div class="vl"></div>
      <h3>Tech</h3>
     {{ range first 2 .Site.Taxonomies.tags.tour }}
      <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
@@ -43,7 +41,6 @@
      </div>
      
     <div class="postcolumn">
-     <div class="vl"></div>
      <h3>Science</h3>
     {{ range first 2 .Site.Taxonomies.tags.visit }}
      <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
