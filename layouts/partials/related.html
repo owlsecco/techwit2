@@ -1,9 +1,41 @@
-	{{ $related := .Site.RegularPages.Related . | first 5 }}
-	{{ with $related }}
-	<h3>See Also</h3>
-	<ul>
-	{{ range . }}
-	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-	{{ end }}
-	</ul>
-	{{ end }}
+ <style>
+ .postcolumn {
+  float: left;
+  width: 33.33%;
+  border-spacing: 10px 1rem;
+  padding:0 15px;
+}
+.postrow:after {
+  content: "";
+  display: table;
+  clear: both;
+ border-spacing: 5px 1rem;
+ padding:0 15px;
+}
+@media screen and (max-width: 600px) {
+  .postcolumn {
+    width: 100%;
+  }
+  }
+ </style>
+ 
+ <div class="has-text-align-center aligncenter postrow alignfull alignwide is-size-full" align="center">
+ 
+    <div class="postcolumn">
+     <h3>Related Articles</h3>
+     {{ $related := .Site.RegularPages.Related . }}
+     {{ range first 2 $related }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
+     {{ end }}
+     </div>
+  
+    <div class="postcolumn">
+     <h3>Other Articles</h3>
+    {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
+     <a href="{{ .RelPermalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+    <a href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>
+     {{ end }}
+     </div>
+  
+</div> 
