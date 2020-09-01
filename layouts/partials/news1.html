@@ -1,7 +1,7 @@
                      <style>
  .postcolumn {
   float: left;
-  width: 50%; /* 33.33% */
+  width: 33.33%; /* 33.33% */
   border-spacing: 25px 1rem;
   padding:0 15px;
 }
@@ -19,7 +19,7 @@
   }
 
  </style>
-<div class="wp-block-group alignwide alignfull has-background postrow">
+<div class="wp-block-group alignwide alignfull has-background aligncenter has-text-align-center postrow">
       
     <div class="postcolumn">
      <h3>Business</h3>
@@ -37,4 +37,11 @@
      {{ end }}
      </div>
  
+      <div class="postcolumn">
+     <h3>Science</h3>
+    {{ range first 2 .Site.Taxonomies.tags.visit }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
+     {{ end }}
+     </div>
       </div>
