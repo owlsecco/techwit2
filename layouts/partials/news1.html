@@ -1,12 +1,62 @@
+                     <style>
+ .postcolumn {
+  float: left;
+  width: 33.33%;
+  border-spacing: 10px 1rem;
+  padding:0 15px;
+  background-color: inherit;
+}
+.postrow:after {
+  content: "";
+  display: table;
+  clear: both;
+ border-spacing: 5px 1rem;
+ padding:0 15px;
+}
+@media screen and (max-width: 600px) {
+  .postcolumn {
+    width: 100%;
+  }
+  }
+
+ </style>
 <div class="wp-block-group alignwide alignfull has-background" style="background: rgb(205,38,83);background: linear-gradient(188deg, rgba(205,38,83,1) 0%, rgba(0,0,0,1) 100%);color: white;width:100%;">
         <div class="wp-block-group__inner-container">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
+                    
+                    
+                    <div class="postcolumn">
+     <h3>Business</h3>
+    {{ range first 2 .Site.Taxonomies.tags.featured }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
+     {{ end }}
+     </div>
+  
+    <div class="postcolumn">
+     <h3>Tech</h3>
+    {{ range first 2 .Site.Taxonomies.tags.tour }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
+     {{ end }}
+     </div>
+     
+    <div class="postcolumn">
+     <h3>Science</h3>
+    {{ range first 2 .Site.Taxonomies.tags.visit }}
+     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
+    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
+     {{ end }}
+     </div>
+                    
+                    
                     <em><h4>Dont Miss</h4></em>
                     {{ range first 3 .Site.Taxonomies.tags.featured }}
                     <strong><em><h6 class="has-text-align-center"><a href="{{ .Permalink }}" style="color:purple;">{{ .Title }}</a></h6></em></strong>
                     {{ end }}
-            </div>
+ 
+                  </div>
           </div>
         </div>
       </div>
