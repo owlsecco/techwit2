@@ -6,7 +6,8 @@ date: 2020-08-03T21:00:00Z
 
 ---
 Hi, there? Want to contact us? Do it here.
-</br>
+
+
 
 <form class="form-horizontal" data-netlify="true">
 <fieldset>
