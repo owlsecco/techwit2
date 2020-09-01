@@ -4,6 +4,7 @@ title: "Sample Page"
 description: "This is meta description"
 # save as draft
 draft: false
+date: 2020-08-03T21:00:00Z
 ---
 
 <p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show
