@@ -16,7 +16,7 @@ TechWit is a Tech, Cybersecurity and Development Blog started on August 1st 2020
 
 We are still new into the content delivery space. But our authors are not.
 
-You can take a look into our [**editor in chief's personal tech blog**](https://ajulusthoughts.wordpress.com "author's personal tech blog") to know we know how to deliver quality content and gain views. His blog views this year(up to now) is close to 10,000. You should know though that our main aim isn't views but teaching and publishing useful content. But that doesn't stop us from understanding potential advertisers will be interested in views. So we are working day and night to make sure this site is attractive not only to you(advertisers) but also to you(our viewers).
+You can take a look into our [**editor in chief&amp;rsquo;s personal tech blog**](https://ajulusthoughts.wordpress.com "author's personal tech blog") to know we know how to deliver quality content and gain views. His blog views this year(up to now) is close to 10,000. You should know though that our main aim isn't views but teaching and publishing useful content. But that doesn't stop us from understanding potential advertisers will be interested in views. So we are working day and night to make sure this site is attractive not only to you(advertisers) but also to you(our viewers).
 
 ## Letter To Early Potential Advertisers
 
