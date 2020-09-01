@@ -16,6 +16,10 @@
   .postcolumn {
     width: 100%;
   }
+  }
+.vl {
+   border-left: 2px solid #cd2653;;
+   height: 500px;
 }
  </style>
  
@@ -29,6 +33,8 @@
      {{ end }}
      </div>
  
+<div class="vl"></div> 
+  
     <div class="postcolumn">
      <h3>Tech</h3>
     {{ range first 2 .Site.Taxonomies.tags.tour }}
@@ -36,6 +42,9 @@
     <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
+  
+  
+<div class="vl"></div> 
      
     <div class="postcolumn">
      <h3>Science</h3>
