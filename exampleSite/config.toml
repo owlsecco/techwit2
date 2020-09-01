@@ -15,12 +15,12 @@ includeFields = ".*"
 [markup.goldmark.renderer]
 unsafe = true
 [markup.tableOfContents]
-endLevel = 4
-ordered = false
+endLevel = 5
+ordered = true
 startLevel = 2
 [[menu.desktop]]
 URL = "blog"
-name = "Blog"
+name = "Articles"
 weight = 1
 [[menu.main]]
 URL = "/"
