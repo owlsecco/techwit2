@@ -19,9 +19,9 @@
   }
  </style>
  
- <div class="has-text-align-center aligncenter postrow alignfull alignwide is-size-full" align="center">
+ <div class="postrow alignfull alignwide is-size-full">
  
-    <div class="postcolumn">
+    <div class="postcolumn" align="left">
      <h3>Related Articles</h3>
      {{ $related := .Site.RegularPages.Related . }}
      {{ range first 2 $related }}
@@ -29,7 +29,7 @@
      {{ end }}
      </div>
   
-    <div class="postcolumn">
+    <div class="postcolumn" align="right">
      <h3>Other Articles</h3>
     {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
     <a href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>
