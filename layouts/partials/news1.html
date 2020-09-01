@@ -21,12 +21,7 @@
 
  </style>
 <div class="wp-block-group alignwide alignfull has-background" style="background: rgb(205,38,83);background: linear-gradient(188deg, rgba(205,38,83,1) 0%, rgba(0,0,0,1) 100%);color: white;">
-        <div class="wp-block-group__inner-container">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-                    
-                    
-                    <div class="postcolumn">
+                            <div class="postcolumn">
      <h3>Business</h3>
     {{ range first 2 .Site.Taxonomies.tags.featured }}
      <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
@@ -41,8 +36,9 @@
     <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
-                    
-                    
+  <div class="wp-block-group__inner-container">
+          <div class="wp-block-group">
+            <div class="wp-block-group__inner-container">
                     <em><h4>Dont Miss</h4></em>
                     {{ range first 3 .Site.Taxonomies.tags.featured }}
                     <strong><em><h6 class="has-text-align-center"><a href="{{ .Permalink }}" style="color:purple;">{{ .Title }}</a></h6></em></strong>
