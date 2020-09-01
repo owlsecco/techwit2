@@ -1,8 +1,8 @@
  <style>
  .postcolumn {
-  float: center;
-  width: 33%;
-  border-spacing: 20px 1rem;
+  float: left;
+  width: 50%;
+  border-spacing: 10px 1rem;
   padding:0 15px;
 }
 .postrow:after {
@@ -23,17 +23,17 @@
  <div class="postrow alignfull alignwide is-size-full">
  
     <div class="postcolumn" align="left">
-     <h3>Related Articles</h3>
+     <h4>Related Articles</h4>
      {{ $related := .Site.RegularPages.Related . }}
      {{ range first 2 $related }}
-    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
+    <a href="{{ .Permalink }}"><h5>{{ .Title }}</h5></a>
      {{ end }}
      </div>
   
     <div class="postcolumn" align="right">
-     <h3>Other Articles</h3>
+     <h4>Other Articles</h4>
     {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
-    <a href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>
+    <a href="{{ .RelPermalink }}"><h5>{{ .Title }}</h5></a>
      {{ end }}
      </div>
   
