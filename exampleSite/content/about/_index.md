@@ -2,7 +2,7 @@
 title: About
 description: Learn More About TechWit Ke The Informative Tech Blog focused on delivering
   quality and easy to understand content to you.
-
+date: 2020-08-03T21:00:12Z
 ---
 ![techwit ke full text logo](/images/techwit-about-1.png "techwit ke full text logo")
 
