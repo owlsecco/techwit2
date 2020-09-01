@@ -1,16 +1,16 @@
                      <style>
  .postcolumn {
   float: left;
-  width: 33.33%;
-  border-spacing: 50px 1rem;
-  padding:0 50px;
+  width: 50%; /* 33.33% */
+  border-spacing: 25px 1rem;
+  padding:0 15px;
 }
 .postrow:after {
   content: "";
   display: table;
   clear: both;
- border-spacing: 50px 1rem;
- padding:0 50px;
+ border-spacing: 25px 1rem;
+ padding:0 15px;
 }
 @media screen and (max-width: 600px) {
   .postcolumn {
@@ -19,7 +19,7 @@
   }
 
  </style>
-<div class="wp-block-group alignwide alignfull has-background postrow" style="background-color:purple;color: white;">
+<div class="wp-block-group alignwide alignfull has-background postrow" style="background-color:red;color: white;">
       
     <div class="postcolumn">
      <h3>Business</h3>
@@ -36,14 +36,5 @@
     <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
      {{ end }}
      </div>
-  
-    <div class="postcolumn">
-     <h3>Science</h3>
-    {{ range first 2 .Site.Taxonomies.tags.visit }}
-     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
-     {{ end }}
-     </div>
-  
  
       </div>
