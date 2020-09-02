@@ -27,33 +27,20 @@ mark {
  <div class="postrow alignfull alignwide is-size-full">
  
     <div class="postcolumn has-text-align-left alignleft" align="left">
-     <h3>Featured</h3>
-    {{ range first 2 .Site.Taxonomies.tags.featured }}
-     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
-     {{ end }}
      </div>
   
-    <div class="postcolumn" style="background-color:white;color:black;">
+    <div class="postcolumn has-text-align-center" style="background-color:white;color:black;">
      <mark><h3 class="has-text-align-center aligncenter">Latest News</h3></mark>
-     <ul style="list-style-type:none;">
     {{ range first 5 (where .Site.RegularPages "Section" "blog")}}
-    <li>
+    <p>
      <a href="{{ .Permalink }}" style="color:black;"><strong>{{ .Title }}</strong></a>
-     <br>
+     </p>
     <span class="meta-wrapper meta-text post-date" style="color:silver;font-size: 15px;">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
-    </li>
      {{ end }}
-     </ul>
      <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="blog">More News </a></div>
      </div>
      
     <div class="postcolumn has-text-align-right alignright" align="right">
-     <h3>Must Visit</h3>
-    {{ range first 2 .Site.Taxonomies.tags.visit }}
-     <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
-    <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
-     {{ end }}
      </div>
  
 </div> 
