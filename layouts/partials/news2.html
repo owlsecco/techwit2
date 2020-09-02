@@ -17,12 +17,15 @@
     width: 100%;
   }
   }
-
+mark {
+  background-color: yellow;
+  color: black;
+}
  </style>
  
- <div class="has-text-align-center aligncenter postrow alignfull alignwide is-size-full" align="center">
+ <div class="postrow alignfull alignwide is-size-full">
  
-    <div class="postcolumn">
+    <div class="postcolumn has-text-align-left alignleft" align="left">
      <h3>Featured</h3>
     {{ range first 2 .Site.Taxonomies.tags.featured }}
      <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
@@ -30,12 +33,12 @@
      {{ end }}
      </div>
   
-    <div class="alignleft postcolumn" style="background-color:white;color:black;" align="left">
+    <div class="alignleft postcolumn" style="background-color:white;color:black;">
      <mark><h3>Latest News</h3></mark>
      <ul style="list-style-type:none;">
     {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
     <li>
-    <a href="{{ .Permalink }}" style="color:white;">{{ .Content | truncate 100 }}</a>
+    <a href="{{ .Permalink }}" style="color:black;">{{ .Content | truncate 100 }}</a>
     <span class="meta-wrapper meta-text post-date">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
     </li>
      {{ end }}
@@ -43,7 +46,7 @@
      <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="blog">More News </a></div>
      </div>
      
-    <div class="postcolumn">
+    <div class="postcolumn has-text-align-right alignright" align="right">
      <h3>Must Visit</h3>
     {{ range first 2 .Site.Taxonomies.tags.visit }}
      <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37" /></figure></a>
