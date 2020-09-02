@@ -21,7 +21,7 @@ To sign up as an advertiser, use [Advertise Here Page](/advertise)
 
 Check our [Code of Conduct](/code-of-conduct) to see what will be accepted and what will be rejected before contacting us.
 
-{{% /tip %}}
+{{% disclaimer %}}
 
 
 <form class="form-horizontal" data-netlify="true">
