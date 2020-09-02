@@ -1,11 +1,11 @@
-    <div class="has-text-align-center aligncenter wp-block-group alignwide has-background wp-block-group__inner-container" style="background-color:white;color:black;width:30%;">
-     <h3 class="has-text-align-center aligncenter" style="background-color: #FFFF00">Latest News</h3>
+    <div class="has-text-align-center aligncenter wp-block-group alignwide has-background wp-block-group__inner-container" style="background-color:white;color:black;width:20%;">
+        <h3 class="has-text-align-center aligncenter"><span style="background-color: #FFFF00">Latest News</span></h3>
     {{ range first 5 (where .Site.RegularPages "Section" "blog")}}
     <p>
      <a href="{{ .Permalink }}" style="color:black;"><strong>{{ .Title }}</strong></a>
      </p>
     <span class="meta-wrapper meta-text post-date" style="color:silver;font-size: 15px;">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
      {{ end }}
-     <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="blog">More News </a></div>
+     <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="blog">More News</a></div>
      </div>
 <br>
