@@ -36,7 +36,7 @@
     {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
     <li>
     <a href="{{ .Permalink }}">{{ .Content | truncate 100 }}</a>
-    <span class="meta-wrapper meta-text post-date">Published on {{ .PublishDate.Format "02 Jan 06 15:04 MST" .Date.EAT }}</span>
+    <span class="meta-wrapper meta-text post-date">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
     </li>
      {{ end }}
      </ul>
