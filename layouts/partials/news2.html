@@ -38,8 +38,8 @@ mark {
      <ul style="list-style-type:none;">
     {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
     <li>
-    <a href="{{ .Permalink }}" style="color:black;">{{ .Content | truncate 100 }}</a>
-    <span class="meta-wrapper meta-text post-date">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
+     <a href="{{ .Permalink }}" style="color:black;"><strong>{{ .Title }}</strong></a>
+    <span class="meta-wrapper meta-text post-date" style="color:silver;font-size: 15px;">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
     </li>
      {{ end }}
      </ul>
