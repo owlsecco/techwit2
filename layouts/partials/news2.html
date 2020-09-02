@@ -35,11 +35,11 @@ mark {
      </div>
   
     <div class="postcolumn" style="background-color:white;color:black;">
-     <mark><h3>Latest News</h3></mark>
+     <mark><h3 class="has-text-align-center aligncenter">Latest News</h3></mark>
      <ul style="list-style-type:none;">
-    {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
+    {{ range first 5 (where .Site.RegularPages "Section" "blog")}}
     <li>
-     <a href="{{ .Permalink }}" style="color:black;" class="has-text-align-center aligncenter"><strong>{{ .Title }}</strong></a>
+     <a href="{{ .Permalink }}" style="color:black;"><strong>{{ .Title }}</strong></a>
      <br>
     <span class="meta-wrapper meta-text post-date" style="color:silver;font-size: 15px;">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
     </li>
