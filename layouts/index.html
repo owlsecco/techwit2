@@ -50,21 +50,6 @@
       
       <div class="wp-block-button aligncenter"><a class="wp-block-button__link"
                   href="blog">Read More Articles 👉</a></div>
-      
-<!-- Test -->
-<h2>Editor's Top Pick</h2>
-{{ range first 1 .Site.Taxonomies.tags.featured }}
-      <a href="{{ .Permalink }}"><figure class="wp-block-image alignfull size-full">
-<img src="{{ .Params.Image |absURL }}" alt="{{ .Title }}" class="wp-image-37" />
-</figure></a>
-      <div class="wp-block-group alignwide">
-        <div class="wp-block-group__inner-container">
-          <a href="{{ .Permalink }}"><h3 class="has-accent-color has-text-align-center">&#8220;{{ .Title }}&#8221;</h3></a>
-        </div>
-      </div>
-      <p class="has-drop-cap">{{ .Summary }}</p>
-{{ end }}
-
 
       {{ if .Site.Params.call_to_action.enable }}
       {{ with .Site.Params.call_to_action }}
