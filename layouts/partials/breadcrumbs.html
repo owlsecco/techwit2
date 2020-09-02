@@ -1,0 +1,58 @@
+<style>
+.teste{
+  -webkit-transition: color .1s,background-color .1s,fill .1s;
+    transition: color .1s,background-color .1s,fill .1s;
+    border-bottom: ;
+    border-color: currentColor;
+    color: #f02d25;
+    display: inline-block;
+    margin: 15px -9px 4px 6px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 0;
+    padding: 10px;
+}
+
+.breadcrumb{
+    color: #cd2653;
+}
+.teste:before {
+    background: #fff;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skewX(25deg);
+    transform: skewX(25deg);
+    width: 100%;
+    z-index: -1;
+}
+.teste:before {
+    border-right: 1px solid;
+    border-top: 1px solid;
+ }
+
+*, :after, :before {
+    box-sizing: border-box;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+<div id="breadcrumbs">
+    <a href="/">Home</a>
+    {{ range (split .RelPermalink "/") }}
+        {{ if gt (len . ) 0 }}
+
+            <div class="teste"><a href="/{{ . }}" target="_blank" class="breadcrumb">{{ humanize (replace . "posts" "blog") }}</a></div>
+            
+        {{ end }}
+    {{ end }}
+</div>
