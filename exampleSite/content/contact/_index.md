@@ -11,7 +11,7 @@ Would you like to contact us?
 
 Feel free to fill in the details below and send a message and we'll on our way to reply.
 
-{{% Disclaimer "Note" %}}
+{{% disclaimer "Note" %}}
 
 SPAM will be deleted.
 
