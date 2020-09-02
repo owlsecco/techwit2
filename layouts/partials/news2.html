@@ -1,35 +1,4 @@
- <style>
- .postcolumn {
-  float: left;
-  width: 33.33%;
-  border-spacing: 10px 1rem;
-  padding:0 15px;
-}
-.postrow:after {
-  content: "";
-  display: table;
-  clear: both;
- border-spacing: 5px 1rem;
- padding:0 15px;
- align: center;
-}
-@media screen and (max-width: 600px) {
-  .postcolumn {
-    width: 100%;
-  }
-  }
-mark {
-  background-color: yellow;
-  color: black;
-}
- </style>
- 
- <div class="postrow alignfull alignwide is-size-full has-text-align-center aligncenter" align="center">
- 
-    <div class="postcolumn">
-     </div>
-  
-    <div class="postcolumn has-text-align-center" style="background-color:white;color:black;">
+    <div class="has-text-align-center aligncenter wp-block-group alignwide has-background wp-block-group__inner-container" style="background-color:white;color:black;">
      <mark><h3 class="has-text-align-center aligncenter">Latest News</h3></mark>
     {{ range first 5 (where .Site.RegularPages "Section" "blog")}}
     <p>
@@ -39,8 +8,3 @@ mark {
      {{ end }}
      <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="blog">More News </a></div>
      </div>
-     
-    <div class="postcolumn">
-     </div>
- 
-</div> 
