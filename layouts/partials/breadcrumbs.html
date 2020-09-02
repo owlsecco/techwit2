@@ -46,7 +46,9 @@
 </style>
 
 <div id="breadcrumbs">
-    <a href="/">Home</a>
+  
+    <div class="teste"><a href="/" target="_blank" class="breadcrumb">Home</a></div>
+  
     {{ range (split .RelPermalink "/") }}
         {{ if gt (len . ) 0 }}
 
