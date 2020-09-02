@@ -1,5 +1,5 @@
-    <div class="has-text-align-center aligncenter wp-block-group alignwide has-background wp-block-group__inner-container" style="background-color:white;color:black;width:50%;">
-     <mark><h3 class="has-text-align-center aligncenter">Latest News</h3></mark>
+    <div class="has-text-align-center aligncenter wp-block-group alignwide has-background wp-block-group__inner-container" style="background-color:white;color:black;width:30%;">
+     <h3 class="has-text-align-center aligncenter" style="background-color: #FFFF00">Latest News</h3>
     {{ range first 5 (where .Site.RegularPages "Section" "blog")}}
     <p>
      <a href="{{ .Permalink }}" style="color:black;"><strong>{{ .Title }}</strong></a>
@@ -8,3 +8,4 @@
      {{ end }}
      <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="blog">More News </a></div>
      </div>
+<br>
