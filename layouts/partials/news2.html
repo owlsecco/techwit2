@@ -32,10 +32,10 @@
   
     <div class="postcolumn" style="background-color:white;color:black;">
      <mark><h3>Latest News</h3></mark>
-     <ul>
+     <ul style="list-style-type:none;">
     {{ range first 2 (where .Site.RegularPages "Section" "blog")}}
     <li>
-    <a href="{{ .Permalink }}">{{ .Content | truncate 100 }}</a>
+    <a href="{{ .Permalink }}" style="color:white;">{{ .Content | truncate 100 }}</a>
     <span class="meta-wrapper meta-text post-date">Published on {{ .PublishDate.Format "02 Jan 06 15:04" }}</span>
     </li>
      {{ end }}
