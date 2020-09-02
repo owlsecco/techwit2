@@ -15,14 +15,12 @@
       <img width="1200" height="769" src="{{ . | absURL }}"
         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
         sizes="(max-width: 1200px) 100vw, 1200px" />
-      <!--<p align="center" class="has-text-align-center" style="position:absolute;top:80%;left:50%;transform:translate(-50%, -50%);color:white;">{{ now.Format "Monday, January 2, 2006"}} &nbsp; | &nbsp; {{- range ( where site.RegularPages "Section" "blog" | first 1 ) }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }} </p>-->
     </div>
   </figure>
   {{end}}
   
   <!-- Featured Posts -->           
   {{partial "featured.html" .}}
-  <!--{{partial "news1.html" .}}-->
   
   <div class="post-inner thin">
     <div class="entry-content">
@@ -33,6 +31,7 @@
         </div>
       </div>
       {{ end }}
+      
       <div class="wp-block-columns columns alignwide">
         {{ range first 10 (where .Site.RegularPages "Section" "blog")}}
         <div class="column">
@@ -52,7 +51,6 @@
       <div class="wp-block-button aligncenter"><a class="wp-block-button__link"
                   href="blog">Read More Articles 👉</a></div>
       
-     <!-- {{partial "tagposts.html" .}} -->
 <!--
       <figure class="wp-block-image alignfull size-full"><img src="images/2020-landscape-2.png" alt=""
           class="wp-image-37" />
@@ -72,8 +70,6 @@
         the Year, and was among the top candidates for the Swedish Museum of the Year Award as well as for the
         Council of Europe Museum Prize.</p>
 -->
-      
-      {{partial "news2.html" .}}
 
       {{ if .Site.Params.call_to_action.enable }}
       {{ with .Site.Params.call_to_action }}
