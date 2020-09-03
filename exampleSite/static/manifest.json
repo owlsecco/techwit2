@@ -11,7 +11,7 @@
     "description": "Welcome to TechWit Ke. Your Informative, Reliable and Trusted Source of Quality Tech, Cybersecurity, Development, Science, Business and Other Tips, Tricks, Tutorials, Reviews, News, Offers, Courses, Newsletter.",
     "orientation": "portrait",
     "related_applications": [],
-	"categories": ["tech", "cybersecurity", "data", "development", "business", "startup", "techwit", "wit", "witty", "machine learning", "blog", "magazine", "newsletter", "tech blog", "tech online magazine", "tech savvy", "savvy", "techsavvy", "data privacy", "security", "kenya", "ke", "pwa", "progressive web applications", "progressive web pplication", "jamstack", "static site", "windows ", "linux", "foss", "news", "android", "hacker"],
+	"categories": ["security", "news", "lifestyle", "books", "business", "education", "personalization", "productivity", "games", "utilities", "magazines", "tech blog", "tech magazine", "development", "technology"],
 	"shortcuts" : [
    {
     "name": "Latest Articles",
