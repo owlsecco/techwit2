@@ -8,10 +8,10 @@
     "start_url": "/?utm_source=homescreen",
     "background_color": "#000000",
     "theme_color": "#000000",
-    "description": "Welcome to TechWit Ke. Your Informative, Reliable and Trusted Source of Quality Tech, Cybersecurity, Development, Science, Business and Other Tips, Tricks, Tutorials, Reviews, News, Offers, Courses, Newsletter.",
+    "description": "Welcome to TechWit Ke. Your Informative, Reliable and Trusted Source of Quality Tech, Cybersecurity, Development, Science, Business and Other Content. Get Tips, Tricks, Tutorials, Reviews, News, Offers, Courses and Newsletters. Join The Witty Side!",
     "orientation": "portrait",
     "related_applications": [],
-	"categories": ["security", "news", "lifestyle", "books", "business", "education", "personalization", "productivity", "games", "utilities", "magazines", "tech blog", "tech magazine", "development", "technology"],
+	"categories": ["security", "news", "lifestyle", "books", "business", "education", "personalization", "productivity", "games", "utilities", "magazines", "technology"],
 	"shortcuts" : [
    {
     "name": "Latest Articles",
@@ -21,12 +21,12 @@
   {
     "name": "Learn More",
     "url": "/about",
-	"description": "Learn More About TechWit Ke"
+    "description": "Learn More About TechWit Ke"
   },
   {
     "name": "Say Hi ",
     "url": "/contact",
-	"description": "Say Hi, Report an Issue, Ask for a Job and more"
+    "description": "Say Hi and Contact Us"
   }
 ],
     "icons": [
@@ -126,10 +126,10 @@
             "type": "image/png"
         },
 	{
-      "src": "/meta/maskable_icon.png",
-      "sizes": "196x196",
-      "type": "image/png",
-      "purpose": "any maskable"
+      	    "src": "/meta/maskable_icon.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any maskable"
    	 }
     ],
     "url": "https://techwit2.netlify.app",
