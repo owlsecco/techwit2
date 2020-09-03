@@ -1,6 +1,6 @@
-// This is the service worker with the Cache-first network
+// This is the service worker with the Stale While Revalidate
 
-const CACHE = "pwabuilder-precache";
+const CACHE = "techwitke-stalewhilerevalidate";
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
 
