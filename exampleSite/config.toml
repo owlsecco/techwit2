@@ -1,4 +1,4 @@
-baseURL = "https://techwit2.netlify.app/"
+baseURL = "https://techwitke.netlify.app/"
 disableLanguages = []
 disqusShortname = "techwitke"
 enableEmoji = true
