@@ -1,10 +1,10 @@
 +++
 author = ["stephenajulu"]
-categories = ["techwitke"]
+categories = ["Technology"]
 date = 2021-01-08T21:00:00Z
 description = "Let's take a look at how The TechWit Ke Magazine was built. What we are still working on and where we are going."
 image = "/images/rsz_1header5.webp"
-tags = ["journey", "howto"]
+tags = ["techwit", "journey", "howto"]
 title = "Building The TechWit Ke Magazine Part 1"
 
 +++
