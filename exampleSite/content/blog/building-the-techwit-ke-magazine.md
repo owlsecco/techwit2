@@ -1,15 +1,14 @@
 +++
 author = ["stephenajulu"]
 categories = ["techwitke"]
-date = 2020-09-01T21:00:00Z
-description = "See how The TechWit Ke Magazine was built. What we are still working on and where we are going."
-draft = true
-image = ""
+date = 2021-01-08T21:00:00Z
+description = "Let's take a look at how The TechWit Ke Magazine was built. What we are still working on and where we are going."
+image = "/images/rsz_1header5.webp"
 tags = ["journey", "howto"]
-title = "Building The TechWit Ke Magazine"
+title = "Building The TechWit Ke Magazine Part 1"
 
 +++
-Hi, there? My name is Stephen Ajulu, the Founder and Chief Editor of TechWit Ke, and this is the beginning and rise of TechWit Ke.
+Hi, there? My name is Stephen Ajulu, the Founder of SAOA Media and Editor in Chief of TechWit Ke, and this is the beginning and rise of TechWit Ke.
 
 To begin, let me explain our stack.
 
@@ -33,4 +32,14 @@ We use Netlify for Continuous Deployment. Each time we make a commit. Netlify st
 
 ### Content Management System: Forestry CMS
 
-From a beautiful and simple interface to snippets that can be paired with hugo shortcodes. This is really the best git based headless cms for Hugo.
+From a beautiful and simple interface to snippets that can be paired with hugo shortcodes. This really is the best git based headless cms for Hugo.
+
+We choose these platforms for their user friendly, reliability and quality. 
+
+As you know TechWit Ke is a brand under the SAOA Media Group. 
+
+We have a commitment to delivering quality tech, cybersecurity and development content.
+
+Next time we'll talk about the other services we use. 
+
+Till then, have a great day! 
