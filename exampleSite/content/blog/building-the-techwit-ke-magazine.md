@@ -14,7 +14,7 @@ To begin, let me explain our stack.
 
 ### Framework: Hugo
 
-It is static site generator built on Go.
+It is a static site generator built on Go.
 
 We chose it because of it's fast build time, built on Go, no server side rendering, easy to understand docs, great for blogs, suitable for large websites and finally because it has a great community.
 
@@ -34,12 +34,12 @@ We use Netlify for Continuous Deployment. Each time we make a commit. Netlify st
 
 From a beautiful and simple interface to snippets that can be paired with hugo shortcodes. This really is the best git based headless cms for Hugo.
 
-We choose these platforms for their user friendly, reliability and quality. 
+We choose these platforms for their user friendly, reliability and quality.
 
-As you know TechWit Ke is a brand under the SAOA Media Group. 
+As you know TechWit Ke is a brand under the SAOA Media Group.
 
 We have a commitment to delivering quality tech, cybersecurity and development content.
 
-Next time we'll talk about the other services we use. 
+Next time we'll talk about the other services we use.
 
-Till then, have a great day! 
+Till then, have a great day!
