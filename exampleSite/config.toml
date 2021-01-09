@@ -82,7 +82,7 @@ mediaType = "application/json"
 home = ["HTML", "RSS", "JSON", "Feed"]
 [params]
 Images = ["images/header5.webp"]
-author = "Admin"
+author = "TechWit Ke"
 description = "Welcome to The TechWit Ke. Your Trusted and Reliable Source of Quality Tech, Cybersecurity, Development, Science, Business & Other Content."
 image = ["images/header5.webp"]
 [params.banner]
