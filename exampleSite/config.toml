@@ -9,7 +9,7 @@ languageName = "En"
 paginate = "10"
 summaryLength = "70"
 theme = "twentytwenty"
-title = "TechWit Ke v0.9"
+title = "TechWit Ke"
 [imaging.exif]
 includeFields = ".*"
 [markup.goldmark.renderer]
