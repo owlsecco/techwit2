@@ -2,7 +2,7 @@
 author = ["stephenajulu"]
 categories = ["Cyber Security"]
 date = 2021-01-10T14:55:00Z
-description = ""
+description = "Here are internet security rules and tips to leave by. A must read in the information age."
 image = "/images/internetsafeyrules-1.png"
 tags = ["bitwarden", "authy", "two factor authentication", "2 factor authentication", "2fa", "encryption", "authentication", "password manager", "antivirus", "firewall", "security", "computer security", "information security policy", "password policy", "cyber threats", "data breaches", "security policy", "data encryption", "information security", "data security", "data protection", "internet security", "cyber security"]
 title = "Internet Safety Rules to Live By"
